@@ -98,7 +98,7 @@ function bootstrap_basic_fse_block_bsPagination_renderPageNext(array $attributes
     $enhanced_pagination = isset($block->context['enhancedPagination']) && $block->context['enhancedPagination'];
     $max_page = (isset($block->context['query']['pages']) ? (int) $block->context['query']['pages'] : 0);
     $page = (empty($_GET[$page_key]) ? 1 : (int) $_GET[$page_key]);
-    $wrapper_attributes = get_block_wrapper_attributes(['class' => 'page-link']);
+    $wrapper_attributes = 'class="wp-block-bootstrap-basic-fse-blocks-bs-pagination page-link"';
     $default_label = __('Next »', 'bootstrap-basic-fse');
     $label_text = (isset($attributes['nextText']) && !empty($attributes['nextText']) ? wp_kses_post($attributes['nextText']) : $default_label);
     $label = $label_text;
@@ -253,7 +253,7 @@ function bootstrap_basic_fse_block_bsPagination_renderPagePrevious(array $attrib
     $enhanced_pagination = isset($block->context['enhancedPagination']) && $block->context['enhancedPagination'];
     $max_page = (isset($block->context['query']['pages']) ? (int) $block->context['query']['pages'] : 0);
     $page = (empty($_GET[$page_key]) ? 1 : (int) $_GET[$page_key]);
-    $wrapper_attributes = get_block_wrapper_attributes(['class' => 'page-link']);
+    $wrapper_attributes = 'class="wp-block-bootstrap-basic-fse-blocks-bs-pagination  page-link"';
     $default_label = __('« Previous', 'bootstrap-basic-fse');
     $label_text = (isset($attributes['previousText']) && !empty($attributes['previousText']) ? wp_kses_post($attributes['previousText']) : $default_label);
     $label = $label_text;
