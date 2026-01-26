@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "attributes": {
+    "navigationRef": {
+      "type": "integer",
+      "default": 0
+    },
+    "dataAttributes": {
+      "type": "object",
+      "default": {}
+    },
+    "ariaAttributes": {
+      "type": "object",
+      "default": {}
+    },
+    "dropdownClassName": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "category": "theme",
+  "description": "Bootstrap navbar navigation items. This block is in the Bootstrap Basic FSE theme.",
+  "editorScript": "file:./index.js",
+  "example": {},
+  "icon": "menu",
+  "keywords": [
+    "bootstrap",
+    "navbar",
+    "navigation",
+    "menu"
+  ],
+  "name": "bootstrap-basic-fse/blocks-bs-navbar-navigation",
+  "parent": [
+    "bootstrap-basic-fse/blocks-bs-navbar-container",
+    "bootstrap-basic-fse/blocks-bs-navbar-responsive-wrapper"
+  ],
+  "render": "file:./render.php",
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "html": false
+  },
+  "textdomain": "bootstrap-basic-fse",
+  "title": "Bootstrap navbar navigation",
+  "version": "0.0.1"
+}
