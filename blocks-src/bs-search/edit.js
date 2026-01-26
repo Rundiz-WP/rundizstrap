@@ -304,9 +304,9 @@ export default function Edit({attributes, setAttributes}) {
                 </>
             ) : (
                 <>
-                    <div class="row g-0">
+                    <div class="row g-3">
                         <div
-                            className={'no-button' === buttonPosition ? 'col-12' : 'col-auto me-auto'}
+                            className={'no-button' === buttonPosition ? 'col-12' : 'col'}
                         >
                             {renderTextField()}
                         </div>

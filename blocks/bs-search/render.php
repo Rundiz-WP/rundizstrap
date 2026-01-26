@@ -68,8 +68,8 @@ if ('button-group-input' === $buttonPosition) {
     $field_markup .= $button_search;
     $field_markup .= '</div>';
 } else {
-    $field_markup .= '<div class="row g-0">';
-    $input_col_class = 'col-auto me-auto';
+    $field_markup .= '<div class="row g-3">';
+    $input_col_class = 'col';
     if ('no-button' === $buttonPosition) {
         $input_col_class = 'col-12';
     }
