@@ -1,0 +1,75 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "appearanceTools": true,
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1320px"
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "rgb(13,110,253)",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "rgb(108,117,125)",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "success",
+                    "color": "rgb(25,135,84)",
+                    "name": "Success"
+                },
+                {
+                    "slug": "info",
+                    "color": "rgb(13,202,240)",
+                    "name": "Info"
+                },
+                {
+                    "slug": "warning",
+                    "color": "rgb(255,193,7)",
+                    "name": "Warning"
+                },
+                {
+                    "slug": "danger",
+                    "color": "rgb(220,53,69)",
+                    "name": "Danger"
+                },
+                {
+                    "slug": "light",
+                    "color": "rgb(248,249,250)",
+                    "name": "Light"
+                },
+                {
+                    "slug": "dark",
+                    "color": "rgb(33,37,41)",
+                    "name": "Dark"
+                }
+            ]
+        }
+    },
+    "styles": {},
+    "customTemplates": [],
+    "templateParts": [
+        {
+            "area": "header",
+            "name": "header",
+            "title": "Header"
+        },
+        {
+            "area": "sidebar",
+            "name": "sidebar",
+            "title": "Sidebar"
+        },
+        {
+            "area": "footer",
+            "name": "footer",
+            "title": "Footer"
+        }
+    ],
+    "patterns": []
+}

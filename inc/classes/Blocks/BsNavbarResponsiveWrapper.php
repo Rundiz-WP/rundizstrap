@@ -1,0 +1,73 @@
+<?php
+/**
+ * Bootstrap Basic FSE - Bootstrap navbar responsive wrapper block.
+ * 
+ * @package bootstrap-basic-fse
+ * @since 0.0.1
+ * @license http://opensource.org/licenses/MIT MIT
+ */
+
+
+namespace BootstrapBasicFSE\Blocks;
+
+
+if (!class_exists('\\BootstrapBasicFSE\Blocks\\BsNavbarResponsiveWrapper')) {
+    /**
+     * Bootstrap navbar responsive wrapper class.
+     * 
+     * @since 0.0.1
+     */
+    class BsNavbarResponsiveWrapper implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    {
+
+
+        /**
+         * @type string Block folder name.
+         */
+        private const BLOCK_NAME = 'bs-navbar-responsive-wrapper';
+
+
+        /**
+         * Register block.
+         * 
+         * @link https://developer.wordpress.org/reference/functions/register_block_type/ Reference.
+         * @since 0.0.1
+         */
+        public function registerBlock()
+        {
+            register_block_type(dirname(BOOTSTRAPBASICFSE_FILE) . '/blocks/' . static::BLOCK_NAME . '/block.json');
+        }// registerBlocks
+
+
+        /**
+         * {@inheritDoc}
+         * 
+         * @since 0.0.1
+         */
+        public function registerHooks()
+        {
+            add_action('init', [$this, 'registerBlock']);
+            add_action('wp_enqueue_scripts', [$this, 'setTranslation']);
+        }// registerHooks
+
+
+        /**
+         * Set script translation (for JS).
+         * 
+         * @link https://developer.wordpress.org/reference/functions/wp_set_script_translations/ Reference.
+         * @since 0.0.1
+         */
+        public function setTranslation()
+        {
+            if (function_exists('wp_set_script_translations')) {
+                wp_set_script_translations(
+                    'bootstrap-basic-fse-blocks-' . static::BLOCK_NAME . '-script', 
+                    'bootstrap-basic-fse', 
+                    plugin_dir_path(BOOTSTRAPBASICFSE_FILE) . 'languages'
+                );
+            }
+        }// setTranslation
+
+
+    }// BsNavbarResponsiveWrapper
+}

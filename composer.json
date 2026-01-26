@@ -1,0 +1,13 @@
+{
+    "autoload": {
+        "psr-4": {
+            "BootstrapBasicFSE\\": "inc/classes/"
+        }
+    },
+    "config": {
+        "vendor-dir": "inc/vendor",
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

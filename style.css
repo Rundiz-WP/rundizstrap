@@ -1,0 +1,41 @@
+/**
+ * Theme Name: Bootstrap Basic FSE
+ * Theme URI: https://rundiz.com
+ * Author: Vee W.
+ * Author URI: https://rundiz.com
+ * Description: A modern WordPress Block Theme (FSE) based on Bootstrap.
+ * Version: 0.0.1
+ * Requires at least: 6.1
+ * Tested up to: 7.0
+ * Requires PHP: 8.0
+ * License: MIT
+ * License URI: https://opensource.org/licenses/MIT
+ * Text Domain: bootstrap-basic-fse
+ * Tags: two-columns, right-sidebar
+ * Domain Path: /languages/
+ */
+
+
+/*
+CSS below is for fallback supported of `[gallery]` shortcode.
+*/
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+}
+.gallery > .gallery-item {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+/* Custom style for this theme. ==================================== */
+.bootstrap-basic-fse-entry-meta a {
+    color: inherit;
+    text-decoration: none;
+}
+.bootstrap-basic-fse-entry-meta a:hover {
+    color: hsl(from currentColor h s calc(l - 80));
+}

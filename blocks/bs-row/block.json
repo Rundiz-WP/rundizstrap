@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    }
+  },
+  "category": "design",
+  "description": "Render Bootstrap row. This block is in the Bootstrap Basic FSE theme.",
+  "editorScript": "file:./index.js",
+  "example": false,
+  "icon": "layout",
+  "keywords": [
+    "bootstrap",
+    "row",
+    "wrapper"
+  ],
+  "name": "bootstrap-basic-fse/blocks-bs-row",
+  "supports": {
+    "anchor": true,
+    "ariaLabel": true,
+    "className": true,
+    "html": false,
+    "color": false,
+    "typography": false,
+    "spacing": false,
+    "layout": false,
+    "__experimentalBorder": false,
+    "position": false,
+    "shadow": false,
+    "dimensions": false,
+    "background": false
+  },
+  "textdomain": "bootstrap-basic-fse",
+  "title": "Bootstrap layout row",
+  "version": "0.0.1"
+}

@@ -1,0 +1,231 @@
+{
+    "moduleName": "Bootstrap Basic FSE",
+    "wpDev": true,
+    "build": {
+        "clean": {
+            "destinations": [
+                {
+                    "patterns": [
+                        "assets/vendor/bootstrap/**",
+                        "assets/vendor/bootstrap"
+                    ]
+                },
+                {
+                    "patterns": [
+                        "assets/vendor/bootstrap-icons/**",
+                        "assets/vendor/bootstrap-icons"
+                    ],
+                    "options": {
+                    }
+                }
+            ]
+        },
+        "copy": {
+            "copyTasks": [
+                {
+                    "patterns": "node_modules/bootstrap/dist/css/bootstrap.min.*",
+                    "destination": "assets/vendor/bootstrap/css"
+                },
+                {
+                    "patterns": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.*",
+                    "destination": "assets/vendor/bootstrap/js"
+                },
+                {
+                    "patterns": "node_modules/bootstrap/LICENSE*",
+                    "destination": "assets/vendor/bootstrap"
+                },
+
+                {
+                    "patterns": "node_modules/bootstrap-icons/font/*.css",
+                    "destination": "assets/vendor/bootstrap-icons/css"
+                },
+                {
+                    "patterns": "node_modules/bootstrap-icons/font/*.json",
+                    "destination": "assets/vendor/bootstrap-icons/css"
+                },
+                {
+                    "patterns": "node_modules/bootstrap-icons/font/fonts/**",
+                    "destination": "assets/vendor/bootstrap-icons/css/fonts"
+                },
+                {
+                    "patterns": "node_modules/bootstrap-icons/LICENSE*",
+                    "destination": "assets/vendor/bootstrap-icons"
+                }
+            ],
+            "copyWP": [
+                {
+                    "patterns": "assets/**",
+                    "destination": "assets"
+                },
+                {
+                    "patterns": "blocks/**",
+                    "destination": "blocks"
+                },
+                {
+                    "patterns": "inc/**",
+                    "destination": "inc"
+                },
+                {
+                    "patterns": "languages/**",
+                    "destination": "languages"
+                },
+                {
+                    "patterns": "parts/**",
+                    "destination": "parts"
+                },
+                {
+                    "patterns": "patterns/**",
+                    "destination": "patterns"
+                },
+                {
+                    "patterns": "templates/**",
+                    "destination": "templates"
+                },
+                {
+                    "patterns": "LICENSE",
+                    "destination": "."
+                },
+                {
+                    "patterns": "*.css",
+                    "destination": "."
+                },
+                {
+                    "patterns": "theme.json",
+                    "destination": "."
+                },
+                {
+                    "patterns": "*.md",
+                    "destination": "."
+                },
+                {
+                    "patterns": "*.php",
+                    "destination": "."
+                },
+                {
+                    "patterns": "*.png",
+                    "destination": "."
+                },
+                {
+                    "patterns": "*.txt",
+                    "destination": "."
+                }
+            ]
+        }
+    },
+    "watch": {
+        "watcher": [
+            {
+                "patterns": "assets/**",
+                "destination": "assets"
+            },
+            {
+                "patterns": "blocks/**",
+                "destination": "blocks"
+            },
+            {
+                "patterns": "inc/**",
+                "destination": "inc"
+            },
+            {
+                "patterns": "languages/**",
+                "destination": "languages"
+            },
+            {
+                "patterns": "parts/**",
+                "destination": "parts"
+            },
+            {
+                "patterns": "patterns/**",
+                "destination": "patterns"
+            },
+            {
+                "patterns": "templates/**",
+                "destination": "templates"
+            },
+            {
+                "patterns": "*.css",
+                    "destination": "."
+            },
+            {
+                "patterns": "theme.json",
+                    "destination": "."
+            },
+            {
+                "patterns": "*.php",
+                "destination": "."
+            },
+            {
+                "patterns": "*.png",
+                "destination": "."
+            },
+            {
+                "patterns": "*.txt",
+                "destination": "."
+            }
+        ]
+    },
+    "writeVersions": [
+        {
+            "nodePackage": "bootstrap",
+            "assetsDataPattern": [
+                "bootstrap\\-basic\\-fse\\-bootstrap"
+            ],
+            "assetsDataFile": "inc/classes/BootstrapBasicFSE.php"
+        },
+        {
+            "nodePackage": "bootstrap-icons",
+            "assetsDataPattern": [
+                "bootstrap\\-basic\\-fse\\-bootstrap\\-icons"
+            ],
+            "assetsDataFile": "inc/classes/BootstrapBasicFSE.php"
+        }
+    ],
+    "pack": {
+        "versionHeaderFile": "readme.txt",
+        "versionPattern": "Stable tag(\\s?)(:?)(\\s?)(?<version>([\\d\\.]+)([-+\\.0-9a-z]*))",
+        "packPatterns": {
+            "dev": {
+                "patterns": [
+                    "**"
+                ],
+                "options": {
+                    "ignore": [
+                        ".backup",
+                        ".dist",
+                        ".git",
+                        ".img-src",
+                        "node_modules"
+                    ]
+                }
+            },
+            "prod": {
+                "patterns": [
+                    "**"
+                ],
+                "options": {
+                    "ignore": [
+                        ".*",
+                        ".backup",
+                        ".dev-notes",
+                        ".dist",
+                        ".git",
+                        ".img-src",
+                        ".phpdoc",
+                        ".phpunit*",
+                        "assets-src",
+                        "blocks/bbfse-test",
+                        "blocks-src",
+                        "inc/classes/Blocks/BbfseTest.php",
+                        "node_modules",
+                        "node_tasks",
+                        "package*.json"
+                    ]
+                }
+            }
+        },
+        "zipFilePrefix": "$folderName$",
+        "zipOptions": {
+            "zipPrefix": "$folderName$"
+        }
+    }
+}
