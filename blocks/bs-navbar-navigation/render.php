@@ -28,14 +28,20 @@ if (!$navigationPost) {
         'post_type' => 'wp_navigation',
         'posts_per_page' => 1,
         'post_status' => 'publish',
+        'orderby' => 'ID',
+        'order' => 'ASC',
     ]);
     if (is_array($navigationPosts) && !empty($navigationPosts)) {
         $navigationPost = $navigationPosts[0];
     }
     unset($navigationPosts);
 }
+$isBlockEditor = defined('REST_REQUEST') && REST_REQUEST && 'edit' === $_GET['context'];
 
 if (!$navigationPost) {
+    if ($isBlockEditor) {
+        esc_html_e('This navigation is empty.', 'bootstrap-basic-fse');
+    }
     unset($navigationPost);
     return;
 }
@@ -46,6 +52,12 @@ $items = BootstrapNavbarNavigationWalker::flattenToTwoLevels($items);
 $items = BootstrapNavbarNavigationWalker::markActive($items);
 
 if (empty($items)) {
+    if ($isBlockEditor) {
+        esc_html_e('This navigation is empty.', 'bootstrap-basic-fse');
+    }
+    if (defined('WP_DEBUG') && WP_DEBUG === true) {
+        echo PHP_EOL . '    <!-- not found navbar contents at `posts`.`ID` \'' . ($navigationPost->ID ?? '') . '\'.  -->' . PHP_EOL;
+    }
     unset($blocks, $items, $navigationPost);
     return;
 }
@@ -61,6 +73,7 @@ $wrapper_attributes .= BootstrapNavbarNavigationWalker::attributesToString(($att
 $walker = new BootstrapNavbarNavigationWalker();
 $walker->setDropdownClassName(($attributes['dropdownClassName'] ?? ''));
 
+echo PHP_EOL;// keep new line.
 printf(
     '<ul %1$s>
         %2$s
