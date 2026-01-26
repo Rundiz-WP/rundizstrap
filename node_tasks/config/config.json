@@ -209,6 +209,7 @@
                         ".dev-notes",
                         ".dist",
                         ".git",
+                        ".github",
                         ".img-src",
                         ".phpdoc",
                         ".phpunit*",

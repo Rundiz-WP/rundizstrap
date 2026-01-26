@@ -16,13 +16,25 @@ Bootstrap Basic FSE Uses Bootstrap Icons https://icons.getbootstrap.com/ , licen
 == Description ==
 Based on latest version of Bootstrap and it is WordPress Full Site Editor (FSE) theme.
 
-The concept is to keep it basic, no rich features, no additional functions.  
+The concept is to keep it basic.  
 Bundled with custom blocks that use HTML & CSS classes based on Bootstrap such as pagination, search.
 
 It is still keep the same concept as Bootstrap Basic (version 1) which is minimal, just basic, easy to start build your own theme whether it is for new parent theme or child theme.  
 Or you can even use it on your production website!
 
 Tested up to PHP 8.5.
+
+= Nav menu item help. =
+
+The navbar consists of 4 parts.
+1. Bootstrap navbar container.
+2. Bootstrap navbar toggler button.
+3. Bootstrap navbar responsive wrapper.
+4. Bootstrap navbar navigation.
+
+To use `navbar-brand`, you can use WordPress core row and add class `navbar-brand` to it. Then you can add site logo, site title into row.
+
+To use dropdown menu divider, add class `dropdown-divider` to sub menu item.
 
 == Changelog ==
 = 0.0.1 =
