@@ -9,13 +9,13 @@
  */
 
 ?>
-<!-- wp:bootstrap-basic-fse/blocks-bs-search {"label":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","buttonText":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","className":"border rounded mb-4 p-2"} /-->
+<!-- wp:bootstrap-basic-fse/blocks-bs-search {"label":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","buttonClass":"btn btn-outline-primary","buttonText":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","className":"mb-5"} /-->
 
-<!-- wp:group {"className":"border rounded p-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group border rounded p-2">
+<!-- wp:group {"className":"","layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
     <!-- wp:heading -->
         <h2 class="wp-block-heading"><?php esc_html_e('Pages', 'bootstrap-basic-fse'); ?></h2>
     <!-- /wp:heading -->
-    <!-- wp:page-list {"className":"mb-1 ps-3"} /-->
+    <!-- wp:page-list {"className":"mb-1 mt-1 ps-3"} /-->
 </div>
 <!-- /wp:group -->

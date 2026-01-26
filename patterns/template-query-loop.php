@@ -13,8 +13,8 @@
 <!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]}} -->
 <div class="wp-block-query">
     <!-- wp:post-template {} -->
-        <!-- wp:group {"tagName":"article","className":"border rounded mb-4 p-2"} -->
-        <article class="wp-block-group border rounded mb-4 p-2">
+        <!-- wp:group {"tagName":"article","className":"border-top border-bottom mb-5 p-2"} -->
+        <article class="wp-block-group border-top border-bottom mb-5 p-2">
             <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/1"} /-->
             <!-- wp:post-title {"level":2,"isLink":true,"className":"h3"} /-->
 
@@ -35,6 +35,8 @@
             <!-- /wp:group -->
 
             <!-- wp:post-content {"className":"bootstrap-basic-fse-each-post-contents mt-0"} /-->
+
+            <!-- wp:read-more {"fontSize":"small"} /-->
         </article>
         <!-- /wp:group -->
     <!-- /wp:post-template -->
@@ -49,6 +51,6 @@
         <!-- /wp:group -->
     <!-- /wp:query-no-results -->
 
-    <!-- wp:bootstrap-basic-fse/blocks-bs-pagination {"alignment":"justify-content-center"} /-->
+    <!-- wp:bootstrap-basic-fse/blocks-bs-pagination {"additionalClass":"mb-0","alignment":"justify-content-center","className": "mt-0 mb-5 mb-md-0"} /-->
 </div>
 <!-- /wp:query -->
