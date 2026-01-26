@@ -46,6 +46,7 @@ import { useEffect, useRef } from '@wordpress/element';
  * @see https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/
  */
 import {
+    Disabled,
     SelectControl, 
     TextControl, 
     ToggleControl, 
@@ -68,6 +69,7 @@ export default function Edit({attributes, setAttributes}) {
     const {
         showLabel,
         label,
+        buttonUseIcon,
         buttonPosition,
         buttonClass,
         buttonText,
@@ -102,6 +104,7 @@ export default function Edit({attributes, setAttributes}) {
             value: 'no-button',
         },
     ];
+    const buttonUseIconDefault = false;
     const buttonDefaultPosition = 'button-outside';
     const buttonDefaultClass = 'btn btn-primary';
 
@@ -115,6 +118,7 @@ export default function Edit({attributes, setAttributes}) {
                         setAttributes({
                             showLabel: false,
                             buttonPosition: buttonDefaultPosition,
+                            buttonUseIcon: buttonUseIconDefault,
                         });
                     }}
                 >
@@ -161,24 +165,46 @@ export default function Edit({attributes, setAttributes}) {
                         />
                     </ToolsPanelItem>
                     {('no-button' !== buttonPosition) && (
-                        <ToolsPanelItem
-                            hasValue={() => buttonClass !== buttonDefaultClass}
-                            label={__('Button class', 'bootstrap-basic-fse')}
-                            onDeselect={() => {
-                                setAttributes({
-                                    buttonClass: buttonDefaultClass,
-                                });
-                            }}
-                            isShownByDefault
-                        >
-                            <TextControl
+                        <>
+                            <ToolsPanelItem
+                                hasValue={() => !buttonUseIconDefault}
+                                label={__('Button use icon', 'bootstrap-basic-fse')}
+                                onDeselect={() => {
+                                    setAttributes({
+                                        buttonUseIcon: buttonUseIconDefault,
+                                    });
+                                }}
+                                isShownByDefault
+                            >
+                                <ToggleControl
+                                    checked={buttonUseIcon}
+                                    label={__('Button use icon', 'bootstrap-basic-fse')}
+                                    onChange={ (value) =>
+                                        setAttributes({
+                                            buttonUseIcon: value,
+                                        })
+                                    }
+                                />
+                            </ToolsPanelItem>
+                            <ToolsPanelItem
+                                hasValue={() => buttonClass !== buttonDefaultClass}
                                 label={__('Button classes', 'bootstrap-basic-fse')}
-                                value={buttonClass}
-                                onChange={
-                                    (buttonClass) => setAttributes({buttonClass})
-                                }
-                            />
-                        </ToolsPanelItem>
+                                onDeselect={() => {
+                                    setAttributes({
+                                        buttonClass: buttonDefaultClass,
+                                    });
+                                }}
+                                isShownByDefault
+                            >
+                                <TextControl
+                                    label={__('Button classes', 'bootstrap-basic-fse')}
+                                    value={buttonClass}
+                                    onChange={
+                                        (buttonClass) => setAttributes({buttonClass})
+                                    }
+                                />
+                            </ToolsPanelItem>
+                        </>
                     )}
                 </ToolsPanel>
             </InspectorControls>
@@ -211,6 +237,27 @@ export default function Edit({attributes, setAttributes}) {
             buttonClasses = buttonClass;
         }
 
+        const isButtonUseIcon = (buttonUseIcon === true);
+
+        let buttonTextValue = buttonText;
+        if (isButtonUseIcon) {
+            buttonTextValue = '<i class="bi bi-search"></i>';
+        }
+
+        if (isButtonUseIcon) {
+            return (
+                <Disabled>
+                    <button
+                        type="button"
+                        className={buttonClasses}
+                        aria-label={__('Search', 'bootstrap-basic-fse')}
+                    >
+                        <i className="bi bi-search" aria-hidden="true"></i>
+                    </button>
+                </Disabled>
+            );
+        }
+
         return (
             <>
                 <RichText
@@ -219,7 +266,7 @@ export default function Edit({attributes, setAttributes}) {
                     aria-label={__('Button text', 'bootstrap-basic-fse')}
                     placeholder={__('Add button text…', 'bootstrap-basic-fse')}
                     withoutInteractiveFormatting
-                    value={buttonText}
+                    value={buttonTextValue}
                     onChange={(html) =>
                         setAttributes({buttonText: html})
                     }

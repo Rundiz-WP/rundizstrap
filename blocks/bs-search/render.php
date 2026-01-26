@@ -16,6 +16,7 @@ $wrapper_attributes = '';
 $field_markup = '';
 $buttonClass = 'btn btn-primary';
 $buttonPosition = 'button-outside';
+$buttonUseIcon = false;
 $buttonText = __('Search', 'bootstrap-basic-fse');
 $placeholderText = '';
 
@@ -43,11 +44,18 @@ if (isset($attributes)) {
     if (isset($attributes['buttonPosition']) && is_string($attributes['buttonPosition']) && '' !== $attributes['buttonPosition']) {
         $buttonPosition = $attributes['buttonPosition'];
     }
+    if (isset($attributes['buttonUseIcon']) && is_bool($attributes['buttonUseIcon'])) {
+        $buttonUseIcon = $attributes['buttonUseIcon'];
+    }
     if (isset($attributes['buttonText']) && is_string($attributes['buttonText']) && '' !== $attributes['buttonText']) {
         $buttonText = $attributes['buttonText'];
     }
     if (isset($attributes['placeholderText']) && is_string($attributes['placeholderText']) && '' !== $attributes['placeholderText']) {
         $placeholderText = $attributes['placeholderText'];
+    }
+
+    if (true === $buttonUseIcon) {
+        $buttonText = '<i class="bi bi-search"></i>';
     }
 }// endif; $attributes
 
