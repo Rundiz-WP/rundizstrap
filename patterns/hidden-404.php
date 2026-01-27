@@ -8,8 +8,8 @@
  * @since 0.0.1
  */
 ?>
-<!-- wp:bbfse-plugin/blocks-bs-container {"className":"container d-flex flex-column flex-grow-1 flex-shrink-1"} -->
-<div class="wp-block-bbfse-plugin-blocks-bs-container page-404-container container d-flex flex-column flex-grow-1 flex-shrink-1">
+<!-- wp:bbfse-plugin/blocks-bs-container {"className":"container mt-0 d-flex flex-column flex-grow-1 flex-shrink-1"} -->
+<div class="wp-block-bbfse-plugin-blocks-bs-container page-404-container container mt-0 d-flex flex-column flex-grow-1 flex-shrink-1">
     <!-- wp:bbfse-plugin/blocks-bs-row {"className":"flex-grow-1"} -->
     <div class="wp-block-bbfse-plugin-blocks-bs-row row flex-grow-1">
         <!-- wp:bbfse-plugin/blocks-bs-column {"tagName":"main","className":"col d-flex flex-column justify-content-center"} -->
