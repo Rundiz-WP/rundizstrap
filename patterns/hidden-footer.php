@@ -9,12 +9,12 @@
  */
 
 ?>
-<!-- wp:bootstrap-basic-fse/blocks-bs-container {"className":"container mb-3"} -->
-<div class="wp-block-bootstrap-basic-fse-blocks-bs-container container mb-3">
-    <!-- wp:bootstrap-basic-fse/blocks-bs-row {"className":"g-0"} -->
-    <div class="wp-block-bootstrap-basic-fse-blocks-bs-row row g-0">
-        <!-- wp:bootstrap-basic-fse/blocks-bs-column {"className":"col border-top border-5 pt-3 d-flex justify-content-between fw-light text-body-secondary"} -->
-        <div class="wp-block-bootstrap-basic-fse-blocks-bs-column col border-top border-5 pt-3 d-flex justify-content-between fw-light text-body-secondary">
+<!-- wp:bbfse-plugin/blocks-bs-container {"className":"container mb-3"} -->
+<div class="wp-block-bbfse-plugin-blocks-bs-container container mb-3">
+    <!-- wp:bbfse-plugin/blocks-bs-row {"className":"g-0"} -->
+    <div class="wp-block-bbfse-plugin-blocks-bs-row row g-0">
+        <!-- wp:bbfse-plugin/blocks-bs-column {"className":"col border-top border-5 pt-3 d-flex justify-content-between fw-light text-body-secondary"} -->
+        <div class="wp-block-bbfse-plugin-blocks-bs-column col border-top border-5 pt-3 d-flex justify-content-between fw-light text-body-secondary">
             <!-- wp:site-title {"level":0,"className":"p-0 m-0"} /-->
 
             <!-- wp:paragraph {"className":"p-0 m-0"} -->
@@ -26,8 +26,8 @@
             ); ?></p>
             <!-- /wp:paragraph -->
         </div>
-        <!-- /wp:bootstrap-basic-fse/blocks-bs-column -->
+        <!-- /wp:bbfse-plugin/blocks-bs-column -->
     </div>
-    <!-- /wp:bootstrap-basic-fse/blocks-bs-row -->
+    <!-- /wp:bbfse-plugin/blocks-bs-row -->
 </div>
-<!-- /wp:bootstrap-basic-fse/blocks-bs-container -->
+<!-- /wp:bbfse-plugin/blocks-bs-container -->

@@ -51,6 +51,6 @@
         <!-- /wp:group -->
     <!-- /wp:query-no-results -->
 
-    <!-- wp:bootstrap-basic-fse/blocks-bs-pagination {"additionalClass":"mb-0","alignment":"justify-content-center","className": "mt-0 mb-5 mb-md-0"} /-->
+    <!-- wp:bbfse-plugin/blocks-bs-pagination {"additionalClass":"mb-0","alignment":"justify-content-center","className": "mt-0 mb-5 mb-md-0"} /-->
 </div>
 <!-- /wp:query -->
