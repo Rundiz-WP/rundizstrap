@@ -1,6 +1,3 @@
 /.backup
 /.dist
-/blocks/bbfse-test
-/blocks-src/bbfse-test
-/inc/classes/Blocks/BbfseTest.php
 /node_modules
