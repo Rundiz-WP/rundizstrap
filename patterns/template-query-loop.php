@@ -13,8 +13,8 @@
 <!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]}} -->
 <div class="wp-block-query">
     <!-- wp:post-template {} -->
-        <!-- wp:group {"tagName":"article","className":"border-top border-bottom mb-5 p-2"} -->
-        <article class="wp-block-group border-top border-bottom mb-5 p-2">
+        <!-- wp:group {"tagName":"article","className":"border-bottom mb-5 p-2"} -->
+        <article class="wp-block-group border-bottom mb-5 p-2 pb-5">
             <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/1"} /-->
             <!-- wp:post-title {"level":2,"isLink":true,"className":"h3"} /-->
 
