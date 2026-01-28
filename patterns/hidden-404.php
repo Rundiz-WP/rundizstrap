@@ -42,7 +42,7 @@
             
             <!-- wp:group {"className":"text-center my-2","layout":{"type":"constrained"}} -->
             <div class="wp-block-group text-center my-2">
-                <!-- wp:bbfse-plugin/blocks-bs-button {"tagName":"a","textHtml":"<?php esc_html_e('Back to home page', 'bootstrap-basic-fse'); ?>","href":"/","className":"btn btn-outline-secondary"} -->
+                <!-- wp:bbfse-plugin/blocks-bs-button {"tagName":"a","textHtml":"<?php esc_html_e('Back to home page', 'bootstrap-basic-fse'); ?>","href":"<?php echo esc_url(home_url('/')); ?>","className":"btn btn-outline-secondary"} -->
                 <a class="wp-block-bbfse-plugin-blocks-bs-button btn btn-outline-secondary" href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Back to home page', 'bootstrap-basic-fse'); ?></a>
                 <!-- /wp:bbfse-plugin/blocks-bs-button -->
             </div>
