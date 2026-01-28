@@ -3,10 +3,6 @@
 ## References
 * Theme structure handbook [https://developer.wordpress.org/themes/core-concepts/theme-structure/](https://developer.wordpress.org/themes/core-concepts/theme-structure/)
 * Dashicon [https://developer.wordpress.org/resource/dashicons/](https://developer.wordpress.org/resource/dashicons/)
-* Sample of block search [https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/search](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/search)
-* Sample of block pagination numbers [https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/query-pagination-numbers](https://github.com/WordPress/gutenberg/tree/trunk/packages/block-library/src/query-pagination-numbers)
-* Block development [https://developer.wordpress.org/block-editor/getting-started/fundamentals/](https://developer.wordpress.org/block-editor/getting-started/fundamentals/)
-* Block development examples [https://github.com/WordPress/block-development-examples/tree/trunk/plugins](https://github.com/WordPress/block-development-examples/tree/trunk/plugins)
 
 ## First dev/First install
 * Run command `npm install` if there is no **node_modules** folder.
