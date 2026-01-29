@@ -1,0 +1,1 @@
+Contain class files that override WordPress core functions.

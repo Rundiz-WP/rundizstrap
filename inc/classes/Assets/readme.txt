@@ -1,0 +1,1 @@
+Contain assets (CSS, JS) that work on specific functional.

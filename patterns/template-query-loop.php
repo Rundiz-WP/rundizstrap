@@ -35,9 +35,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:post-content {"className":"bootstrap-basic-fse-each-post-contents mt-0"} /-->
-
-            <!-- wp:read-more {"fontSize":"small"} /-->
+            <!-- wp:post-content {"className":"bootstrap-basic-fse-each-post-contents mt-0 bootstrap-basic-fse-entry-content-readmore"} /-->
         </article>
         <!-- /wp:group -->
     <!-- /wp:post-template -->

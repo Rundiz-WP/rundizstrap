@@ -53,12 +53,12 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
         public function enqueueScriptsStyles()
         {
             // CSS
-            wp_enqueue_style('bootstrap-basic-fse-bootstrap', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css', [], '5.3.8');
+            wp_enqueue_style('bootstrap-basic-fse-bootstrap');
             wp_enqueue_style('bootstrap-basic-fse-bootstrap-icons');
-            wp_enqueue_style('bootstrap-basic-fse-stylesheet', get_stylesheet_uri(), ['bootstrap-basic-fse-bootstrap'], BOOTSTRAPBASICFSE_VERSION);
+            wp_enqueue_style('bootstrap-basic-fse-stylesheet');
 
             // JS
-            wp_enqueue_script('bootstrap-basic-fse-bootstrap', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js', [], '5.3.8', true);
+            wp_enqueue_script('bootstrap-basic-fse-bootstrap');
         }// enqueueScriptsStyles
 
 
@@ -88,11 +88,20 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
          * @link https://developer.wordpress.org/reference/functions/wp_register_style/ Function reference.
          * @link https://github.com/WordPress/WordPress/blob/master/wp-includes/functions.wp-scripts.php#L187 The register style function called to `_wp_scripts_maybe_doing_it_wrong()`
          * @link https://github.com/WordPress/WordPress/blob/master/wp-includes/functions.wp-scripts.php#L41 The maybe doing it wrong function check that if `init` hook did called then it's work.
+         * @link https://developer.wordpress.org/themes/core-concepts/including-assets/ Functions to use when enqueue/register asset files.
          * @since 0.0.1
          */
         public function registerScriptsStyles()
         {
-            wp_register_style('bootstrap-basic-fse-bootstrap-icons', get_stylesheet_directory_uri() . '/assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css', [], '1.13.1');
+            // CSS
+            wp_register_style('bootstrap-basic-fse-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'), [], '5.3.8');
+            wp_register_style('bootstrap-basic-fse-bootstrap-icons', get_theme_file_uri('assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css'), [], '1.13.1');
+            wp_register_style('bootstrap-basic-fse-stylesheet', get_stylesheet_uri(), [], BOOTSTRAPBASICFSE_VERSION);
+            wp_register_style('bootstrap-basic-fse-entry-content-readmore', get_theme_file_uri('assets/css/entry-content-readmore.css'), [], BOOTSTRAPBASICFSE_VERSION);
+
+            // JS
+            wp_register_script('bootstrap-basic-fse-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'), [], '5.3.8', true);
+            wp_register_script('bootstrap-basic-fse-entry-content-readmore', get_theme_file_uri('assets/js/entry-content-readmore.js'), [], BOOTSTRAPBASICFSE_VERSION, true);
         }// registerScriptsStyles
 
 

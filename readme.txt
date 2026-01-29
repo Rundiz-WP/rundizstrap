@@ -24,6 +24,11 @@ Or you can even use it on your production website!
 
 This theme requires plugin "bbfse-plugin". You can download from GitHub at https://github.com/Rundiz-WP/bbfse-plugin
 
+Tested up to PHP 8.5.
+
+= Expand/collapse contents help (read more/read less) =
+To make contents limit height, add class `bootstrap-basic-fse-entry-content-readmore` to post content block that contain CSS `entry-content` and this functional will be activated automatically.
+
 == Changelog ==
 = 0.0.1 =
 2026-01-20
