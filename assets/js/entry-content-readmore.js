@@ -195,9 +195,13 @@ class BootstrapBasicFSEEntryContentReadmore {
     /**
      * Initialize.
      * 
-     * Search for selected selector and render required HTML/CSS class(es).<br>
+     * Search for selected selector and render required HTML/CSS class(es).
+     * 
+     * This method don't have to be called.<br>
      * If you use AJAX load content then you can call this method directly after displayed your contents.<br>
      * If you initialize `new` object of this class, this method will be called automatically in the `constructor()`.
+     * 
+     * It can be use as initialize the functional or update when there is something changed such as HTML loaded via AJAX and merged, or images have loaded.
      * 
      * @since 0.0.1
      */
@@ -262,6 +266,16 @@ class BootstrapBasicFSEEntryContentReadmore {
 var BootstrapBasicFSEEntryContentReadmoreJS;
 
 
+// on DOM content has loaded.
 document.addEventListener('DOMContentLoaded', () => {
     BootstrapBasicFSEEntryContentReadmoreJS = new BootstrapBasicFSEEntryContentReadmore();
+});
+
+// on whole page has loaded. ( https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event )
+window.addEventListener('load', () => {
+    if (BootstrapBasicFSEEntryContentReadmoreJS instanceof BootstrapBasicFSEEntryContentReadmore) {
+        // if JS variable was set correctly.
+        // update those elements again in case DOM loaded but images are not, the content's height can be shorter than when images have loaded.
+        BootstrapBasicFSEEntryContentReadmoreJS.init();
+    }
 });
