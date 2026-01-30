@@ -208,3 +208,10 @@ body.error404 .wp-site-blocks {
 .bootstrap-basic-fse-entry-meta a:hover {
     color: hsl(from currentColor h s calc(l - 80));
 }
+
+
+.entry-content::after {
+    clear: both;
+    content: '';
+    display: block;
+}
