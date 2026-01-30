@@ -218,6 +218,10 @@ class BootstrapBasicFSEEntryContentReadmore {
                 // if the entry was initialized and options hasn't been updated.
                 // skip this loop.
                 return;// this is skip for `.forEach()`.
+            } 
+            if (true === this.#updatedOptions) {
+                item.classList.remove(this.#collapsedClassName, this.#expandedClassName, this.#shownFullClassName);
+                item.style.removeProperty('--entry-content-readmore-full-height');
             }// endif;
 
             const computedStyles = window.getComputedStyle(item);
@@ -240,6 +244,19 @@ class BootstrapBasicFSEEntryContentReadmore {
 
         this.#updatedOptions = false;
     }// init
+
+
+    /**
+     * Re-initialize.
+     * 
+     * Mark updated and call to `init()` method again.
+     * 
+     * @since 0.0.1
+     */
+    reInit() {
+        this.#updatedOptions = true;
+        this.init();
+    }// reInit
 
 
     /**
@@ -276,6 +293,7 @@ window.addEventListener('load', () => {
     if (BootstrapBasicFSEEntryContentReadmoreJS instanceof BootstrapBasicFSEEntryContentReadmore) {
         // if JS variable was set correctly.
         // update those elements again in case DOM loaded but images are not, the content's height can be shorter than when images have loaded.
-        BootstrapBasicFSEEntryContentReadmoreJS.init();
+        // this event listener maybe unable to detect image with lazy loading properly.
+        BootstrapBasicFSEEntryContentReadmoreJS.reInit();
     }
 });

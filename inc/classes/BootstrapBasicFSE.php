@@ -38,7 +38,7 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
 
             // @link https://developer.wordpress.org/reference/functions/add_editor_style/ Reference.
             add_editor_style([
-                get_stylesheet_directory_uri() . '/assets/vendor/bootstrap/css/bootstrap.min.css',
+                get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'),
                 'style.css',
             ]);
         }// afterSetupTheme

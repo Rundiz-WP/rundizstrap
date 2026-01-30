@@ -21,7 +21,12 @@
 }
 
 .bootstrap-basic-fse-entry-content-readmore-expanded {
-    max-height: var(--entry-content-readmore-full-height, 1000px);
+    /* 
+    use max-height value `var(--entry-content-readmore-full-height, 1000px)` for transition to work but
+    it will not work properly if there is image lazy loading. it cause the element is not showing actual full height.
+    read more in JS.
+    */
+    max-height: none;
 }
 
 .bootstrap-basic-fse-entry-content-readmore-collapsed::after {
