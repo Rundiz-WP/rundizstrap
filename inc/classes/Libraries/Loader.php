@@ -85,5 +85,49 @@ if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
         }// getClassFileList
 
 
+        /**
+         * Load views.
+         *
+         * @since 0.0.1
+         * @param string $view_name View file name, refer from inc/views folder, without .php extension.
+         * @param array $data For send data variable to view.
+         * @param bool $require_once Set to `true` to use `include_once`, `false` to use `include`. Default is `false`.
+         * @return bool Return `true` if success loading.
+         * @throws \Exception Throws the error if views file was not found.
+         */
+        public function loadView(string $view_name, array $data = [], bool $require_once = false): bool
+        {
+            $view_dir = dirname(BOOTSTRAPBASICFSE_FILE) . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR;
+            $templateFile = $view_dir . $view_name . '.php';
+            unset($view_dir);
+
+            if ('' !== $view_name && file_exists($templateFile) && is_file($templateFile)) {
+                // if views file was found.
+                if (is_array($data)) {
+                    extract($data, EXTR_PREFIX_SAME, 'dupvar_');// phpcs:ignore WordPress.PHP.DontExtract.extract_extract
+                }
+
+                if (true === $require_once) {
+                    include_once $templateFile;
+                } else {
+                    include $templateFile;
+                }
+
+                unset($templateFile);
+                return true;
+            } else {
+                // if views file was not found.
+                // throw the exception to notice the developers.
+                throw new Exception(
+                    sprintf(
+                        // translators: %s: Template path.
+                        esc_html(__('The views file was not found (%s).', 'bbfse-plugin')), 
+                        str_replace(['\\', '/'], '/', $templateFile)// phpcs:ignore WordPress.Security.EscapeOutput
+                    )
+                );
+            }
+        }// loadView
+
+
     }// Loader
 }
