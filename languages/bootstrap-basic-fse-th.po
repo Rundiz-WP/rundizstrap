@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bootstrap Basic FSE 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/bootstrap-basic-fse\n"
-"POT-Creation-Date: 2026-01-25T16:49:42+07:00\n"
-"PO-Revision-Date: 2026-01-25 17:06+0700\n"
+"POT-Creation-Date: 2026-02-03T22:17:41+07:00\n"
+"PO-Revision-Date: 2026-02-03 22:17+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #. Theme Name of the theme
-#: style.css
+#: style.css patterns/hero-bird-flame.php:26
 msgid "Bootstrap Basic FSE"
 msgstr "Bootstrap Basic FSE"
 
@@ -39,38 +39,85 @@ msgstr "ธีม WordPress แบบบล็อก (FSE) ที่ทันส
 msgid "Vee W."
 msgstr "วี ว."
 
-#: blocks/bs-pagination/render.php:102 blocks/bs-pagination/index.js:1
-msgid "Next »"
-msgstr "ถัดไป »"
+#: inc/classes/Assets/EntryContentReadmore.php:81
+msgid "Read less"
+msgstr "อ่านน้อยลง"
 
-#: blocks/bs-pagination/render.php:105
-msgid "Next"
-msgstr "ถัดไป"
+#: inc/classes/Assets/EntryContentReadmore.php:90 patterns/template-query-loop-search.php:20
+msgid "Read more"
+msgstr "อ่านเพิ่มเติม"
 
-#: blocks/bs-pagination/render.php:257 blocks/bs-pagination/index.js:1
-msgid "« Previous"
-msgstr "« ก่อนหน้า"
-
-#: blocks/bs-pagination/render.php:260
-msgid "Previous"
-msgstr "ก่อนหน้า"
-
-#: blocks/bs-pagination/render.php:371
-msgid "Pagination"
-msgstr "การแบ่งหน้า"
-
-#: blocks/bs-search/render.php:19 blocks/bs-search/render.php:24
-#: patterns/hidden-sidebar.php:12 blocks/bs-search/index.js:1
-msgid "Search"
-msgstr "ค้นหา"
-
-#: inc/classes/BootstrapBasicFSE.php:135
+#: inc/classes/BootstrapBasicFSE.php:144
 msgid "Sidebar"
 msgstr "บาร์ด้านข้าง"
 
-#: inc/classes/BootstrapBasicFSE.php:136
+#: inc/classes/BootstrapBasicFSE.php:145
 msgid "Right side bar"
 msgstr "บาร์ด้านขวา"
+
+#: patterns/comments.php
+msgctxt "Pattern title"
+msgid "Comments"
+msgstr "ความคิดเห็น"
+
+#: patterns/comments.php
+msgctxt "Pattern description"
+msgid "Comments area with comments list, pagination, and comment form."
+msgstr "ส่วนแสดงความคิดเห็น พร้อมรายการความคิดเห็น, การแบ่งหน้า, และฟอร์มแสดงความคิดเห็น."
+
+#: patterns/comments.php:17
+msgid "Comments"
+msgstr "ความคิดเห็น"
+
+#: patterns/hero-bird-flame.php
+msgctxt "Pattern title"
+msgid "Hero bird flame"
+msgstr "แบนเนอร์นกเปลวเพลิง"
+
+#: patterns/hero-bird-flame.php
+msgctxt "Pattern description"
+msgid "A hero section for display image banner with heading and paragraph text."
+msgstr "ส่วนหัวเรื่องสำหรับแบนเนอร์รูปภาพ พร้อมหัวเรื่องและข้อความย่อหน้า."
+
+#: patterns/hero-bird-flame.php:30
+msgid "A modern WordPress Block Theme (FSE) based on Bootstrap"
+msgstr "ธีม WordPress แบบบล็อก (FSE) ที่ทันสมัย ​​สร้างขึ้นบนพื้นฐานของ Bootstrap"
+
+#: patterns/hero-paper-ripped-clouds.php
+msgctxt "Pattern title"
+msgid "Hero paper ripped and clouds"
+msgstr "แบนเนอร์กระดาษขาดและก้อนเมฆ"
+
+#: patterns/hero-paper-ripped-clouds.php
+msgctxt "Pattern description"
+msgid "A hero section for display image banner in painting style."
+msgstr "ส่วนหัวของแบนเนอร์รูปภาพแสดงผลในสไตล์ภาพวาด."
+
+#: patterns/hero-paper-ripped-clouds.php:34
+msgid "Open up a new perspective"
+msgstr "เปิดรับมุมมองใหม่ๆ"
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr "404"
+
+#: patterns/hidden-404.php:24
+msgctxt "image description"
+msgid "Smoke floats past the screen."
+msgstr "ควันลอยผ่านหน้าจอ"
+
+#: patterns/hidden-404.php:36
+msgid "Page not found"
+msgstr "ไม่พบหน้าเว็บ"
+
+#: patterns/hidden-404.php:40
+msgid "It looks like the page you're looking for does not exists or has been moved."
+msgstr "ดูเหมือนว่าหน้าที่คุณกำลังมองหาไม่มีอยู่จริงหรือถูกย้ายไปแล้ว"
+
+#: patterns/hidden-404.php:45 patterns/hidden-404.php:46
+msgid "Back to home page"
+msgstr "กลับสู่หน้าหลัก"
 
 #: patterns/hidden-footer.php
 msgctxt "Pattern title"
@@ -83,6 +130,41 @@ msgstr "ท้าย"
 msgid "Powered by %1$sWordPress%2$s."
 msgstr "ขับเคลื่อนโดย %1$sWordPress%2$s."
 
+#: patterns/hidden-post-date-author.php
+msgctxt "Pattern title"
+msgid "Post date & author"
+msgstr "วันที่และผู้เขียน"
+
+#: patterns/hidden-post-date-author.php:17
+msgid "Posted on"
+msgstr "โพสต์เมื่อ"
+
+#: patterns/hidden-post-date-author.php:23
+msgid "by"
+msgstr "โดย"
+
+#: patterns/hidden-post-taxonomy.php
+msgctxt "Pattern title"
+msgid "Post categories, tags"
+msgstr "หมวดหมู่และแท็กของโพสต์"
+
+#: patterns/hidden-post-taxonomy.php:16
+msgid "Categories: "
+msgstr "หมวดหมู่: "
+
+#: patterns/hidden-post-taxonomy.php:18
+msgid "Tags: "
+msgstr "แท็ก: "
+
+#: patterns/hidden-search.php
+msgctxt "Pattern title"
+msgid "Search"
+msgstr "ค้นหา"
+
+#: patterns/hidden-search.php:16 patterns/hidden-sidebar.php:12
+msgid "Search"
+msgstr "ค้นหา"
+
 #: patterns/hidden-sidebar.php
 msgctxt "Pattern title"
 msgid "Sidebar"
@@ -91,6 +173,21 @@ msgstr "บาร์ด้านข้าง"
 #: patterns/hidden-sidebar.php:17
 msgid "Pages"
 msgstr "หน้า"
+
+#: patterns/template-query-loop-search.php
+msgctxt "Pattern title"
+msgid "Bootstrap Basic FSE List of posts in search"
+msgstr "Bootstrap Basic FSE รายการโพสต์ในผลการค้นหา"
+
+#: patterns/template-query-loop-search.php
+msgctxt "Pattern description"
+msgid "A list of posts for use with search result."
+msgstr "รายการโพสต์สำหรับใช้ในผลการค้นหา."
+
+#: patterns/template-query-loop-search.php:29 patterns/template-query-loop.php:33
+msgctxt "Message explaining that there are no results returned from a search."
+msgid "Sorry, but nothing was found. Please try a search with different keywords."
+msgstr "ขออภัย, แต่ว่าไม่พบอะไร. โปรดลองค้นหาด้วยคำค้นอื่น."
 
 #: patterns/template-query-loop.php
 msgctxt "Pattern title"
@@ -101,484 +198,6 @@ msgstr "Bootstrap Basic FSE รายการโพสต์"
 msgctxt "Pattern description"
 msgid "A list of posts, with featured image, post date, author."
 msgstr "รายการบทความ, พร้อมรูปภาพเด่น, วันที่เผยแพร่, และผู้เขียน."
-
-#: patterns/template-query-loop.php:24
-msgid "Posted on"
-msgstr "โพสต์เมื่อ"
-
-#: patterns/template-query-loop.php:30
-msgid "by"
-msgstr "โดย"
-
-#: patterns/template-query-loop.php:46
-msgctxt "Message explaining that there are no results returned from a search."
-msgid "Sorry, but nothing was found. Please try a search with different keywords."
-msgstr "ขออภัย, แต่ว่าไม่พบอะไร. โปรดลองค้นหาด้วยคำค้นอื่น."
-
-#: blocks/bs-column/index.js:1 blocks/bs-container/index.js:1 blocks/bs-row/index.js:1
-msgid "HTML element"
-msgstr "องค์ประกอบ HTML"
-
-#: blocks/bs-column/index.js:1 blocks/bs-container/index.js:1 blocks/bs-row/index.js:1
-msgid "Default (<div>)"
-msgstr "ค่าเริ่มต้น (<div>)"
-
-#: blocks/bs-column/index.js:1
-msgid ""
-"Please add a Bootstrap column class (e.g., \"col\", \"col-md-6\") in the \"Additional CSS "
-"class(es)\" field under Advanced settings."
-msgstr ""
-"โปรดเพิ่มคลาสคอลัมน์ของ Bootstrap (เช่น \"col\", \"col-md-6\") ในช่อง \"คลาส CSS เพิ่มเติม\" "
-"ภายใต้การตั้งค่าขั้นสูง."
-
-#: blocks/bs-container/index.js:1
-msgid ""
-"Please add a Bootstrap container class (e.g., \"container\", \"container-fluid\") in the "
-"\"Additional CSS class(es)\" field under Advanced settings."
-msgstr ""
-"โปรดเพิ่มคลาสคอนเทนเนอร์ของ Bootstrap (เช่น \"container\", \"container-fluid\") ในช่อง \"คลาส "
-"CSS เพิ่มเติม\" ภายใต้การตั้งค่าขั้นสูง."
-
-#: blocks/bs-navbar-container/index.js:1 blocks/bs-navbar-responsive-wrapper/index.js:1
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Key"
-msgstr "คีย์"
-
-#: blocks/bs-navbar-container/index.js:1 blocks/bs-navbar-responsive-wrapper/index.js:1
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Value"
-msgstr "ค่า"
-
-#: blocks/bs-navbar-container/index.js:1 blocks/bs-navbar-responsive-wrapper/index.js:1
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Remove"
-msgstr "เอาออก"
-
-#: blocks/bs-navbar-container/index.js:1 blocks/bs-navbar-responsive-wrapper/index.js:1
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Add attribute"
-msgstr "เพิ่มแอตทริบิวต์"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Navbar Settings"
-msgstr "ตั้งค่าแถบนำทาง"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Tag Name"
-msgstr "ชื่อแท็ก"
-
-#: blocks/bs-navbar-container/index.js:1 blocks/bs-navbar-responsive-wrapper/index.js:1
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Data attributes"
-msgstr "แอตทริบิวต์ data"
-
-#: blocks/bs-navbar-container/index.js:1 blocks/bs-navbar-responsive-wrapper/index.js:1
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Aria attributes"
-msgstr "แอตทริบิวต์ aria"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Container Settings"
-msgstr "ตั้งค่าคอนเทนเนอร์"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Container Tag Name"
-msgstr "ชื่อแท็กคอนเทนเนอร์"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Container Class"
-msgstr "คลาสของคอนเทนเนอร์"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Default is container-fluid. You can change to container, container-lg, etc."
-msgstr "ค่าเริ่มต้นคือ container-fluid คุณสามารถเปลี่ยนเป็น container, container-lg เป็นต้นได้"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Container data attributes"
-msgstr "แอตทริบิวต์ data ของคอนเทนเนอร์"
-
-#: blocks/bs-navbar-container/index.js:1
-msgid "Container aria attributes"
-msgstr "แอตทริบิวต์ aria ของคอนเทนเนอร์"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Navbar responsive wrapper"
-msgstr "ตัวหุ้มแถบนำทางที่ตอบสนองต่อขนาดหน้าจอ"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Please note that the preview will not display with styles so that editing can work."
-msgstr "โปรดทราบว่าตัวอย่างจะไม่แสดงสไตล์ เพื่อให้สามารถแก้ไขได้"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Wrapper style"
-msgstr "สไตล์สำหรับตัวหุ้ม"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Navbar responsive offcanvas"
-msgstr "แถบนำทางแบบตอบสนองต่อขนาดหน้าจอที่อยู่นอกกรอบ (offcanvas)"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Offcanvas header Class"
-msgstr "คลาสส่วนหัว offcanvas"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Default is %1$s."
-msgstr "ค่าเริ่มต้นคือ %1$s."
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Offcanvas header title ID"
-msgstr "ไอดีสำหรับไตเติลส่วนหัว offcanvas"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "HTML id attribute on offcanvas header title"
-msgstr "แอตทริบิวต์ id ของ HTML บนส่วนหัวไตเติลของ offcanvas"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Offcanvas header title Class"
-msgstr "คลาสไตเติลส่วนหัว offcanvas"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Offcanvas header title text"
-msgstr "ข้อความไตเติลส่วนหัวของ offcanvas"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "You can use text or HTML. This will be display inside offcanvas title."
-msgstr "คุณสามารถใช้ข้อความหรือ HTML ได้ โดยจะแสดงผลภายในส่วนหัวของ offcanvas"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Close button additional Class"
-msgstr "คลาสเพิ่มเติมสำหรับปุ่มปิด"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "This will be additional class next to main close button class."
-msgstr "นี่จะเป็นคลาสเพิ่มเติมถัดจากคลาสหลักบนปุ่มปิด."
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Close button data attributes"
-msgstr "แอตทริบิวต์ data ของปุ่มปิด"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Close button aria attributes"
-msgstr "แอตทริบิวต์ aria ของปุ่มปิด"
-
-#: blocks/bs-navbar-responsive-wrapper/index.js:1
-msgid "Offcanvas body Class"
-msgstr "คลาสของร่าง offcanvas"
-
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Button Settings"
-msgstr "ตั้งค่าปุ่ม"
-
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Icon Settings"
-msgstr "ตั้งค่าไอคอน"
-
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Icon Additional Class(es)"
-msgstr "คลาส CSS เพิ่มเติมสำหรับไอคอน"
-
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Add additional classes to the icon span."
-msgstr "เพิ่มคลาสเพิ่มเติมให้กับไอคอน span."
-
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Icon data attributes"
-msgstr "แอตทริบิวต์ะของไอคอน data"
-
-#: blocks/bs-navbar-toggler-button/index.js:1
-msgid "Icon aria attributes"
-msgstr "แอตทริบิวต์ะของไอคอน aria"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Default (Start)"
-msgstr "ค่าเริ่มต้น (เริ่ม)"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Center"
-msgstr "กลาง"
-
-#: blocks/bs-pagination/index.js:1
-msgid "End"
-msgstr "สิ้นสุด"
-
-#: blocks/bs-pagination/index.js:1 blocks/bs-search/index.js:1
-msgid "Settings"
-msgstr "ตั้งค่า"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Show previous/next buttons"
-msgstr "แสดงปุ่มก่อนหน้า/ถัดไป"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Previous button text"
-msgstr "ข้อความปุ่มก่อนหน้า"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Previous button text/HTML"
-msgstr "ข้อความ/HTML ของปุ่มก่อนหน้า"
-
-#: blocks/bs-pagination/index.js:1
-msgid "You can use HTML for icons, e.g. <i class=\"bi bi-chevron-left\"></i>"
-msgstr "คุณสามารถใช้ HTML สำหรับไอคอนได้ เช่น <i class=\"bi bi-chevron-left\"></i>"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Next button text"
-msgstr "ข้อความปุ่มถัดไป"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Next button text/HTML"
-msgstr "ข้อความ/HTML ของปุ่มถัดไป"
-
-#: blocks/bs-pagination/index.js:1
-msgid "You can use HTML for icons, e.g. <i class=\"bi bi-chevron-right\"></i>"
-msgstr "คุณสามารถใช้ HTML สำหรับไอคอนได้ เช่น <i class=\"bi bi-chevron-right\"></i>"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Show page numbers"
-msgstr "แสดงหมายเลขหน้า"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Number of adjacent pages"
-msgstr "จำนวนหน้าติดกัน"
-
-#: blocks/bs-pagination/index.js:1
-msgid ""
-"Specify how many links can appear before and after the current page number. Links to the "
-"first, current and last page are always visible."
-msgstr ""
-"ระบุจำนวนลิงก์ที่สามารถปรากฏก่อนและหลังหมายเลขหน้าปัจจุบัน. ลิงก์ไปยังหน้าแรก, หน้าปัจจุบัน "
-"และหน้าสุดท้ายจะแสดงอยู่เสมอ."
-
-#: blocks/bs-pagination/index.js:1
-msgid "Alignment"
-msgstr "การจัดแนว"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Additional CSS class"
-msgstr "คลาส CSS เพิ่มเติม"
-
-#: blocks/bs-pagination/index.js:1
-msgid "Add extra CSS classes to the pagination container."
-msgstr "เพิ่มคลาส CSS เพิ่มเติมให้กับคอนเทนเนอร์การแบ่งหน้า."
-
-#: blocks/bs-pagination/index.js:1
-msgid "Page navigation preview"
-msgstr "ตัวอย่างการนำทางหน้าเว็บ"
-
-#: blocks/bs-search/index.js:1
-msgid "Button outside"
-msgstr "ปุ่มด้านนอก"
-
-#: blocks/bs-search/index.js:1
-msgid "Button group with input"
-msgstr "กลุ่มปุ่มพร้อมช่องป้อนข้อมูล"
-
-#: blocks/bs-search/index.js:1
-msgid "No button"
-msgstr "ไม่มีปุ่ม"
-
-#: blocks/bs-search/index.js:1
-msgid "Show label"
-msgstr "แสดงป้ายกำกับ"
-
-#: blocks/bs-search/index.js:1
-msgid "Button position"
-msgstr "ตำแหน่งปุ่ม"
-
-#: blocks/bs-search/index.js:1
-msgid "Button class"
-msgstr "คลาสปุ่ม"
-
-#: blocks/bs-search/index.js:1
-msgid "Button classes"
-msgstr "คลาสปุ่ม"
-
-#: blocks/bs-search/index.js:1
-msgid "Optional placeholder text"
-msgstr "ข้อความตัวอย่าง (ไม่จำเป็น)"
-
-#: blocks/bs-search/index.js:1
-msgid "Optional placeholder…"
-msgstr "ข้อความตัวอย่าง (ไม่จำเป็น)..."
-
-#: blocks/bs-search/index.js:1
-msgid "Button text"
-msgstr "ข้อความบนปุ่ม"
-
-#: blocks/bs-search/index.js:1
-msgid "Add button text…"
-msgstr "เพิ่มข้อความบนปุ่ม..."
-
-#: blocks/bs-search/index.js:1
-msgid "Label text"
-msgstr "ข้อความป้ายกำกับ"
-
-#: blocks/bs-search/index.js:1
-msgid "Add label…"
-msgstr "เพิ่มป้ายกำกับ…"
-
-#: blocks/bs-column/block.json
-msgctxt "block description"
-msgid "Render Bootstrap column. This block is in the Bootstrap Basic FSE theme."
-msgstr "แสดงผลคอลัมน์ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-column/block.json blocks/bs-container/block.json
-#: blocks/bs-navbar-container/block.json blocks/bs-navbar-responsive-wrapper/block.json
-#: blocks/bs-navbar-toggler-button/block.json blocks/bs-pagination/block.json
-#: blocks/bs-row/block.json blocks/bs-search/block.json
-msgctxt "block keyword"
-msgid "bootstrap"
-msgstr "bootstrap"
-
-#: blocks/bs-column/block.json
-msgctxt "block keyword"
-msgid "column"
-msgstr "คอลัมน์"
-
-#: blocks/bs-column/block.json blocks/bs-container/block.json
-msgctxt "block keyword"
-msgid "layout"
-msgstr "เค้าโครง"
-
-#: blocks/bs-column/block.json blocks/bs-container/block.json
-#: blocks/bs-navbar-responsive-wrapper/block.json blocks/bs-row/block.json
-msgctxt "block keyword"
-msgid "wrapper"
-msgstr "ตัวหุ้ม"
-
-#: blocks/bs-column/block.json
-msgctxt "block title"
-msgid "Bootstrap layout column"
-msgstr "คอลัมน์เลย์เอาต์ Bootstrap"
-
-#: blocks/bs-container/block.json
-msgctxt "block description"
-msgid "Render Bootstrap container. This block is in the Bootstrap Basic FSE theme."
-msgstr "แสดงผลคอนเทนเนอร์ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-container/block.json blocks/bs-navbar-container/block.json
-msgctxt "block keyword"
-msgid "container"
-msgstr "คอนเทนเนอร์"
-
-#: blocks/bs-container/block.json
-msgctxt "block title"
-msgid "Bootstrap layout container"
-msgstr "คอนเทนเนอร์เลย์เอาต์ Bootstrap"
-
-#: blocks/bs-navbar-container/block.json
-msgctxt "block description"
-msgid "Bootstrap navbar container. This block is in the Bootstrap Basic FSE theme."
-msgstr "คอนเทนเนอร์แถบนำทาง Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-navbar-container/block.json blocks/bs-navbar-responsive-wrapper/block.json
-#: blocks/bs-navbar-toggler-button/block.json
-msgctxt "block keyword"
-msgid "navbar"
-msgstr "แถบนำทาง"
-
-#: blocks/bs-navbar-container/block.json
-msgctxt "block title"
-msgid "Bootstrap navbar container"
-msgstr "คอนเทนเนอร์แถบนำทาง Bootstrap"
-
-#: blocks/bs-navbar-responsive-wrapper/block.json
-msgctxt "block description"
-msgid ""
-"Wrap the navbar items with collapse or offcanvas. This block is in the Bootstrap Basic FSE "
-"theme."
-msgstr "หุ้มรายการในแถบนำทางด้วย collapse หรือ offcanvas. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-navbar-responsive-wrapper/block.json
-msgctxt "block keyword"
-msgid "responsive"
-msgstr "ตอบสนองต่อขนาดหน้าจอ"
-
-#: blocks/bs-navbar-responsive-wrapper/block.json
-msgctxt "block keyword"
-msgid "collapse"
-msgstr "ยุบ"
-
-#: blocks/bs-navbar-responsive-wrapper/block.json
-msgctxt "block keyword"
-msgid "offcanvas"
-msgstr "นอกกรอบ (offcanvas)"
-
-#: blocks/bs-navbar-responsive-wrapper/block.json
-msgctxt "block title"
-msgid "Bootstrap navbar responsive wrapper"
-msgstr "ตัวหุ้มแถบนำทางที่ตอบสนองต่อขนาดหน้าจอสำหรับ Bootstrap"
-
-#: blocks/bs-navbar-toggler-button/block.json
-msgctxt "block description"
-msgid "Bootstrap navbar toggler button. This block is in the Bootstrap Basic FSE theme."
-msgstr "ปุ่มสลับแถบนำทาง Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-navbar-toggler-button/block.json
-msgctxt "block keyword"
-msgid "toggler"
-msgstr "ตัวสลับ"
-
-#: blocks/bs-navbar-toggler-button/block.json
-msgctxt "block title"
-msgid "Bootstrap Navbar Toggler Button"
-msgstr "ปุ่มสลับแถบนำทาง Bootstrap"
-
-#: blocks/bs-pagination/block.json
-msgctxt "block description"
-msgid "Display pagination in Bootstrap style. This block is in the Bootstrap Basic FSE theme."
-msgstr "แสดงการแบ่งหน้าในรูปแบบ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-pagination/block.json
-msgctxt "block keyword"
-msgid "navigation"
-msgstr "การนำทาง"
-
-#: blocks/bs-pagination/block.json
-msgctxt "block keyword"
-msgid "pages"
-msgstr "หน้า"
-
-#: blocks/bs-pagination/block.json
-msgctxt "block keyword"
-msgid "pagination"
-msgstr "การแบ่งหน้า"
-
-#: blocks/bs-pagination/block.json
-msgctxt "block title"
-msgid "Bootstrap pagination"
-msgstr "การแบ่งหน้าของ Bootstrap"
-
-#: blocks/bs-row/block.json
-msgctxt "block description"
-msgid "Render Bootstrap row. This block is in the Bootstrap Basic FSE theme."
-msgstr "แสดงผลแถว Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-row/block.json
-msgctxt "block keyword"
-msgid "row"
-msgstr "แถว"
-
-#: blocks/bs-row/block.json
-msgctxt "block title"
-msgid "Bootstrap layout row"
-msgstr "แถวเลย์เอาต์ Bootstrap"
-
-#: blocks/bs-search/block.json
-msgctxt "block description"
-msgid ""
-"Display search form in Bootstrap style. This block is in the Bootstrap Basic FSE theme."
-msgstr "แสดงฟอร์มค้นหาในรูปแบบของ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#: blocks/bs-search/block.json
-msgctxt "block keyword"
-msgid "find"
-msgstr "ค้น"
-
-#: blocks/bs-search/block.json
-msgctxt "block title"
-msgid "Bootstrap search form"
-msgstr "ฟอร์มค้นหาของ Bootstrap"
 
 #: theme.json
 msgctxt "Color name"
@@ -634,6 +253,373 @@ msgstr "บาร์ด้านข้าง"
 msgctxt "Template part name"
 msgid "Footer"
 msgstr "ท้าย"
+
+#~ msgid "Next »"
+#~ msgstr "ถัดไป »"
+
+#~ msgid "Next"
+#~ msgstr "ถัดไป"
+
+#~ msgid "« Previous"
+#~ msgstr "« ก่อนหน้า"
+
+#~ msgid "Previous"
+#~ msgstr "ก่อนหน้า"
+
+#~ msgid "Pagination"
+#~ msgstr "การแบ่งหน้า"
+
+#~ msgid "HTML element"
+#~ msgstr "องค์ประกอบ HTML"
+
+#~ msgid "Default (<div>)"
+#~ msgstr "ค่าเริ่มต้น (<div>)"
+
+#~ msgid ""
+#~ "Please add a Bootstrap column class (e.g., \"col\", \"col-md-6\") in the \"Additional CSS "
+#~ "class(es)\" field under Advanced settings."
+#~ msgstr ""
+#~ "โปรดเพิ่มคลาสคอลัมน์ของ Bootstrap (เช่น \"col\", \"col-md-6\") ในช่อง \"คลาส CSS เพิ่มเติม\" "
+#~ "ภายใต้การตั้งค่าขั้นสูง."
+
+#~ msgid ""
+#~ "Please add a Bootstrap container class (e.g., \"container\", \"container-fluid\") in the "
+#~ "\"Additional CSS class(es)\" field under Advanced settings."
+#~ msgstr ""
+#~ "โปรดเพิ่มคลาสคอนเทนเนอร์ของ Bootstrap (เช่น \"container\", \"container-fluid\") ในช่อง \"คลาส "
+#~ "CSS เพิ่มเติม\" ภายใต้การตั้งค่าขั้นสูง."
+
+#~ msgid "Key"
+#~ msgstr "คีย์"
+
+#~ msgid "Value"
+#~ msgstr "ค่า"
+
+#~ msgid "Remove"
+#~ msgstr "เอาออก"
+
+#~ msgid "Add attribute"
+#~ msgstr "เพิ่มแอตทริบิวต์"
+
+#~ msgid "Navbar Settings"
+#~ msgstr "ตั้งค่าแถบนำทาง"
+
+#~ msgid "Tag Name"
+#~ msgstr "ชื่อแท็ก"
+
+#~ msgid "Data attributes"
+#~ msgstr "แอตทริบิวต์ data"
+
+#~ msgid "Aria attributes"
+#~ msgstr "แอตทริบิวต์ aria"
+
+#~ msgid "Container Settings"
+#~ msgstr "ตั้งค่าคอนเทนเนอร์"
+
+#~ msgid "Container Tag Name"
+#~ msgstr "ชื่อแท็กคอนเทนเนอร์"
+
+#~ msgid "Container Class"
+#~ msgstr "คลาสของคอนเทนเนอร์"
+
+#~ msgid "Default is container-fluid. You can change to container, container-lg, etc."
+#~ msgstr "ค่าเริ่มต้นคือ container-fluid คุณสามารถเปลี่ยนเป็น container, container-lg เป็นต้นได้"
+
+#~ msgid "Container data attributes"
+#~ msgstr "แอตทริบิวต์ data ของคอนเทนเนอร์"
+
+#~ msgid "Container aria attributes"
+#~ msgstr "แอตทริบิวต์ aria ของคอนเทนเนอร์"
+
+#~ msgid "Navbar responsive wrapper"
+#~ msgstr "ตัวหุ้มแถบนำทางที่ตอบสนองต่อขนาดหน้าจอ"
+
+#~ msgid "Please note that the preview will not display with styles so that editing can work."
+#~ msgstr "โปรดทราบว่าตัวอย่างจะไม่แสดงสไตล์ เพื่อให้สามารถแก้ไขได้"
+
+#~ msgid "Wrapper style"
+#~ msgstr "สไตล์สำหรับตัวหุ้ม"
+
+#~ msgid "Navbar responsive offcanvas"
+#~ msgstr "แถบนำทางแบบตอบสนองต่อขนาดหน้าจอที่อยู่นอกกรอบ (offcanvas)"
+
+#~ msgid "Offcanvas header Class"
+#~ msgstr "คลาสส่วนหัว offcanvas"
+
+#~ msgid "Default is %1$s."
+#~ msgstr "ค่าเริ่มต้นคือ %1$s."
+
+#~ msgid "Offcanvas header title ID"
+#~ msgstr "ไอดีสำหรับไตเติลส่วนหัว offcanvas"
+
+#~ msgid "HTML id attribute on offcanvas header title"
+#~ msgstr "แอตทริบิวต์ id ของ HTML บนส่วนหัวไตเติลของ offcanvas"
+
+#~ msgid "Offcanvas header title Class"
+#~ msgstr "คลาสไตเติลส่วนหัว offcanvas"
+
+#~ msgid "Offcanvas header title text"
+#~ msgstr "ข้อความไตเติลส่วนหัวของ offcanvas"
+
+#~ msgid "You can use text or HTML. This will be display inside offcanvas title."
+#~ msgstr "คุณสามารถใช้ข้อความหรือ HTML ได้ โดยจะแสดงผลภายในส่วนหัวของ offcanvas"
+
+#~ msgid "Close button additional Class"
+#~ msgstr "คลาสเพิ่มเติมสำหรับปุ่มปิด"
+
+#~ msgid "This will be additional class next to main close button class."
+#~ msgstr "นี่จะเป็นคลาสเพิ่มเติมถัดจากคลาสหลักบนปุ่มปิด."
+
+#~ msgid "Close button data attributes"
+#~ msgstr "แอตทริบิวต์ data ของปุ่มปิด"
+
+#~ msgid "Close button aria attributes"
+#~ msgstr "แอตทริบิวต์ aria ของปุ่มปิด"
+
+#~ msgid "Offcanvas body Class"
+#~ msgstr "คลาสของร่าง offcanvas"
+
+#~ msgid "Button Settings"
+#~ msgstr "ตั้งค่าปุ่ม"
+
+#~ msgid "Icon Settings"
+#~ msgstr "ตั้งค่าไอคอน"
+
+#~ msgid "Icon Additional Class(es)"
+#~ msgstr "คลาส CSS เพิ่มเติมสำหรับไอคอน"
+
+#~ msgid "Add additional classes to the icon span."
+#~ msgstr "เพิ่มคลาสเพิ่มเติมให้กับไอคอน span."
+
+#~ msgid "Icon data attributes"
+#~ msgstr "แอตทริบิวต์ะของไอคอน data"
+
+#~ msgid "Icon aria attributes"
+#~ msgstr "แอตทริบิวต์ะของไอคอน aria"
+
+#~ msgid "Default (Start)"
+#~ msgstr "ค่าเริ่มต้น (เริ่ม)"
+
+#~ msgid "Center"
+#~ msgstr "กลาง"
+
+#~ msgid "End"
+#~ msgstr "สิ้นสุด"
+
+#~ msgid "Settings"
+#~ msgstr "ตั้งค่า"
+
+#~ msgid "Show previous/next buttons"
+#~ msgstr "แสดงปุ่มก่อนหน้า/ถัดไป"
+
+#~ msgid "Previous button text"
+#~ msgstr "ข้อความปุ่มก่อนหน้า"
+
+#~ msgid "Previous button text/HTML"
+#~ msgstr "ข้อความ/HTML ของปุ่มก่อนหน้า"
+
+#~ msgid "You can use HTML for icons, e.g. <i class=\"bi bi-chevron-left\"></i>"
+#~ msgstr "คุณสามารถใช้ HTML สำหรับไอคอนได้ เช่น <i class=\"bi bi-chevron-left\"></i>"
+
+#~ msgid "Next button text"
+#~ msgstr "ข้อความปุ่มถัดไป"
+
+#~ msgid "Next button text/HTML"
+#~ msgstr "ข้อความ/HTML ของปุ่มถัดไป"
+
+#~ msgid "You can use HTML for icons, e.g. <i class=\"bi bi-chevron-right\"></i>"
+#~ msgstr "คุณสามารถใช้ HTML สำหรับไอคอนได้ เช่น <i class=\"bi bi-chevron-right\"></i>"
+
+#~ msgid "Show page numbers"
+#~ msgstr "แสดงหมายเลขหน้า"
+
+#~ msgid "Number of adjacent pages"
+#~ msgstr "จำนวนหน้าติดกัน"
+
+#~ msgid ""
+#~ "Specify how many links can appear before and after the current page number. Links to the "
+#~ "first, current and last page are always visible."
+#~ msgstr ""
+#~ "ระบุจำนวนลิงก์ที่สามารถปรากฏก่อนและหลังหมายเลขหน้าปัจจุบัน. ลิงก์ไปยังหน้าแรก, หน้าปัจจุบัน "
+#~ "และหน้าสุดท้ายจะแสดงอยู่เสมอ."
+
+#~ msgid "Alignment"
+#~ msgstr "การจัดแนว"
+
+#~ msgid "Additional CSS class"
+#~ msgstr "คลาส CSS เพิ่มเติม"
+
+#~ msgid "Add extra CSS classes to the pagination container."
+#~ msgstr "เพิ่มคลาส CSS เพิ่มเติมให้กับคอนเทนเนอร์การแบ่งหน้า."
+
+#~ msgid "Page navigation preview"
+#~ msgstr "ตัวอย่างการนำทางหน้าเว็บ"
+
+#~ msgid "Button outside"
+#~ msgstr "ปุ่มด้านนอก"
+
+#~ msgid "Button group with input"
+#~ msgstr "กลุ่มปุ่มพร้อมช่องป้อนข้อมูล"
+
+#~ msgid "No button"
+#~ msgstr "ไม่มีปุ่ม"
+
+#~ msgid "Show label"
+#~ msgstr "แสดงป้ายกำกับ"
+
+#~ msgid "Button position"
+#~ msgstr "ตำแหน่งปุ่ม"
+
+#~ msgid "Button class"
+#~ msgstr "คลาสปุ่ม"
+
+#~ msgid "Button classes"
+#~ msgstr "คลาสปุ่ม"
+
+#~ msgid "Optional placeholder text"
+#~ msgstr "ข้อความตัวอย่าง (ไม่จำเป็น)"
+
+#~ msgid "Optional placeholder…"
+#~ msgstr "ข้อความตัวอย่าง (ไม่จำเป็น)..."
+
+#~ msgid "Button text"
+#~ msgstr "ข้อความบนปุ่ม"
+
+#~ msgid "Add button text…"
+#~ msgstr "เพิ่มข้อความบนปุ่ม..."
+
+#~ msgid "Label text"
+#~ msgstr "ข้อความป้ายกำกับ"
+
+#~ msgid "Add label…"
+#~ msgstr "เพิ่มป้ายกำกับ…"
+
+#~ msgctxt "block description"
+#~ msgid "Render Bootstrap column. This block is in the Bootstrap Basic FSE theme."
+#~ msgstr "แสดงผลคอลัมน์ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "bootstrap"
+#~ msgstr "bootstrap"
+
+#~ msgctxt "block keyword"
+#~ msgid "column"
+#~ msgstr "คอลัมน์"
+
+#~ msgctxt "block keyword"
+#~ msgid "layout"
+#~ msgstr "เค้าโครง"
+
+#~ msgctxt "block keyword"
+#~ msgid "wrapper"
+#~ msgstr "ตัวหุ้ม"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap layout column"
+#~ msgstr "คอลัมน์เลย์เอาต์ Bootstrap"
+
+#~ msgctxt "block description"
+#~ msgid "Render Bootstrap container. This block is in the Bootstrap Basic FSE theme."
+#~ msgstr "แสดงผลคอนเทนเนอร์ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "container"
+#~ msgstr "คอนเทนเนอร์"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap layout container"
+#~ msgstr "คอนเทนเนอร์เลย์เอาต์ Bootstrap"
+
+#~ msgctxt "block description"
+#~ msgid "Bootstrap navbar container. This block is in the Bootstrap Basic FSE theme."
+#~ msgstr "คอนเทนเนอร์แถบนำทาง Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "navbar"
+#~ msgstr "แถบนำทาง"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap navbar container"
+#~ msgstr "คอนเทนเนอร์แถบนำทาง Bootstrap"
+
+#~ msgctxt "block description"
+#~ msgid ""
+#~ "Wrap the navbar items with collapse or offcanvas. This block is in the Bootstrap Basic FSE "
+#~ "theme."
+#~ msgstr "หุ้มรายการในแถบนำทางด้วย collapse หรือ offcanvas. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "responsive"
+#~ msgstr "ตอบสนองต่อขนาดหน้าจอ"
+
+#~ msgctxt "block keyword"
+#~ msgid "collapse"
+#~ msgstr "ยุบ"
+
+#~ msgctxt "block keyword"
+#~ msgid "offcanvas"
+#~ msgstr "นอกกรอบ (offcanvas)"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap navbar responsive wrapper"
+#~ msgstr "ตัวหุ้มแถบนำทางที่ตอบสนองต่อขนาดหน้าจอสำหรับ Bootstrap"
+
+#~ msgctxt "block description"
+#~ msgid "Bootstrap navbar toggler button. This block is in the Bootstrap Basic FSE theme."
+#~ msgstr "ปุ่มสลับแถบนำทาง Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "toggler"
+#~ msgstr "ตัวสลับ"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap Navbar Toggler Button"
+#~ msgstr "ปุ่มสลับแถบนำทาง Bootstrap"
+
+#~ msgctxt "block description"
+#~ msgid "Display pagination in Bootstrap style. This block is in the Bootstrap Basic FSE theme."
+#~ msgstr "แสดงการแบ่งหน้าในรูปแบบ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "navigation"
+#~ msgstr "การนำทาง"
+
+#~ msgctxt "block keyword"
+#~ msgid "pages"
+#~ msgstr "หน้า"
+
+#~ msgctxt "block keyword"
+#~ msgid "pagination"
+#~ msgstr "การแบ่งหน้า"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap pagination"
+#~ msgstr "การแบ่งหน้าของ Bootstrap"
+
+#~ msgctxt "block description"
+#~ msgid "Render Bootstrap row. This block is in the Bootstrap Basic FSE theme."
+#~ msgstr "แสดงผลแถว Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "row"
+#~ msgstr "แถว"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap layout row"
+#~ msgstr "แถวเลย์เอาต์ Bootstrap"
+
+#~ msgctxt "block description"
+#~ msgid ""
+#~ "Display search form in Bootstrap style. This block is in the Bootstrap Basic FSE theme."
+#~ msgstr "แสดงฟอร์มค้นหาในรูปแบบของ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
+
+#~ msgctxt "block keyword"
+#~ msgid "find"
+#~ msgstr "ค้น"
+
+#~ msgctxt "block title"
+#~ msgid "Bootstrap search form"
+#~ msgstr "ฟอร์มค้นหาของ Bootstrap"
 
 #~ msgctxt "Pattern title"
 #~ msgid "List of posts"
