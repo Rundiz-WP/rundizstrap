@@ -16,11 +16,7 @@ Bootstrap Basic FSE Uses Bootstrap Icons https://icons.getbootstrap.com/ , licen
 == Description ==
 Based on latest version of Bootstrap and it is WordPress Full Site Editor (FSE) theme.
 
-The concept is to keep it basic.  
-Bundled with custom blocks that use HTML & CSS classes based on Bootstrap such as pagination, search.
-
-It is still keep the same concept as Bootstrap Basic (version 1) which is minimal, just basic, easy to start build your own theme whether it is for new parent theme or child theme.  
-Or you can even use it on your production website!
+The concept is to keep it basic, minimal, support most Bootstrap features.
 
 This theme requires plugin "bbfse-plugin". You can download from GitHub at https://github.com/Rundiz-WP/bbfse-plugin
 
