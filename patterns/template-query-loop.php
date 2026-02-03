@@ -19,21 +19,7 @@
 
             <!-- wp:post-title {"level":2,"isLink":true,"className":"h3"} /-->
 
-            <!-- wp:group {"className":"text-body-tertiary mt-0 mb-3","style":{"spacing":{"blockGap":"0.3rem"}},"fontSize":"small","layout":{"type":"flex","flexWrap":"wrap"}} -->
-            <div class="wp-block-group bootstrap-basic-fse-entry-meta text-body-tertiary mt-0 mb-3 has-small-font-size">
-                <!-- wp:paragraph -->
-                <p><?php esc_html_e('Posted on', 'bootstrap-basic-fse'); ?></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:post-date {"isLink":true,"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"style":{"spacing":{"margin":{"right":"var:preset|spacing|20"}}}} /-->
-
-                <!-- wp:paragraph -->
-                <p><?php esc_html_e('by', 'bootstrap-basic-fse'); ?></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:post-author-name {"isLink":true} /-->
-            </div>
-            <!-- /wp:group -->
+            <!-- wp:pattern {"slug":"bootstrap-basic-fse/hidden-post-date-author"} /-->
 
             <!-- wp:post-content {"className":"bootstrap-basic-fse-each-post-contents mt-0 bootstrap-basic-fse-entry-content-readmore"} /-->
         </article>

@@ -17,7 +17,7 @@
         <article class="wp-block-group border-bottom mb-5 pb-5">
             <!-- wp:post-title {"level":2,"isLink":true,"className":"h3"} /-->
 
-            <!-- wp:post-excerpt {"className":"bootstrap-basic-fse-each-post-contents mt-0"} /-->
+            <!-- wp:post-excerpt {"moreText":"<?php esc_html_e('Read more', 'bootstrap-basic-fse'); ?>","className":"bootstrap-basic-fse-each-post-contents mt-0"} /-->
         </article>
         <!-- /wp:group -->
     <!-- /wp:post-template -->
