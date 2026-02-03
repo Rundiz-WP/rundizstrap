@@ -1,5 +1,4 @@
-* Maybe use filter `comment_form_default_fields` to modify comment form. See more on ( https://github.com/WordPress/wordpress-develop/blob/6.9/src/wp-includes/comment-template.php#L2494 ).
+* Display next/previous post (post navigation)
 * Use filter `the_content` to detect that user viewing in single page & post content use classic editor & contain `<!--nextpage-->` then render page break use `wp_link_pages()`. 
     See bug at https://github.com/WordPress/gutenberg/issues/29484
-* create template for other pages
 * try add search form to navbar.
