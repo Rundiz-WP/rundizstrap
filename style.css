@@ -151,8 +151,43 @@ body.error404 .wp-site-blocks {
 }
 
 
+.bootstrap-basic-fse-comment-content-wrapper {
+    min-width: 0;/* make flex child not too wide over its parent. */
+}
+
+
 .entry-content::after {
     clear: both;
     content: '';
     display: block;
+}
+
+
+.taxonomy-category::before {
+    content: '\F3F5';
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-weight: 400 !important;
+    margin-right: 5px;
+    vertical-align: -.125em;
+}
+
+.taxonomy-post_tag::before {
+    content: '\F5B1';
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-weight: 400 !important;
+    margin-right: 5px;
+    vertical-align: -.125em;
+}
+
+
+.wp-block-comments {
+    border-top-style: dashed;
+}
+.wp-block-comments.border-top {
+    border-top-style: dashed !important;
+}
+.wp-block-comment-template ol {
+    padding-left: 1rem;
 }
