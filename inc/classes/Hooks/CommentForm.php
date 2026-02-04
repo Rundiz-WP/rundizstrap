@@ -11,6 +11,10 @@
 namespace BootstrapBasicFSE\Hooks;
 
 
+return;// disabled. use block `wp:bbfse-plugin/blocks-bs-comment-form` instead.
+// leave this file as fallback.
+
+
 if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
     /**
      * Comment form class.
@@ -55,7 +59,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
          * @return array
          */
         public function commentFormFields(array $comment_fields): array
-        {  
+        {
             if (isset($comment_fields['cookies']) && is_string($comment_fields['cookies'])) {
                 $Dom = new \DOMDocument();
                 $Dom->loadHTML($comment_fields['cookies'], LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
