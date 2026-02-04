@@ -1,4 +1,3 @@
-* Display next/previous post (post navigation)
 * Use filter `the_content` to detect that user viewing in single page & post content use classic editor & contain `<!--nextpage-->` then render page break use `wp_link_pages()`. 
     See bug at https://github.com/WordPress/gutenberg/issues/29484
 * try add search form to navbar.
