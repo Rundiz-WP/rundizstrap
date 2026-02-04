@@ -12,8 +12,8 @@
 
 ?>
 
-<!-- wp:bbfse-plugin/blocks-bs-row {"className":"gy-2 gy-md-0 mt-5 border-top pt-5 mb-5"} -->
-<div class="wp-block-bbfse-plugin-blocks-bs-row row gy-2 gy-md-0 mt-5 border-top pt-5 mb-5">
+<!-- wp:bbfse-plugin/blocks-bs-row {"className":"gx-0 gy-2 gy-md-0 mt-5 border-top pt-5 mb-5"} -->
+<div class="wp-block-bbfse-plugin-blocks-bs-row row gx-0 gy-2 gy-md-0 mt-5 border-top pt-5 mb-5">
     <!-- wp:bbfse-plugin/blocks-bs-column {"className":"col-12 col-md-6 text-center text-md-start"} -->
     <div class="wp-block-bbfse-plugin-blocks-bs-column col-12 col-md-6 text-center text-md-start">
         <!-- wp:bbfse-plugin/blocks-bs-post-navigation-link {"type":"previous","showTitle":true,"prependTextHtml":"\u003ci class=\u0022bi bi-chevron-left\u0022\u003e\u003c/i\u003e","className":"btn btn-outline-secondary"} /-->
