@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Hook into "Bootstrap Basic FSE Plugin" about enqueue/dequeue styles & scripts.
+ * Bootstrap Basic FSE - Hook into "Bootstrap Basic FSE Plug" about enqueue/dequeue styles & scripts.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1
@@ -11,13 +11,13 @@
 namespace BootstrapBasicFSE\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPluginEnqueueStylesScripts')) {
+if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPlugEnqueueStylesScripts')) {
     /**
-     * BBFSE Plugin enqueue class.
+     * BBFSE Plug enqueue class.
      * 
      * @since 0.0.1
      */
-    class BBFSEPluginEnqueueStylesScripts implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class BBFSEPlugEnqueueStylesScripts implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
     {
 
 
@@ -33,9 +33,9 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPluginEnqueueStylesScripts'))
          */
         public function dequeueStylesScripts()
         {
-            wp_dequeue_style('bbfse-plugin-bootstrap-css');
-            wp_dequeue_style('bbfse-plugin-bootstrap-icons');
-            wp_dequeue_script('bbfse-plugin-bootstrap-js');
+            wp_dequeue_style('bbfse-plug-bootstrap-css');
+            wp_dequeue_style('bbfse-plug-bootstrap-icons');
+            wp_dequeue_script('bbfse-plug-bootstrap-js');
         }// dequeueStylesScripts
 
 
@@ -49,11 +49,11 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPluginEnqueueStylesScripts'))
             // "filter" hook below did not test on other OS.
             // So, I'm not sure if there is problem with plugin loading order that cause this to not work or not. 
             // Use action hook below (that is under this filter hook) instead.
-            //add_filter('bbfse_plugin_enqueue_styles_scripts', '__return_false');
+            //add_filter('bbfse_plug_enqueue_styles_scripts', '__return_false');
             // "action" hook below should work fine because it was called after (priority 11) the plugin.
             add_action('wp_enqueue_scripts', [$this, 'dequeueStylesScripts'], 11);
         }// registerHooks
 
 
-    }// BBFSEPluginEnqueueStylesScripts
+    }// BBFSEPlugEnqueueStylesScripts
 }

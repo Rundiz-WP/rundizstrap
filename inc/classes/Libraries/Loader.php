@@ -121,7 +121,7 @@ if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
                 throw new \Exception(
                     sprintf(
                         // translators: %s: Template path.
-                        esc_html(__('The views file was not found (%s).', 'bbfse-plugin')), 
+                        esc_html(__('The views file was not found (%s).', 'bootstrap-basic-fse')), 
                         str_replace(['\\', '/'], '/', $templateFile)// phpcs:ignore WordPress.Security.EscapeOutput
                     )
                 );

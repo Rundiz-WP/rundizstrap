@@ -28,7 +28,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
          */
         public function detectAndDisplayAlert()
         {
-            if (!class_exists('\\BBFSEPlugin\\App\\App')) {
+            if (!class_exists('\\BBFSEPlug\\App\\App')) {
                 $Loader = new \BootstrapBasicFSE\Libraries\Loader();
                 $Loader->loadView('Hooks/detectRequiredPlugin_v');
                 unset($Loader);

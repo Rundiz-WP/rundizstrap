@@ -8,16 +8,16 @@
  * @since 0.0.1
  */
 ?>
-<!-- wp:bbfse-plugin/blocks-bs-container {"className":"container mt-0 d-flex flex-column flex-grow-1 flex-shrink-1"} -->
-<div class="wp-block-bbfse-plugin-blocks-bs-container page-404-container container mt-0 d-flex flex-column flex-grow-1 flex-shrink-1">
-    <!-- wp:bbfse-plugin/blocks-bs-row {"className":"flex-grow-1"} -->
-    <div class="wp-block-bbfse-plugin-blocks-bs-row row flex-grow-1">
-        <!-- wp:bbfse-plugin/blocks-bs-column {"tagName":"main","className":"col d-flex flex-column justify-content-center"} -->
-        <main class="wp-block-bbfse-plugin-blocks-bs-column site-main-column col d-flex flex-column justify-content-center">
-            <!-- wp:bbfse-plugin/blocks-bs-row {"className":"mb-1"} -->
-            <div class="wp-block-bbfse-plugin-blocks-bs-row row mb-1">
-                <!-- wp:bbfse-plugin/blocks-bs-column {"className":"col-8 offset-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4"} -->
-                <div class="wp-block-bbfse-plugin-blocks-bs-column col-8 offset-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+<!-- wp:bbfse-plug/blocks-bs-container {"className":"container mt-0 d-flex flex-column flex-grow-1 flex-shrink-1"} -->
+<div class="wp-block-bbfse-plug-blocks-bs-container page-404-container container mt-0 d-flex flex-column flex-grow-1 flex-shrink-1">
+    <!-- wp:bbfse-plug/blocks-bs-row {"className":"flex-grow-1"} -->
+    <div class="wp-block-bbfse-plug-blocks-bs-row row flex-grow-1">
+        <!-- wp:bbfse-plug/blocks-bs-column {"tagName":"main","className":"col d-flex flex-column justify-content-center"} -->
+        <main class="wp-block-bbfse-plug-blocks-bs-column site-main-column col d-flex flex-column justify-content-center">
+            <!-- wp:bbfse-plug/blocks-bs-row {"className":"mb-1"} -->
+            <div class="wp-block-bbfse-plug-blocks-bs-row row mb-1">
+                <!-- wp:bbfse-plug/blocks-bs-column {"className":"col-8 offset-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4"} -->
+                <div class="wp-block-bbfse-plug-blocks-bs-column col-8 offset-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                     <!-- wp:image {"scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
                     <figure class="wp-block-image size-full">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/imgs/404-cover-smoke-1200x290.webp" 
@@ -28,9 +28,9 @@
                     </figure>
                     <!-- /wp:image -->
                 </div>
-                <!-- /wp:bbfse-plugin/blocks-bs-row -->
+                <!-- /wp:bbfse-plug/blocks-bs-row -->
             </div>
-            <!-- /wp:bbfse-plugin/blocks-bs-row -->
+            <!-- /wp:bbfse-plug/blocks-bs-row -->
 
             <!-- wp:heading {"className":"display-1 mb-1","textAlign":"center","level":1} -->
             <h1 class="wp-block-heading has-text-align-center display-1 mb-1"><?php esc_html_e('Page not found', 'bootstrap-basic-fse'); ?></h1>
@@ -42,14 +42,14 @@
             
             <!-- wp:group {"className":"text-center my-2","layout":{"type":"constrained"}} -->
             <div class="wp-block-group text-center my-2">
-                <!-- wp:bbfse-plugin/blocks-bs-button {"tagName":"a","textHtml":"<?php esc_html_e('Back to home page', 'bootstrap-basic-fse'); ?>","href":"<?php echo esc_url(home_url('/')); ?>","className":"btn btn-outline-secondary"} -->
-                <a class="wp-block-bbfse-plugin-blocks-bs-button btn btn-outline-secondary" href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Back to home page', 'bootstrap-basic-fse'); ?></a>
-                <!-- /wp:bbfse-plugin/blocks-bs-button -->
+                <!-- wp:bbfse-plug/blocks-bs-button {"tagName":"a","textHtml":"<?php esc_html_e('Back to home page', 'bootstrap-basic-fse'); ?>","href":"<?php echo esc_url(home_url('/')); ?>","className":"btn btn-outline-secondary"} -->
+                <a class="wp-block-bbfse-plug-blocks-bs-button btn btn-outline-secondary" href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Back to home page', 'bootstrap-basic-fse'); ?></a>
+                <!-- /wp:bbfse-plug/blocks-bs-button -->
             </div>
             <!-- /wp:group -->
         </main>
-        <!-- /wp:bbfse-plugin/blocks-bs-column -->
+        <!-- /wp:bbfse-plug/blocks-bs-column -->
     </div>
-    <!-- /wp:bbfse-plugin/blocks-bs-row -->
+    <!-- /wp:bbfse-plug/blocks-bs-row -->
 </div>
-<!-- /wp:bbfse-plugin/blocks-bs-container -->
+<!-- /wp:bbfse-plug/blocks-bs-container -->

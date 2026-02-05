@@ -20,8 +20,8 @@
         }
     }} -->
 <div class="wp-block-group p-4 p-md-5 mb-4 rounded text-body-emphasis bg-white">
-    <!-- wp:bbfse-plugin/blocks-bs-column {"className":"col-lg-6 px-0"} -->
-    <div class="wp-block-bbfse-plugin-blocks-bs-column col-lg-6 offset-lg-6 px-0">
+    <!-- wp:bbfse-plug/blocks-bs-column {"className":"col-lg-6 px-0"} -->
+    <div class="wp-block-bbfse-plug-blocks-bs-column col-lg-6 offset-lg-6 px-0">
         <!-- wp:heading {"level":1,"className":"display-4 fst-italic"} -->
         <h1 class="wp-block-heading display-4 fst-italic"><?php esc_html_e('Bootstrap Basic FSE', 'bootstrap-basic-fse'); ?></h1>
         <!-- /wp:heading -->
@@ -30,6 +30,6 @@
         <p class="lead my-3"><?php esc_html_e('A modern WordPress Block Theme (FSE) based on Bootstrap', 'bootstrap-basic-fse'); ?></p>
         <!-- /wp:paragraph -->
     </div>
-    <!-- /wp:bbfse-plugin/blocks-bs-column -->
+    <!-- /wp:bbfse-plug/blocks-bs-column -->
 </div>
 <!-- /wp:group -->
