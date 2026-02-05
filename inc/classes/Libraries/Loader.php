@@ -118,7 +118,7 @@ if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
             } else {
                 // if views file was not found.
                 // throw the exception to notice the developers.
-                throw new Exception(
+                throw new \Exception(
                     sprintf(
                         // translators: %s: Template path.
                         esc_html(__('The views file was not found (%s).', 'bbfse-plugin')), 
