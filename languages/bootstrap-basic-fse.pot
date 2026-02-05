@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-03T22:17:41+07:00\n"
+"POT-Creation-Date: 2026-02-05T17:09:07+07:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: bootstrap-basic-fse\n"
@@ -51,6 +51,20 @@ msgstr ""
 
 #: inc/classes/BootstrapBasicFSE.php:145
 msgid "Right side bar"
+msgstr ""
+
+#: inc/classes/Hooks/ContentPagination.php:93
+msgid "Pages:"
+msgstr ""
+
+#: inc/classes/Hooks/ContentPagination.php:94
+msgid "Content pages"
+msgstr ""
+
+#. translators: %1$s the plugin name.
+#: inc/views/Hooks/detectRequiredPlugin_v.php:5
+#, php-format
+msgid "The %1$s plugin is required and must be activated."
 msgstr ""
 
 #: patterns/comments.php
@@ -124,9 +138,15 @@ msgid "Footer"
 msgstr ""
 
 #. translators: %1$s open link tag, %2$s close link tag.
-#: patterns/hidden-footer.php:23
+#: patterns/hidden-footer.php:21
 #, php-format
 msgid "Powered by %1$sWordPress%2$s."
+msgstr ""
+
+#. translators: %1$s open link tag, %2$s close link tag.
+#: patterns/hidden-footer.php:30
+#, php-format
+msgid "Theme: %1$sBootstrap Basic FSE%2$s."
 msgstr ""
 
 #: patterns/hidden-post-date-author.php
@@ -172,6 +192,16 @@ msgstr ""
 
 #: patterns/hidden-sidebar.php:17
 msgid "Pages"
+msgstr ""
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr ""
+
+#: patterns/post-navigation.php
+msgctxt "Pattern description"
+msgid "Next and previous post links."
 msgstr ""
 
 #: patterns/template-query-loop-search.php

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bootstrap Basic FSE 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/bootstrap-basic-fse\n"
-"POT-Creation-Date: 2026-02-03T22:17:41+07:00\n"
-"PO-Revision-Date: 2026-02-03 22:17+0700\n"
+"POT-Creation-Date: 2026-02-05T17:09:07+07:00\n"
+"PO-Revision-Date: 2026-02-05 17:10+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -54,6 +54,20 @@ msgstr "บาร์ด้านข้าง"
 #: inc/classes/BootstrapBasicFSE.php:145
 msgid "Right side bar"
 msgstr "บาร์ด้านขวา"
+
+#: inc/classes/Hooks/ContentPagination.php:93
+msgid "Pages:"
+msgstr "หน้า:"
+
+#: inc/classes/Hooks/ContentPagination.php:94
+msgid "Content pages"
+msgstr "หน้าของเนื้อหา"
+
+#. translators: %1$s the plugin name.
+#: inc/views/Hooks/detectRequiredPlugin_v.php:5
+#, php-format
+msgid "The %1$s plugin is required and must be activated."
+msgstr "ต้องการปลั๊กอิน %1$s และจะต้องเปิดใช้งาน."
 
 #: patterns/comments.php
 msgctxt "Pattern title"
@@ -125,10 +139,16 @@ msgid "Footer"
 msgstr "ท้าย"
 
 #. translators: %1$s open link tag, %2$s close link tag.
-#: patterns/hidden-footer.php:23
+#: patterns/hidden-footer.php:21
 #, php-format
 msgid "Powered by %1$sWordPress%2$s."
 msgstr "ขับเคลื่อนโดย %1$sWordPress%2$s."
+
+#. translators: %1$s open link tag, %2$s close link tag.
+#: patterns/hidden-footer.php:30
+#, php-format
+msgid "Theme: %1$sBootstrap Basic FSE%2$s."
+msgstr "ธีม: %1$sBootstrap Basic FSE%2$s."
 
 #: patterns/hidden-post-date-author.php
 msgctxt "Pattern title"
@@ -173,6 +193,16 @@ msgstr "บาร์ด้านข้าง"
 #: patterns/hidden-sidebar.php:17
 msgid "Pages"
 msgstr "หน้า"
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr "การนำทางในโพสต์"
+
+#: patterns/post-navigation.php
+msgctxt "Pattern description"
+msgid "Next and previous post links."
+msgstr "ลิ้งค์ของโพสต์ในหน้าก่อนและหน้าถัดไป."
 
 #: patterns/template-query-loop-search.php
 msgctxt "Pattern title"
@@ -579,10 +609,6 @@ msgstr "ท้าย"
 #~ msgctxt "block description"
 #~ msgid "Display pagination in Bootstrap style. This block is in the Bootstrap Basic FSE theme."
 #~ msgstr "แสดงการแบ่งหน้าในรูปแบบ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
-
-#~ msgctxt "block keyword"
-#~ msgid "navigation"
-#~ msgstr "การนำทาง"
 
 #~ msgctxt "block keyword"
 #~ msgid "pages"
