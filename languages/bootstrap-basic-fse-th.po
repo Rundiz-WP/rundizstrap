@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bootstrap Basic FSE 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/bootstrap-basic-fse\n"
-"POT-Creation-Date: 2026-02-05T17:09:07+07:00\n"
-"PO-Revision-Date: 2026-02-05 17:10+0700\n"
+"POT-Creation-Date: 2026-02-06T01:09:16+07:00\n"
+"PO-Revision-Date: 2026-02-06 01:09+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -62,6 +62,12 @@ msgstr "หน้า:"
 #: inc/classes/Hooks/ContentPagination.php:94
 msgid "Content pages"
 msgstr "หน้าของเนื้อหา"
+
+#. translators: %s: Template path.
+#: inc/classes/Libraries/Loader.php:124
+#, php-format
+msgid "The views file was not found (%s)."
+msgstr "ไม่พบไฟล์วิว (%s)."
 
 #. translators: %1$s the plugin name.
 #: inc/views/Hooks/detectRequiredPlugin_v.php:5
