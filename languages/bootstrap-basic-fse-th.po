@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bootstrap Basic FSE 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/bootstrap-basic-fse\n"
-"POT-Creation-Date: 2026-02-06T01:09:16+07:00\n"
-"PO-Revision-Date: 2026-02-06 01:09+0700\n"
+"POT-Creation-Date: 2026-02-06T15:16:08+07:00\n"
+"PO-Revision-Date: 2026-02-06 15:17+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -43,7 +43,7 @@ msgstr "วี ว."
 msgid "Read less"
 msgstr "อ่านน้อยลง"
 
-#: inc/classes/Assets/EntryContentReadmore.php:90 patterns/template-query-loop-search.php:20
+#: inc/classes/Assets/EntryContentReadmore.php:90 patterns/template-query-loop-search.php:21
 msgid "Read more"
 msgstr "อ่านเพิ่มเติม"
 
@@ -210,25 +210,36 @@ msgctxt "Pattern description"
 msgid "Next and previous post links."
 msgstr "ลิ้งค์ของโพสต์ในหน้าก่อนและหน้าถัดไป."
 
+#: patterns/template-query-grid.php
+msgctxt "Pattern title"
+msgid "BBFSE List posts as grid"
+msgstr "BBFSE รายการโพสต์แบบกริด"
+
+#: patterns/template-query-grid.php
+msgctxt "Pattern description"
+msgid "A list of posts, 3 columns."
+msgstr "รายการโพสต์, 3 คอลัมน์."
+
+#: patterns/template-query-grid.php:35 patterns/template-query-loop-search.php:30
+#: patterns/template-query-loop.php:34
+msgctxt "Message explaining that there are no results returned from a search."
+msgid "Sorry, but nothing was found. Please try a search with different keywords."
+msgstr "ขออภัย, แต่ว่าไม่พบอะไร. โปรดลองค้นหาด้วยคำค้นอื่น."
+
 #: patterns/template-query-loop-search.php
 msgctxt "Pattern title"
-msgid "Bootstrap Basic FSE List of posts in search"
-msgstr "Bootstrap Basic FSE รายการโพสต์ในผลการค้นหา"
+msgid "BBFSE List of posts in search"
+msgstr "BBFSE รายการโพสต์ในผลการค้นหา"
 
 #: patterns/template-query-loop-search.php
 msgctxt "Pattern description"
 msgid "A list of posts for use with search result."
 msgstr "รายการโพสต์สำหรับใช้ในผลการค้นหา."
 
-#: patterns/template-query-loop-search.php:29 patterns/template-query-loop.php:33
-msgctxt "Message explaining that there are no results returned from a search."
-msgid "Sorry, but nothing was found. Please try a search with different keywords."
-msgstr "ขออภัย, แต่ว่าไม่พบอะไร. โปรดลองค้นหาด้วยคำค้นอื่น."
-
 #: patterns/template-query-loop.php
 msgctxt "Pattern title"
-msgid "Bootstrap Basic FSE List of posts"
-msgstr "Bootstrap Basic FSE รายการโพสต์"
+msgid "BBFSE List of posts"
+msgstr "BBFSE รายการโพสต์"
 
 #: patterns/template-query-loop.php
 msgctxt "Pattern description"
@@ -289,6 +300,10 @@ msgstr "บาร์ด้านข้าง"
 msgctxt "Template part name"
 msgid "Footer"
 msgstr "ท้าย"
+
+#~ msgctxt "Pattern title"
+#~ msgid "Bootstrap Basic FSE List of posts"
+#~ msgstr "Bootstrap Basic FSE รายการโพสต์"
 
 #~ msgid "Next »"
 #~ msgstr "ถัดไป »"
@@ -652,10 +667,6 @@ msgstr "ท้าย"
 #~ msgctxt "block title"
 #~ msgid "Bootstrap search form"
 #~ msgstr "ฟอร์มค้นหาของ Bootstrap"
-
-#~ msgctxt "Pattern title"
-#~ msgid "List of posts"
-#~ msgstr "รายการโพสต์"
 
 #~ msgid "Search label"
 #~ msgstr "ป้ายกำกับการค้นหา"

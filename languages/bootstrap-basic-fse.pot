@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-06T01:09:16+07:00\n"
+"POT-Creation-Date: 2026-02-06T15:16:08+07:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: bootstrap-basic-fse\n"
@@ -41,7 +41,7 @@ msgid "Read less"
 msgstr ""
 
 #: inc/classes/Assets/EntryContentReadmore.php:90
-#: patterns/template-query-loop-search.php:20
+#: patterns/template-query-loop-search.php:21
 msgid "Read more"
 msgstr ""
 
@@ -210,9 +210,26 @@ msgctxt "Pattern description"
 msgid "Next and previous post links."
 msgstr ""
 
+#: patterns/template-query-grid.php
+msgctxt "Pattern title"
+msgid "BBFSE List posts as grid"
+msgstr ""
+
+#: patterns/template-query-grid.php
+msgctxt "Pattern description"
+msgid "A list of posts, 3 columns."
+msgstr ""
+
+#: patterns/template-query-grid.php:35
+#: patterns/template-query-loop-search.php:30
+#: patterns/template-query-loop.php:34
+msgctxt "Message explaining that there are no results returned from a search."
+msgid "Sorry, but nothing was found. Please try a search with different keywords."
+msgstr ""
+
 #: patterns/template-query-loop-search.php
 msgctxt "Pattern title"
-msgid "Bootstrap Basic FSE List of posts in search"
+msgid "BBFSE List of posts in search"
 msgstr ""
 
 #: patterns/template-query-loop-search.php
@@ -220,15 +237,9 @@ msgctxt "Pattern description"
 msgid "A list of posts for use with search result."
 msgstr ""
 
-#: patterns/template-query-loop-search.php:29
-#: patterns/template-query-loop.php:33
-msgctxt "Message explaining that there are no results returned from a search."
-msgid "Sorry, but nothing was found. Please try a search with different keywords."
-msgstr ""
-
 #: patterns/template-query-loop.php
 msgctxt "Pattern title"
-msgid "Bootstrap Basic FSE List of posts"
+msgid "BBFSE List of posts"
 msgstr ""
 
 #: patterns/template-query-loop.php

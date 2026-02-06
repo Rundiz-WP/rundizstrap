@@ -3,7 +3,7 @@
  * Title: Hero bird flame
  * Slug: bootstrap-basic-fse/hero-bird-flame
  * Categories: banner
- * Keywords: bird, smoke, flame, hero
+ * Keywords: bootstrap basic, bird, smoke, flame, hero
  * Description: A hero section for display image banner with heading and paragraph text.
  *
  * @package bootstrap-basic-fse
@@ -13,7 +13,7 @@
 ?>
 <!-- wp:group {"className":"p-4 p-md-5 mb-4 rounded text-body-emphasis bg-white","style":{
         "background":{
-            "backgroundImage":{"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/imgs/bird-flame-1920x768.webp"},
+            "backgroundImage":{"url":"<?php echo esc_url(get_theme_file_uri('assets/imgs/bird-flame-1920x768.webp')); ?>"},
             "backgroundSize":"cover",
             "backgroundPosition":"center",
             "backgroundRepeat":"no-repeat"

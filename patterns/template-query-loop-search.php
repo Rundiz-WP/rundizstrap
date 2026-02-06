@@ -1,9 +1,10 @@
 <?php
 /**
- * Title: Bootstrap Basic FSE List of posts in search
+ * Title: BBFSE List of posts in search
  * Slug: bootstrap-basic-fse/template-query-loop-search
  * Categories: query
  * Block Types: core/query
+ * Keywords: bootstrap basic, search result
  * Description: A list of posts for use with search result.
  *
  * @package bootstrap-basic-fse

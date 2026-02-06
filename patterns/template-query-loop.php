@@ -1,9 +1,10 @@
 <?php
 /**
- * Title: Bootstrap Basic FSE List of posts
+ * Title: BBFSE List of posts
  * Slug: bootstrap-basic-fse/template-query-loop
  * Categories: query
  * Block Types: core/query
+ * Keywords: bootstrap basic, list posts
  * Description: A list of posts, with featured image, post date, author.
  *
  * @package bootstrap-basic-fse

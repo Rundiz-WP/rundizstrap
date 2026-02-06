@@ -3,6 +3,7 @@
  * Title: Post navigation
  * Slug: bootstrap-basic-fse/post-navigation
  * Categories: text
+ * Keywords: bootstrap basic, post pagination, next post, previous post
  * Description: Next and previous post links.
  * Block Types: core/post-navigation-link
  *
