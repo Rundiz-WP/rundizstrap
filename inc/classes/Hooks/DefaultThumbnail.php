@@ -46,8 +46,9 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\DefaultThumbnail')) {
          */
         public function setDefaultPostThumbnail(string $html, int $post_id, int $post_thumbnail_id, string|array $size, string|array $attr): string
         {
-            if (intval($post_thumbnail_id) !== 0) {
-                // if there is post feature image.
+            if (intval($post_thumbnail_id) !== 0 || '' !== $html) {
+                // if there is post feature image. 
+                // in some case post thumbnail maybe set from other plugins, if it is not empty then let it go.
                 return $html;
             }
 
