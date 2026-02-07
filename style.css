@@ -162,6 +162,12 @@ body.error404 .wp-site-blocks {
     display: block;
 }
 
+/* always force image responsive (reference https://web.dev/learn/design/responsive-images ) */
+.entry-content img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
 
 .taxonomy-category::before {
     content: '\F3F5';
