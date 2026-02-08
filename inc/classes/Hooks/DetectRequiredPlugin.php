@@ -34,7 +34,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
                 // check current admin page use `get_current_screen()` instead of `global $pagenow;` 
                 // because `$pagenow` can't detect sub page like 'themes.php?page=themecheck'.
                 $currentScreen = get_current_screen();
-                $displayInAdminPages = ['dashboard', 'themes'];
+                $displayInAdminPages = ['dashboard', 'plugins', 'themes'];
                 if (isset($currentScreen) && !in_array(($currentScreen->id ?? ''), $displayInAdminPages, true)) {
                     // if not in certain admin pages
                     // do not display, it will be annoying to show on all pages.
@@ -42,10 +42,14 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
                 }
                 unset($currentScreen, $displayInAdminPages);
 
+                /* @var $theme \WP_Theme */
+                $theme = (function_exists('wp_get_theme') ? wp_get_theme() : null);
+
                 $message = sprintf(
-                    /* translators: %1$s the plugin name. */
-                    esc_html__('The %1$s plugin is required and must be activated.', 'bootstrap-basic-fse'),
-                    '<strong style="text-decoration: underline;">BBFSE Plug</strong>'
+                    /* translators: %1$s the plugin name, %2$s the theme name. */
+                    esc_html__('The %1$s plugin is required for %2$s theme and must be activated.', 'bootstrap-basic-fse'),
+                    '<strong style="text-decoration: underline;">BBFSE Plug</strong>',
+                    '<strong style="text-decoration: underline;">' . (is_object($theme) ? $theme->get('Name') : esc_html__('Bootstrap Basic FSE', 'bootstrap-basic-fse')) . '</strong>'
                 );
                 $args = [
                     'dismissible' => true,
@@ -53,7 +57,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
                 ];
 
                 wp_admin_notice($message, $args);
-                unset($args, $message);
+                unset($args, $message, $theme);
             }// endif;
         }// detectAndDisplayAlert
 

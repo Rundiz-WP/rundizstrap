@@ -117,6 +117,7 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
             }
 
             if (!defined('BOOTSTRAPBASICFSE_VERSION')) {
+                /* @var $theme \WP_Theme */
                 $theme = (function_exists('wp_get_theme') ? wp_get_theme() : null);
                 $themeVersion = (is_object($theme) ? $theme->get('Version') : date('Ym')); // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date
                 if (!is_string($themeVersion) || empty($themeVersion)) {
