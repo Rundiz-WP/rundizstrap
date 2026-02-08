@@ -7,6 +7,7 @@
     "scripts": {
         "build": "wpdev build",
         "buildBlocks": "wp-scripts build --webpack-src-dir=\"./blocks-src\" --output-path=\"./blocks\"",
+        "langPot": "wp i18n make-pot . --exclude=\"assets/vendor,languages,node_modules,node_tasks,*.css,*.svg,*.eot,*.woff,*.woff2,*.ttf,*.pot\"",
         "watch": "wpdev watch",
         "watchBlocks": "wp-scripts start --webpack-src-dir=\"./blocks-src\" --output-path=\"./blocks\"",
         "pack": "wpdev pack --packtype=dev prod",
