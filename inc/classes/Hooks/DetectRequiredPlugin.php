@@ -29,22 +29,33 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
         public function detectAndDisplayAlert()
         {
             if (!class_exists('\\BBFSEPlug\\App\\App')) {
-                $Loader = new \BootstrapBasicFSE\Libraries\Loader();
-                $Loader->loadView('Hooks/detectRequiredPlugin_v');
-                unset($Loader);
+                // if PHP class of required plugin is not exists. it is not activated.
+
+                // check current admin page use `get_current_screen()` instead of `global $pagenow;` 
+                // because `$pagenow` can't detect sub page like 'themes.php?page=themecheck'.
+                $currentScreen = get_current_screen();
+                $displayInAdminPages = ['dashboard', 'themes'];
+                if (isset($currentScreen) && !in_array(($currentScreen->id ?? ''), $displayInAdminPages, true)) {
+                    // if not in certain admin pages
+                    // do not display, it will be annoying to show on all pages.
+                    return;
+                }
+                unset($currentScreen, $displayInAdminPages);
+
+                $message = sprintf(
+                    /* translators: %1$s the plugin name. */
+                    esc_html__('The %1$s plugin is required and must be activated.', 'bootstrap-basic-fse'),
+                    '<strong style="text-decoration: underline;">BBFSE Plug</strong>'
+                );
+                $args = [
+                    'dismissible' => true,
+                    'type' => 'error',
+                ];
+
+                wp_admin_notice($message, $args);
+                unset($args, $message);
             }// endif;
         }// detectAndDisplayAlert
-
-
-        /**
-         * Enqueue styles and scripts.
-         * 
-         * @since 0.0.1
-         */
-        public function enqueueStylesAndScripts()
-        {
-            wp_enqueue_script('bootstrap-basic-fse-hooks-detect-required-plugin', get_theme_file_uri('assets/js/Hooks/detect-required-plugin.js'), [], BOOTSTRAPBASICFSE_VERSION, true);
-        }// enqueueStylesAndScripts
 
 
         /**
@@ -54,8 +65,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
          */
         public function registerHooks()
         {
-            add_action('wp_enqueue_scripts', [$this, 'enqueueStylesAndScripts']);
-            add_action('wp_footer', [$this, 'detectAndDisplayAlert']);
+            add_action('admin_notices', [$this, 'detectAndDisplayAlert']);
         }// registerHooks
 
 

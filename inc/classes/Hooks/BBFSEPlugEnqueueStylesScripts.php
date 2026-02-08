@@ -24,7 +24,7 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPlugEnqueueStylesScripts')) {
         /**
          * Dequeue styles and scripts.
          * 
-         * These enqueue names are on Bootstrap Basic FSE Plugin (BBFSE Plugin) that created for this theme by the same author.
+         * These enqueue names are on BBFSE Plug (Bootstrap Basic FSE Plugin) that created for this theme by the same author.
          * It does not need to enqueue the same CSS & JS files on both plugin and theme. Use them based on this theme is enough.
          * 
          * @link https://developer.wordpress.org/reference/functions/wp_dequeue_style/ Reference.
@@ -47,9 +47,8 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPlugEnqueueStylesScripts')) {
         public function registerHooks()
         {
             // "filter" hook below did not test on other OS.
-            // So, I'm not sure if there is problem with plugin loading order that cause this to not work or not. 
-            // Use action hook below (that is under this filter hook) instead.
-            //add_filter('bbfse_plug_enqueue_styles_scripts', '__return_false');
+            // So, I'm not sure does it work on all OS or not.
+            add_filter('bbfse_plug_enqueue_styles_scripts', '__return_false');
             // "action" hook below should work fine because it was called after (priority 11) the plugin.
             add_action('wp_enqueue_scripts', [$this, 'dequeueStylesScripts'], 11);
         }// registerHooks
