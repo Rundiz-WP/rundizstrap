@@ -78,7 +78,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
                     // label text copied from inside function `comment_form()`.
                     sprintf(
                         '<label class="form-check-label" for="wp-comment-cookies-consent">%s</label>',
-                        __('Save my name, email, and website in this browser for the next time I comment.')
+                        __('Save my name, email, and website in this browser for the next time I comment.', 'bootstrap-basic-fse')
                     ),
                 );
 
@@ -101,7 +101,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
                     // label text copied from inside function `comment_form()`.
                     sprintf(
                         '<label class="form-label" for="url">%s</label>',
-                        __('Website')
+                        __('Website', 'bootstrap-basic-fse')
                     ),
                     $Dom->saveHTML($Input),
                 );
@@ -125,7 +125,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
                     // label text copied from inside function `comment_form()`.
                     sprintf(
                         '<label class="form-label" for="email">%s</label>',
-                        __('Email')
+                        __('Email', 'bootstrap-basic-fse')
                     ),
                     $Dom->saveHTML($Input),
                 );
@@ -149,7 +149,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
                     // label text copied from inside function `comment_form()`.
                     sprintf(
                         '<label class="form-label" for="author">%s</label>',
-                        __('Name')
+                        __('Name', 'bootstrap-basic-fse')
                     ),
                     $Dom->saveHTML($Input),
                 );
@@ -173,7 +173,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
                     // label text copied from inside function `comment_form()`.
                     sprintf(
                         '<label class="form-label" for="comment">%s</label>',
-                        _x('Comment', 'noun')
+                        _x('Comment', 'noun', 'bootstrap-basic-fse')
                     ),
                     $Dom->saveHTML($Input),
                 );
@@ -196,7 +196,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
          */
         public function commentFormSubmitButton(string $submit_button, array $args): string
         {
-            $submit_button = '<button class="btn btn-primary" type="submit">' . ($args['label_submit'] ?? __('Post Comment')) . '</button>';
+            $submit_button = '<button class="btn btn-primary" type="submit">' . ($args['label_submit'] ?? __('Post Comment', 'bootstrap-basic-fse')) . '</button>';
 
             return $submit_button;
         }// commentFormSubmitButton
