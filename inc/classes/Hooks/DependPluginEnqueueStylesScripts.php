@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Hook into "Bootstrap Basic FSE Plug" about enqueue/dequeue styles & scripts.
+ * Bootstrap Basic FSE - Hook into dependency plugin (RundizStrap Companion) about enqueue/dequeue styles & scripts.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1
@@ -11,20 +11,20 @@
 namespace BootstrapBasicFSE\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPlugEnqueueStylesScripts')) {
+if (!class_exists('\\BootstrapBasicFSE\Hooks\\DependPluginEnqueueStylesScripts')) {
     /**
-     * BBFSE Plug enqueue class.
+     * Depend plugin enqueue class.
      * 
      * @since 0.0.1
      */
-    class BBFSEPlugEnqueueStylesScripts implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class DependPluginEnqueueStylesScripts implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
     {
 
 
         /**
          * Dequeue styles and scripts.
          * 
-         * These enqueue names are on BBFSE Plug (Bootstrap Basic FSE Plugin) that created for this theme by the same author.
+         * These enqueue names are on RundizStrap Companion that created for this theme by the same author.
          * It does not need to enqueue the same CSS & JS files on both plugin and theme. Use them based on this theme is enough.
          * 
          * @link https://developer.wordpress.org/reference/functions/wp_dequeue_style/ Reference.
@@ -33,9 +33,9 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPlugEnqueueStylesScripts')) {
          */
         public function dequeueStylesScripts()
         {
-            wp_dequeue_style('bbfse-plug-bootstrap-css');
-            wp_dequeue_style('bbfse-plug-bootstrap-icons');
-            wp_dequeue_script('bbfse-plug-bootstrap-js');
+            wp_dequeue_style('rundizstrap-companion-bootstrap-css');
+            wp_dequeue_style('rundizstrap-companion-bootstrap-icons');
+            wp_dequeue_script('rundizstrap-companion-bootstrap-js');
         }// dequeueStylesScripts
 
 
@@ -48,11 +48,11 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\BBFSEPlugEnqueueStylesScripts')) {
         {
             // "filter" hook below did not test on other OS.
             // So, I'm not sure does it work on all OS or not.
-            add_filter('bbfse_plug_enqueue_styles_scripts', '__return_false');
+            add_filter('rundizstrap_companion_enqueue_styles_scripts', '__return_false');
             // "action" hook below should work fine because it was called after (priority 11) the plugin.
             add_action('wp_enqueue_scripts', [$this, 'dequeueStylesScripts'], 11);
         }// registerHooks
 
 
-    }// BBFSEPlugEnqueueStylesScripts
+    }// DependPluginEnqueueStylesScripts
 }

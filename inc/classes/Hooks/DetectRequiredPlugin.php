@@ -28,7 +28,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
          */
         public function detectAndDisplayAlert()
         {
-            if (!class_exists('\\BBFSEPlug\\App\\App')) {
+            if (!class_exists('\\RundizstrapCompanion\\App\\App')) {
                 // if PHP class of required plugin is not exists. it is not activated.
 
                 // check current admin page use `get_current_screen()` instead of `global $pagenow;` 
@@ -48,7 +48,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
                 $message = sprintf(
                     /* translators: %1$s the plugin name, %2$s the theme name. */
                     esc_html__('The %1$s plugin is required for %2$s theme and must be activated.', 'bootstrap-basic-fse'),
-                    '<strong style="text-decoration: underline;">BBFSE Plug</strong>',
+                    '<strong style="text-decoration: underline;">RundizStrap Companion</strong>',
                     '<strong style="text-decoration: underline;">' . (is_object($theme) ? $theme->get('Name') : esc_html__('Bootstrap Basic FSE', 'bootstrap-basic-fse')) . '</strong>'
                 );
                 $args = [

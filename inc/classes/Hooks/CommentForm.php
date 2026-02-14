@@ -11,7 +11,7 @@
 namespace BootstrapBasicFSE\Hooks;
 
 
-return;// disabled. use block `wp:bbfse-plug/blocks-bs-comment-form` instead.
+return;// disabled. use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
 // leave this file as fallback.
 
 

@@ -18,7 +18,7 @@ Based on latest version of Bootstrap and it is WordPress Full Site Editor (FSE) 
 
 The concept is to keep it basic, minimal, support most Bootstrap features.
 
-This theme requires plugin "bbfse-plug". You can download from GitHub at https://github.com/Rundiz-WP/bbfse-plug
+This theme requires plugin "rundizstrap-companion". You can download from GitHub at https://github.com/Rundiz-WP/rundizstrap-companion
 
 Tested up to PHP 8.5.
 

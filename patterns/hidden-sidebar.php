@@ -9,7 +9,7 @@
  */
 
 ?>
-<!-- wp:bbfse-plug/blocks-bs-search {"label":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","buttonClass":"btn btn-outline-secondary","buttonText":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","className":"mb-5"} /-->
+<!-- wp:rundizstrap-companion/blocks-bs-search {"label":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","buttonClass":"btn btn-outline-secondary","buttonText":"<?php esc_html_e('Search', 'bootstrap-basic-fse'); ?>","className":"mb-5"} /-->
 
 <!-- wp:group {"className":"","layout":{"type":"constrained"}} -->
 <div class="wp-block-group">

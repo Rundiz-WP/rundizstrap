@@ -9,12 +9,12 @@
  */
 
 ?>
-<!-- wp:bbfse-plug/blocks-bs-container {"className":"container mb-3"} -->
-<div class="wp-block-bbfse-plug-blocks-bs-container container mb-3">
-    <!-- wp:bbfse-plug/blocks-bs-row {"className":"g-0"} -->
-    <div class="wp-block-bbfse-plug-blocks-bs-row row g-0">
-        <!-- wp:bbfse-plug/blocks-bs-column {"className":"col border-top border-5 pt-3 d-flex justify-content-start fw-light text-body-secondary"} -->
-        <div class="wp-block-bbfse-plug-blocks-bs-column col border-top border-5 pt-3 d-flex justify-content-start fw-light text-body-secondary">
+<!-- wp:rundizstrap-companion/blocks-bs-container {"className":"container mb-3"} -->
+<div class="wp-block-rundizstrap-companion-blocks-bs-container container mb-3">
+    <!-- wp:rundizstrap-companion/blocks-bs-row {"className":"g-0"} -->
+    <div class="wp-block-rundizstrap-companion-blocks-bs-row row g-0">
+        <!-- wp:rundizstrap-companion/blocks-bs-column {"className":"col border-top border-5 pt-3 d-flex justify-content-start fw-light text-body-secondary"} -->
+        <div class="wp-block-rundizstrap-companion-blocks-bs-column col border-top border-5 pt-3 d-flex justify-content-start fw-light text-body-secondary">
             <!-- wp:paragraph {"className":"p-0 my-0"} -->
             <p class="p-0 my-0"><?php printf(
                 /* translators: %1$s open link tag, %2$s close link tag. */
@@ -33,8 +33,8 @@
             ); ?></p>
             <!-- /wp:paragraph -->
         </div>
-        <!-- /wp:bbfse-plug/blocks-bs-column -->
+        <!-- /wp:rundizstrap-companion/blocks-bs-column -->
     </div>
-    <!-- /wp:bbfse-plug/blocks-bs-row -->
+    <!-- /wp:rundizstrap-companion/blocks-bs-row -->
 </div>
-<!-- /wp:bbfse-plug/blocks-bs-container -->
+<!-- /wp:rundizstrap-companion/blocks-bs-container -->

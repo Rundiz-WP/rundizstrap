@@ -54,6 +54,6 @@
         <!-- wp:comments-pagination-next {"className":"btn btn-outline-secondary"} /-->
     <!-- /wp:comments-pagination -->
 
-    <!-- wp:bbfse-plug/blocks-bs-comment-form /-->
+    <!-- wp:rundizstrap-companion/blocks-bs-comment-form /-->
 </section>
 <!-- /wp:comments -->

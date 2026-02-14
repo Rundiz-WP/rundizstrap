@@ -38,6 +38,6 @@ add_filter('bootstrap_basic_fse_default_thumbnail_on_listing', '__return_true');
         <!-- /wp:group -->
     <!-- /wp:query-no-results -->
 
-    <!-- wp:bbfse-plug/blocks-bs-pagination {"additionalClass":"mb-0","alignment":"justify-content-center","className": "mt-0 mb-5 mb-md-0"} /-->
+    <!-- wp:rundizstrap-companion/blocks-bs-pagination {"additionalClass":"mb-0","alignment":"justify-content-center","className": "mt-0 mb-5 mb-md-0"} /-->
 </div>
 <!-- /wp:query -->
