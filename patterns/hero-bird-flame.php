@@ -23,7 +23,7 @@
     <!-- wp:rundizstrap-companion/blocks-bs-column {"className":"col-lg-6 px-0"} -->
     <div class="wp-block-rundizstrap-companion-blocks-bs-column col-lg-6 offset-lg-6 px-0">
         <!-- wp:heading {"level":1,"className":"display-4 fst-italic"} -->
-        <h1 class="wp-block-heading display-4 fst-italic"><?php esc_html_e('Bootstrap Basic FSE', 'bootstrap-basic-fse'); ?></h1>
+        <h1 class="wp-block-heading display-4 fst-italic"><?php esc_html_e('RundizStrap', 'bootstrap-basic-fse'); ?></h1>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"className":"lead my-3"} -->

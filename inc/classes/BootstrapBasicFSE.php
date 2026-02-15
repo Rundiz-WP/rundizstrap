@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE main theme's class.
+ * RundizStrap main theme's class.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1
@@ -13,7 +13,7 @@ namespace BootstrapBasicFSE;
 
 if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
     /**
-     * Bootstrap Basic FSE main theme's class.
+     * RundizStrap main theme's class.
      */
     class BootstrapBasicFSE
     {

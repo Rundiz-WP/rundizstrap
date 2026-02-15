@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Hook into comment form and modify the fields use Bootstrap CSS classes.
+ * RundizStrap - Hook into comment form and modify the fields use Bootstrap CSS classes.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1

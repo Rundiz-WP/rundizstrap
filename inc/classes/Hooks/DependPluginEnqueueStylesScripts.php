@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Hook into dependency plugin (RundizStrap Companion) about enqueue/dequeue styles & scripts.
+ * RundizStrap - Hook into dependency plugin (RundizStrap Companion) about enqueue/dequeue styles & scripts.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1

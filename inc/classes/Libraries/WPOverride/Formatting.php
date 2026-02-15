@@ -24,7 +24,8 @@ if (!class_exists('\\BootstrapBasicFSE\\Libraries\\WPOverride\\Formatting')) {
         /**
          * Sanitizes an HTML class name(s) to ensure it only contains valid characters.
          * 
-         * This will be call to function `sanitize_html_class` if input class name contain multiple values.
+         * Override: The argument `$classname` now supported multiple class name at once by using space as separator or use array.<br>
+         * Example: `class-one class-two`, or it can be `['class-one', 'class-two']`.
          * 
          * @since 0.0.1
          * @see `sanitize_html_class()` for more info

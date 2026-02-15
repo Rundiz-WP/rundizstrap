@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Content modifier such as append clear float.
+ * RundizStrap - Content modifier such as append clear float.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1

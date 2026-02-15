@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bootstrap Basic FSE 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/bootstrap-basic-fse\n"
-"POT-Creation-Date: 2026-02-08T12:33:36+07:00\n"
-"PO-Revision-Date: 2026-02-08 12:35+0700\n"
+"POT-Creation-Date: 2026-02-15T10:32:58+07:00\n"
+"PO-Revision-Date: 2026-02-15 10:33+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -20,8 +20,8 @@ msgstr ""
 
 #. Theme Name of the theme
 #: style.css inc/classes/Hooks/DetectRequiredPlugin.php:52 patterns/hero-bird-flame.php:26
-msgid "Bootstrap Basic FSE"
-msgstr "Bootstrap Basic FSE"
+msgid "RundizStrap"
+msgstr "RundizStrap"
 
 #. Theme URI of the theme
 #. Author URI of the theme
@@ -80,11 +80,11 @@ msgstr "ความคิดเห็น"
 msgid "Post Comment"
 msgstr "แสดงความคิดเห็น"
 
-#: inc/classes/Hooks/ContentPagination.php:93
+#: inc/classes/Hooks/ContentPagination.php:94
 msgid "Pages:"
 msgstr "หน้า:"
 
-#: inc/classes/Hooks/ContentPagination.php:94
+#: inc/classes/Hooks/ContentPagination.php:95
 msgid "Content pages"
 msgstr "หน้าของเนื้อหา"
 
@@ -183,8 +183,8 @@ msgstr "ขับเคลื่อนโดย %1$sWordPress%2$s."
 #. translators: %1$s open link tag, %2$s close link tag.
 #: patterns/hidden-footer.php:30
 #, php-format
-msgid "Theme: %1$sBootstrap Basic FSE%2$s."
-msgstr "ธีม: %1$sBootstrap Basic FSE%2$s."
+msgid "Theme: %1$sRundizStrap%2$s."
+msgstr "ธีม: %1$sRundizStrap%2$s."
 
 #: patterns/hidden-post-date-author.php
 msgctxt "Pattern title"
@@ -330,6 +330,9 @@ msgstr "บาร์ด้านข้าง"
 msgctxt "Template part name"
 msgid "Footer"
 msgstr "ท้าย"
+
+#~ msgid "Bootstrap Basic FSE"
+#~ msgstr "Bootstrap Basic FSE"
 
 #~ msgctxt "Pattern title"
 #~ msgid "Bootstrap Basic FSE List of posts"

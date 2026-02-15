@@ -27,7 +27,7 @@
             <!-- wp:paragraph {"className":"p-0 my-0 ms-1"} -->
             <p class="p-0 my-0 ms-1"><?php printf(
                 /* translators: %1$s open link tag, %2$s close link tag. */
-                esc_html__('Theme: %1$sBootstrap Basic FSE%2$s.', 'bootstrap-basic-fse'),
+                esc_html__('Theme: %1$sRundizStrap%2$s.', 'bootstrap-basic-fse'),
                 '<a class="link-secondary" href="https://rundiz.com" target="rundiz-com">',
                 '</a>'
             ); ?></p>

@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Content pagination.
+ * RundizStrap - Content pagination.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1
@@ -29,9 +29,10 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\ContentPagination')) {
 
 
         /**
-         * Add pagination links.
+         * Add pagination links if using classic editor.
          * 
          * @link https://developer.wordpress.org/reference/hooks/the_content/ Reference
+         * @link https://github.com/WordPress/gutenberg/issues/29484 Issue
          * @since 0.0.1
          * @param string $content Content of the current post.
          * @return string

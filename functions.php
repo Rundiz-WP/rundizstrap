@@ -1,6 +1,6 @@
 <?php
 /** 
- * Bootstrap Basic FSE functions file.
+ * RundizStrap functions file.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1

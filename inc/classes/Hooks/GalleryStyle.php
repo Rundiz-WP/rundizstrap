@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Hook into gallery shortcode style.
+ * RundizStrap - Hook into gallery shortcode style.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1

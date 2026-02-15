@@ -2,14 +2,14 @@
 # This file is distributed under the MIT.
 msgid ""
 msgstr ""
-"Project-Id-Version: Bootstrap Basic FSE 0.0.1\n"
+"Project-Id-Version: RundizStrap 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/bootstrap-basic-fse\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-08T12:33:36+07:00\n"
+"POT-Creation-Date: 2026-02-15T10:32:58+07:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: bootstrap-basic-fse\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: style.css
 #: inc/classes/Hooks/DetectRequiredPlugin.php:52
 #: patterns/hero-bird-flame.php:26
-msgid "Bootstrap Basic FSE"
+msgid "RundizStrap"
 msgstr ""
 
 #. Theme URI of the theme
@@ -79,11 +79,11 @@ msgstr ""
 msgid "Post Comment"
 msgstr ""
 
-#: inc/classes/Hooks/ContentPagination.php:93
+#: inc/classes/Hooks/ContentPagination.php:94
 msgid "Pages:"
 msgstr ""
 
-#: inc/classes/Hooks/ContentPagination.php:94
+#: inc/classes/Hooks/ContentPagination.php:95
 msgid "Content pages"
 msgstr ""
 
@@ -183,7 +183,7 @@ msgstr ""
 #. translators: %1$s open link tag, %2$s close link tag.
 #: patterns/hidden-footer.php:30
 #, php-format
-msgid "Theme: %1$sBootstrap Basic FSE%2$s."
+msgid "Theme: %1$sRundizStrap%2$s."
 msgstr ""
 
 #: patterns/hidden-post-date-author.php

@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE loader class.
+ * RundizStrap loader class.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1

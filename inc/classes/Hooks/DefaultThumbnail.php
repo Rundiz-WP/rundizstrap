@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrap Basic FSE - Show default thumbnail if there is no post feature image.
+ * RundizStrap - Show default thumbnail if there is no post feature image.
  * 
  * @package bootstrap-basic-fse
  * @since 0.0.1

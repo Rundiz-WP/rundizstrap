@@ -1,4 +1,4 @@
-=== Bootstrap Basic FSE ===
+=== RundizStrap ===
 Contributors: Vee W.
 Tags: one-column, two-columns, right-sidebar, translation-ready
 Requires at least: 6.1
@@ -7,11 +7,11 @@ Stable tag: 0.0.1
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
-Bootstrap Basic FSE, Copyright (C) Rundiz.com
-Bootstrap Basic FSE is licensed under the MIT.
+RundizStrap, Copyright (C) Rundiz.com
+RundizStrap is licensed under the MIT.
 
-Bootstrap Basic FSE Uses Bootstrap https://getbootstrap.com/ , licensed under MIT.
-Bootstrap Basic FSE Uses Bootstrap Icons https://icons.getbootstrap.com/ , licensed under MIT.
+RundizStrap Uses Bootstrap https://getbootstrap.com/ , licensed under MIT.
+RundizStrap Uses Bootstrap Icons https://icons.getbootstrap.com/ , licensed under MIT.
 
 == Description ==
 Based on latest version of Bootstrap and it is WordPress Full Site Editor (FSE) theme.
