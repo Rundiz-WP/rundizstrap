@@ -6,10 +6,8 @@
     "type": "module",
     "scripts": {
         "build": "wpdev build",
-        "buildBlocks": "wp-scripts build --webpack-src-dir=\"./blocks-src\" --output-path=\"./blocks\"",
         "langPot": "wp i18n make-pot . --exclude=\"assets/vendor,languages,node_modules,node_tasks,*.css,*.svg,*.eot,*.woff,*.woff2,*.ttf,*.pot\"",
         "watch": "wpdev watch",
-        "watchBlocks": "wp-scripts start --webpack-src-dir=\"./blocks-src\" --output-path=\"./blocks\"",
         "pack": "wpdev pack --packtype=dev prod",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -34,8 +32,5 @@
     "dependencies": {
         "bootstrap": "^5.0.0",
         "bootstrap-icons": "^1.13.1"
-    },
-    "devDependencies": {
-        "@wordpress/scripts": "^31.3.0"
     }
 }
