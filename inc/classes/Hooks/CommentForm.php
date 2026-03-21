@@ -8,20 +8,20 @@
  */
 
 
-namespace BootstrapBasicFSE\Hooks;
+namespace Rundizstrap\Hooks;
 
 
 return;// disabled. use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
 // leave this file as fallback.
 
 
-if (!class_exists('\\BootstrapBasicFSE\\Hooks\\CommentForm')) {
+if (!class_exists('\\Rundizstrap\\Hooks\\CommentForm')) {
     /**
      * Comment form class.
      * 
      * @since 0.0.1
      */
-    class CommentForm implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class CommentForm implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
 
 

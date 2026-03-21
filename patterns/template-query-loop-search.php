@@ -1,10 +1,10 @@
 <?php
 /**
- * Title: BBFSE List of posts in search
+ * Title: RundizStrap List of posts in search
  * Slug: rundizstrap/template-query-loop-search
  * Categories: query
  * Block Types: core/query
- * Keywords: bootstrap basic, search result
+ * Keywords: rundizstrap, bootstrap, search result
  * Description: A list of posts for use with search result.
  *
  * @package rundizstrap

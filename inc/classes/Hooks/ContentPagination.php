@@ -8,16 +8,16 @@
  */
 
 
-namespace BootstrapBasicFSE\Hooks;
+namespace Rundizstrap\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\\Hooks\\ContentPagination')) {
+if (!class_exists('\\Rundizstrap\\Hooks\\ContentPagination')) {
     /**
      * Content pagination class.
      * 
      * @since 0.0.1
      */
-    class ContentPagination implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class ContentPagination implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
 
 

@@ -10,10 +10,10 @@
 
 require_once 'inc/vendor/autoload.php';
 
-$BsbFSE = new BootstrapBasicFSE\BootstrapBasicFSE();
-$BsbFSE->init();
-unset($BsbFSE);
+$Rundizstrap = new Rundizstrap\Rundizstrap();
+$Rundizstrap->init();
+unset($Rundizstrap);
 
-$Loader = new BootstrapBasicFSE\Libraries\Loader();
+$Loader = new Rundizstrap\Libraries\Loader();
 $Loader->autoRegisterClasses();
 unset($Loader);

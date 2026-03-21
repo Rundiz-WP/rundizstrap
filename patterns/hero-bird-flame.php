@@ -3,7 +3,7 @@
  * Title: Hero bird flame
  * Slug: rundizstrap/hero-bird-flame
  * Categories: banner
- * Keywords: bootstrap basic, bird, smoke, flame, hero
+ * Keywords: rundizstrap, bootstrap, bird, smoke, flame, hero
  * Description: A hero section for display image banner with heading and paragraph text.
  *
  * @package rundizstrap

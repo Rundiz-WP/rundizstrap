@@ -8,14 +8,14 @@
  */
 
 
-namespace BootstrapBasicFSE;
+namespace Rundizstrap;
 
 
-if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
+if (!class_exists('\\Rundizstrap\\Rundizstrap')) {
     /**
      * RundizStrap main theme's class.
      */
-    class BootstrapBasicFSE
+    class Rundizstrap
     {
 
 
@@ -96,12 +96,12 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
             // CSS
             wp_register_style('rundizstrap-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'), [], '5.3.8');
             wp_register_style('rundizstrap-bootstrap-icons', get_theme_file_uri('assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css'), [], '1.13.1');
-            wp_register_style('rundizstrap-stylesheet', get_stylesheet_uri(), [], BOOTSTRAPBASICFSE_VERSION);
-            wp_register_style('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/css/entry-content-readmore.css'), [], BOOTSTRAPBASICFSE_VERSION);
+            wp_register_style('rundizstrap-stylesheet', get_stylesheet_uri(), [], RUNDIZSTRAP_VERSION);
+            wp_register_style('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/css/entry-content-readmore.css'), [], RUNDIZSTRAP_VERSION);
 
             // JS
             wp_register_script('rundizstrap-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'), [], '5.3.8', true);
-            wp_register_script('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/js/entry-content-readmore.js'), [], BOOTSTRAPBASICFSE_VERSION, true);
+            wp_register_script('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/js/entry-content-readmore.js'), [], RUNDIZSTRAP_VERSION, true);
         }// registerScriptsStyles
 
 
@@ -112,11 +112,11 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
          */
         private function setConstants()
         {
-            if (!defined('BOOTSTRAPBASICFSE_FILE')) {
-                define('BOOTSTRAPBASICFSE_FILE', dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'functions.php');
+            if (!defined('RUNDIZSTRAP_FILE')) {
+                define('RUNDIZSTRAP_FILE', dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'functions.php');
             }
 
-            if (!defined('BOOTSTRAPBASICFSE_VERSION')) {
+            if (!defined('RUNDIZSTRAP_VERSION')) {
                 /* @var $theme \WP_Theme */
                 $theme = (function_exists('wp_get_theme') ? wp_get_theme() : null);
                 $themeVersion = (is_object($theme) ? $theme->get('Version') : date('Ym')); // phpcs:ignore WordPress.DateTime.RestrictedFunctions.date_date
@@ -124,7 +124,7 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
                     $themeVersion = false;
                 }
                 unset($theme);
-                define('BOOTSTRAPBASICFSE_VERSION', $themeVersion);
+                define('RUNDIZSTRAP_VERSION', $themeVersion);
                 unset($themeVersion);
             }
         }// setConstants
@@ -151,5 +151,5 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
         }// templatePartAreas
 
 
-    }// BootstrapBasicFSE
+    }// Rundizstrap
 }

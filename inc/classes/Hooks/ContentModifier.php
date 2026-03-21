@@ -8,16 +8,16 @@
  */
 
 
-namespace BootstrapBasicFSE\Hooks;
+namespace Rundizstrap\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\\Hooks\\ContentModifier')) {
+if (!class_exists('\\Rundizstrap\\Hooks\\ContentModifier')) {
     /**
      * Content modifier class.
      * 
      * @since 0.0.1
      */
-    class ContentModifier implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class ContentModifier implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
 
 

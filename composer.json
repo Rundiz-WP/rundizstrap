@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "BootstrapBasicFSE\\": "inc/classes/"
+            "Rundizstrap\\": "inc/classes/"
         }
     },
     "config": {

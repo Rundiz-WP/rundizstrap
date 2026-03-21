@@ -8,10 +8,10 @@
  */
 
 
-namespace BootstrapBasicFSE\Libraries\WPOverride;
+namespace Rundizstrap\Libraries\WPOverride;
 
 
-if (!class_exists('\\BootstrapBasicFSE\\Libraries\\WPOverride\\Formatting')) {
+if (!class_exists('\\Rundizstrap\\Libraries\\WPOverride\\Formatting')) {
     /**
      * Formatting class.
      * 

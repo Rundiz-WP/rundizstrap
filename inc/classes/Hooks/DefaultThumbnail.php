@@ -8,16 +8,16 @@
  */
 
 
-namespace BootstrapBasicFSE\Hooks;
+namespace Rundizstrap\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\Hooks\\DefaultThumbnail')) {
+if (!class_exists('\\Rundizstrap\Hooks\\DefaultThumbnail')) {
     /**
      * Default thumbnail class.
      * 
      * @since 0.0.1
      */
-    class DefaultThumbnail implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class DefaultThumbnail implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
 
 
@@ -58,15 +58,15 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\DefaultThumbnail')) {
              * @since 0.0.1
              * @param bool $set_default_on_singular Set to `true` to set default image on singular post. Default is `false`.
              */
-            $set_default_on_singular = apply_filters('bootstrap_basic_fse_default_thumbnail_on_singular', false);
+            $set_default_on_singular = apply_filters('rundizstrap_default_thumbnail_on_singular', false);
 
             /**
              * Set default thumbnail on list posts.
              * 
              * @since 0.0.1
-             * @param bool $set_default_on_listing Set to `true` to set default image on list posts. Default is `true`.
+             * @param bool $set_default_on_listing Set to `true` to set default image on list posts. Default is `false`.
              */
-            $set_default_on_listing = apply_filters('bootstrap_basic_fse_default_thumbnail_on_listing', false);
+            $set_default_on_listing = apply_filters('rundizstrap_default_thumbnail_on_listing', false);
 
             if (is_singular() && false === $set_default_on_singular) {
                 // if it is singular and mark to not set default image on singular.
@@ -84,7 +84,7 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\DefaultThumbnail')) {
              * @since 0.0.1
              * @param string $image_url The default image URL without any HTML tag.
              */
-            $image_url = apply_filters('bootstrap_basic_fse_default_thumbnail_url', get_theme_file_uri('assets/imgs/default-image.webp'));
+            $image_url = apply_filters('rundizstrap_default_thumbnail_url', get_theme_file_uri('assets/imgs/default-image.webp'));
 
             $html = '<img';
             if (is_string($size) && 'post-thumbnail' === strtolower($size)) {

@@ -8,10 +8,10 @@
  */
 
 
-namespace BootstrapBasicFSE\Interfaces;
+namespace Rundizstrap\Interfaces;
 
 
-if (!trait_exists('\\BootstrapBasicFSE\\Interfaces\\AutoRegisterInterface')) {
+if (!trait_exists('\\Rundizstrap\\Interfaces\\AutoRegisterInterface')) {
     /**
      * Auto register interface.
      * 

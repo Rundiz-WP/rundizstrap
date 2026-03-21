@@ -8,10 +8,10 @@
  */
 
 
-namespace BootstrapBasicFSE\Libraries;
+namespace Rundizstrap\Libraries;
 
 
-if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
+if (!class_exists('\\Rundizstrap\Libraries\\Loader')) {
     /**
      * Loader class.
      * 
@@ -31,12 +31,12 @@ if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
          */
         public function autoRegisterClasses()
         {
-            $thisThemeDir = dirname(BOOTSTRAPBASICFSE_FILE);
+            $thisThemeDir = dirname(RUNDIZSTRAP_FILE);
             $filesList = $this->getClassFileList($thisThemeDir . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'classes');
 
             if (is_array($filesList) || is_iterable($filesList)) {
                 foreach ($filesList as $file) {
-                    $fileAsClassName = '\\BootstrapBasicFSE' . str_replace([$thisThemeDir, '.php', '/'], ['', '', '\\'], $file);
+                    $fileAsClassName = '\\Rundizstrap' . str_replace([$thisThemeDir, '.php', '/'], ['', '', '\\'], $file);
                     $fileAsClassName = str_replace(['inc\\classes\\'], '', $fileAsClassName);
 
                     if (class_exists($fileAsClassName)) {
@@ -44,7 +44,7 @@ if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
                         if (
                             !$TestClass->isAbstract() && 
                             !$TestClass->isTrait() && 
-                            $TestClass->implementsInterface('\\BootstrapBasicFSE\\Interfaces\\AutoRegisterInterface')
+                            $TestClass->implementsInterface('\\Rundizstrap\\Interfaces\\AutoRegisterInterface')
                         ) {
                             $ClassObj = new $fileAsClassName();
                             if (method_exists($ClassObj, 'registerHooks')) {
@@ -97,7 +97,7 @@ if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
          */
         public function loadView(string $view_name, array $data = [], bool $require_once = false): bool
         {
-            $view_dir = dirname(BOOTSTRAPBASICFSE_FILE) . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR;
+            $view_dir = dirname(RUNDIZSTRAP_FILE) . DIRECTORY_SEPARATOR . 'inc' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR;
             $templateFile = $view_dir . $view_name . '.php';
             unset($view_dir);
 

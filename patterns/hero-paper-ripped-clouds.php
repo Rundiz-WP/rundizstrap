@@ -3,7 +3,7 @@
  * Title: Hero paper ripped and clouds
  * Slug: rundizstrap/hero-paper-ripped-clouds
  * Categories: banner
- * Keywords: bootstrap basic, bird, smoke, flame, hero
+ * Keywords: rundizstrap, bootstrap, bird, smoke, flame, hero
  * Description: A hero section for display image banner in painting style.
  *
  * @package rundizstrap

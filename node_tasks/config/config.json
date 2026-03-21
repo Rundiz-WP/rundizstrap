@@ -168,16 +168,16 @@
         {
             "nodePackage": "bootstrap",
             "assetsDataPattern": [
-                "bootstrap\\-basic\\-fse\\-bootstrap"
+                "rundizstrap\\-bootstrap"
             ],
-            "assetsDataFile": "inc/classes/BootstrapBasicFSE.php"
+            "assetsDataFile": "inc/classes/Rundizstrap.php"
         },
         {
             "nodePackage": "bootstrap-icons",
             "assetsDataPattern": [
-                "bootstrap\\-basic\\-fse\\-bootstrap\\-icons"
+                "rundizstrap\\-bootstrap\\-icons"
             ],
-            "assetsDataFile": "inc/classes/BootstrapBasicFSE.php"
+            "assetsDataFile": "inc/classes/Rundizstrap.php"
         }
     ],
     "pack": {
@@ -214,9 +214,6 @@
                         ".phpdoc",
                         ".phpunit*",
                         "assets-src",
-                        "blocks/bbfse-test",
-                        "blocks-src",
-                        "inc/classes/Blocks/BbfseTest.php",
                         "node_modules",
                         "node_tasks",
                         "package*.json"

@@ -8,16 +8,16 @@
  */
 
 
-namespace BootstrapBasicFSE\Hooks;
+namespace Rundizstrap\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\Hooks\\DependPluginEnqueueStylesScripts')) {
+if (!class_exists('\\Rundizstrap\Hooks\\DependPluginEnqueueStylesScripts')) {
     /**
      * Depend plugin enqueue class.
      * 
      * @since 0.0.1
      */
-    class DependPluginEnqueueStylesScripts implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class DependPluginEnqueueStylesScripts implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
 
 

@@ -8,16 +8,16 @@
  */
 
 
-namespace BootstrapBasicFSE\Hooks;
+namespace Rundizstrap\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
+if (!class_exists('\\Rundizstrap\\Hooks\\DetectRequiredPlugin')) {
     /**
      * Detect required plugin class.
      * 
      * @since 0.0.1
      */
-    class DetectRequiredPlugin implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class DetectRequiredPlugin implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
 
 

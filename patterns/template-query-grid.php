@@ -1,11 +1,11 @@
 <?php
 /**
- * Title: BBFSE List posts as grid
+ * Title: RundizStrap List posts as grid
  * Slug: rundizstrap/template-query-grid
  * Categories: query
  * Block Types: core/query
  * Viewport width: 1400
- * Keywords: bootstrap basic, grid
+ * Keywords: rundizstrap, bootstrap, grid
  * Description: A list of posts, 3 columns.
  *
  * @package rundizstrap
@@ -14,7 +14,7 @@
 
 
 // mark default thumbnail on listing to `true`. special for this template pattern.
-add_filter('bootstrap_basic_fse_default_thumbnail_on_listing', '__return_true');
+add_filter('rundizstrap_default_thumbnail_on_listing', '__return_true');
 ?>
 <!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]}} -->
 <div class="wp-block-query">

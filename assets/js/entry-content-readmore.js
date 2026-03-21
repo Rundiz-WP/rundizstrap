@@ -9,7 +9,7 @@
  */
 
 
-class BootstrapBasicFSEEntryContentReadmore {
+class RundizstrapEntryContentReadmore {
 
 
     /**
@@ -169,9 +169,9 @@ class BootstrapBasicFSEEntryContentReadmore {
      * @returns {String}
      */
     #readlessHTML() {
-        return '<div class="' + this.#readmoreWrapperClassName + ' ' + BootstrapBasicFSEEntryContentReadmoreObj.readlessWrapperClass + '">\n\
-            <a class="' + this.#readmoreTogglerClassName + ' ' + BootstrapBasicFSEEntryContentReadmoreObj.readlessLinkClass + '" href="#" role="button">\n\
-                ' + BootstrapBasicFSEEntryContentReadmoreObj.txtReadless + '\n\
+        return '<div class="' + this.#readmoreWrapperClassName + ' ' + RundizstrapEntryContentReadmoreObj.readlessWrapperClass + '">\n\
+            <a class="' + this.#readmoreTogglerClassName + ' ' + RundizstrapEntryContentReadmoreObj.readlessLinkClass + '" href="#" role="button">\n\
+                ' + RundizstrapEntryContentReadmoreObj.txtReadless + '\n\
             </a>\n\
         </div>';
     }// #readlessHTML
@@ -184,9 +184,9 @@ class BootstrapBasicFSEEntryContentReadmore {
      * @returns {String}
      */
     #readmoreHTML() {
-        return '<div class="' + this.#readmoreWrapperClassName + ' ' + BootstrapBasicFSEEntryContentReadmoreObj.readmoreWrapperClass + '">\n\
-            <a class="' + this.#readmoreTogglerClassName + ' ' + BootstrapBasicFSEEntryContentReadmoreObj.readmoreLinkClass + '" href="#" role="button">\n\
-                ' + BootstrapBasicFSEEntryContentReadmoreObj.txtReadmore + '\n\
+        return '<div class="' + this.#readmoreWrapperClassName + ' ' + RundizstrapEntryContentReadmoreObj.readmoreWrapperClass + '">\n\
+            <a class="' + this.#readmoreTogglerClassName + ' ' + RundizstrapEntryContentReadmoreObj.readmoreLinkClass + '" href="#" role="button">\n\
+                ' + RundizstrapEntryContentReadmoreObj.txtReadmore + '\n\
             </a>\n\
         </div>';
     }// #readmoreHTML
@@ -265,7 +265,7 @@ class BootstrapBasicFSEEntryContentReadmore {
      * To re/render, you have to call `init()` method again.
      * 
      * @since 0.0.1
-     * @see `BootstrapBasicFSEEntryContentReadmore:constructor()`.
+     * @see `RundizstrapEntryContentReadmore:constructor()`.
      * @param {object} options Read more on class constructor.
      */
     updateOptions(options = {}) {
@@ -276,24 +276,24 @@ class BootstrapBasicFSEEntryContentReadmore {
     }// updateOptions
 
 
-}// BootstrapBasicFSEEntryContentReadmore
+}// RundizstrapEntryContentReadmore
 
 
 // declare variable for easy access by other JS.
-var BootstrapBasicFSEEntryContentReadmoreJS;
+var RundizstrapEntryContentReadmoreJS;
 
 
 // on DOM content has loaded.
 document.addEventListener('DOMContentLoaded', () => {
-    BootstrapBasicFSEEntryContentReadmoreJS = new BootstrapBasicFSEEntryContentReadmore();
+    RundizstrapEntryContentReadmoreJS = new RundizstrapEntryContentReadmore();
 });
 
 // on whole page has loaded. ( https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event )
 window.addEventListener('load', () => {
-    if (BootstrapBasicFSEEntryContentReadmoreJS instanceof BootstrapBasicFSEEntryContentReadmore) {
+    if (RundizstrapEntryContentReadmoreJS instanceof RundizstrapEntryContentReadmore) {
         // if JS variable was set correctly.
         // update those elements again in case DOM loaded but images are not, the content's height can be shorter than when images have loaded.
         // this event listener maybe unable to detect image with lazy loading properly.
-        BootstrapBasicFSEEntryContentReadmoreJS.reInit();
+        RundizstrapEntryContentReadmoreJS.reInit();
     }
 });

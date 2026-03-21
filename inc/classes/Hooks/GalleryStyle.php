@@ -8,16 +8,16 @@
  */
 
 
-namespace BootstrapBasicFSE\Hooks;
+namespace Rundizstrap\Hooks;
 
 
-if (!class_exists('\\BootstrapBasicFSE\Hooks\\GalleryStyle')) {
+if (!class_exists('\\Rundizstrap\Hooks\\GalleryStyle')) {
     /**
      * Gallery style class.
      * 
      * @since 0.0.1
      */
-    class GalleryStyle implements \BootstrapBasicFSE\Interfaces\AutoRegisterInterface
+    class GalleryStyle implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
 
 
@@ -37,7 +37,7 @@ if (!class_exists('\\BootstrapBasicFSE\Hooks\\GalleryStyle')) {
             }
 
             ob_start();
-            $Loader = new \BootstrapBasicFSE\Libraries\Loader();
+            $Loader = new \Rundizstrap\Libraries\Loader();
             $Loader->loadView('Hooks/galleryStyle_v');
             unset($Loader);
             $output = ob_get_contents();

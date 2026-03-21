@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname(dirname($vendorDir));
 
 return array(
-    'BootstrapBasicFSE\\' => array($baseDir . '/inc/classes'),
+    'Rundizstrap\\' => array($baseDir . '/inc/classes'),
 );
