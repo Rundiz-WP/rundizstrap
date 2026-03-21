@@ -46,10 +46,9 @@ if (!class_exists('\\Rundizstrap\Hooks\\DependPluginEnqueueStylesScripts')) {
          */
         public function registerHooks()
         {
-            // "filter" hook below did not test on other OS.
-            // So, I'm not sure does it work on all OS or not.
+            // add filter hook to the RundizStrap Companion plugin.
             add_filter('rundizstrap_companion_enqueue_styles_scripts', '__return_false');
-            // "action" hook below should work fine because it was called after (priority 11) the plugin.
+            // add action hook below in case above filter is not working.
             add_action('wp_enqueue_scripts', [$this, 'dequeueStylesScripts'], 11);
         }// registerHooks
 
