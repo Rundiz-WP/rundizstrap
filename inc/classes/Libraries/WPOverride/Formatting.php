@@ -50,7 +50,7 @@ if (!class_exists('\\Rundizstrap\\Libraries\\WPOverride\\Formatting')) {
                 // if class name is something else.
                 // do not translate exception in any other languages. it is very bad idea to do that!
                 // if this error occur on client sites and they use some language that we don't know. the debug data (error log) will be very hard to know what it is.
-                throw new \InvalidArgumentException('The argument `$classname` must be string or array. ' . ucfirst(gettype($classname)) . ' given.');
+                throw new \InvalidArgumentException(esc_html('The argument `$classname` must be string or array. ' . ucfirst(gettype($classname)) . ' given.'));
             }
 
             $output = '';

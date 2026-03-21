@@ -13,6 +13,7 @@ namespace Rundizstrap\Hooks;
 
 return;// disabled. use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
 // leave this file as fallback.
+// phpcs:disable
 
 
 if (!class_exists('\\Rundizstrap\\Hooks\\CommentForm')) {

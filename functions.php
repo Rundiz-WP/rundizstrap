@@ -8,12 +8,15 @@
  */
 
 
+/*
+ * Require Composer's auto load.
+ */
 require_once 'inc/vendor/autoload.php';
 
 $Rundizstrap = new Rundizstrap\Rundizstrap();
 $Rundizstrap->init();
 unset($Rundizstrap);
 
-$Loader = new Rundizstrap\Libraries\Loader();
-$Loader->autoRegisterClasses();
-unset($Loader);
+$RundizstrapLoader = new Rundizstrap\Libraries\Loader();
+$RundizstrapLoader->autoRegisterClasses();
+unset($RundizstrapLoader);
