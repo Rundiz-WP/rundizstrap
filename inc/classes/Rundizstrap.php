@@ -98,6 +98,7 @@ if (!class_exists('\\Rundizstrap\\Rundizstrap')) {
             wp_register_style('rundizstrap-bootstrap-icons', get_theme_file_uri('assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css'), [], '1.13.1');
             wp_register_style('rundizstrap-stylesheet', get_stylesheet_uri(), [], RUNDIZSTRAP_VERSION);
             wp_register_style('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/css/entry-content-readmore.css'), [], RUNDIZSTRAP_VERSION);
+            wp_register_style('rundizstrap-gallery-shortcode', get_theme_file_uri('assets/css/gallery-shortcode.css'), [], RUNDIZSTRAP_VERSION);
 
             // JS
             wp_register_script('rundizstrap-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'), [], '5.3.8', true);
