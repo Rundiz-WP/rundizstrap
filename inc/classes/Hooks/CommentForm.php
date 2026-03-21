@@ -5,6 +5,7 @@
  * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
+ * @deprecated Use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
  */
 
 
@@ -21,6 +22,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\CommentForm')) {
      * Comment form class.
      * 
      * @since 0.0.1
+     * @deprecated Use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
      */
     class CommentForm implements \Rundizstrap\Interfaces\AutoRegisterInterface
     {
