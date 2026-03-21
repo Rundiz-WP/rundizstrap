@@ -2,7 +2,7 @@
 /**
  * CSS below is for fallback supported of `[gallery]` shortcode.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  */
 ?>

@@ -2,7 +2,7 @@
 /**
  * Load assets to work about entry content read more/less.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */
@@ -34,13 +34,13 @@ if (!class_exists('\\BootstrapBasicFSE\\Assets\\EntryContentReadmore')) {
          */
         public function enqueueScriptsStyles()
         {
-            wp_enqueue_style('bootstrap-basic-fse-entry-content-readmore');
+            wp_enqueue_style('rundizstrap-entry-content-readmore');
 
             // entry-content-readmore.js -------------------------------------------------------
             $linkClasses = 'btn btn-outline-secondary btn-sm rounded-pill';
 
             wp_localize_script(
-                'bootstrap-basic-fse-entry-content-readmore',
+                'rundizstrap-entry-content-readmore',
                 'BootstrapBasicFSEEntryContentReadmoreObj',
                 [
                     /**
@@ -78,7 +78,7 @@ if (!class_exists('\\BootstrapBasicFSE\\Assets\\EntryContentReadmore')) {
                          * @since 0.0.1
                          * @param string $text The read less text.
                          */
-                        apply_filters('bootstrap_basic_fse_entry_content_readmore_readless_text', __('Read less', 'bootstrap-basic-fse'))
+                        apply_filters('bootstrap_basic_fse_entry_content_readmore_readless_text', __('Read less', 'rundizstrap'))
                     ),
                     'txtReadmore' => esc_html(
                         /**
@@ -87,11 +87,11 @@ if (!class_exists('\\BootstrapBasicFSE\\Assets\\EntryContentReadmore')) {
                          * @since 0.0.1
                          * @param string $text The read more text.
                          */
-                        apply_filters('bootstrap_basic_fse_entry_content_readmore_readmore_text', __('Read more', 'bootstrap-basic-fse'))
+                        apply_filters('bootstrap_basic_fse_entry_content_readmore_readmore_text', __('Read more', 'rundizstrap'))
                     ),
                 ]
             );
-            wp_enqueue_script('bootstrap-basic-fse-entry-content-readmore');
+            wp_enqueue_script('rundizstrap-entry-content-readmore');
 
             unset($linkClasses);
             // end entry-content-readmore.js ---------------------------------------------------

@@ -2,7 +2,7 @@
 /**
  * RundizStrap loader class.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */
@@ -121,7 +121,7 @@ if (!class_exists('\\BootstrapBasicFSE\Libraries\\Loader')) {
                 throw new \Exception(
                     sprintf(
                         // translators: %s: Template path.
-                        esc_html(__('The views file was not found (%s).', 'bootstrap-basic-fse')), 
+                        esc_html(__('The views file was not found (%s).', 'rundizstrap')), 
                         str_replace(['\\', '/'], '/', $templateFile)// phpcs:ignore WordPress.Security.EscapeOutput
                     )
                 );

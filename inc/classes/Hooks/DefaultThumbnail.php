@@ -2,7 +2,7 @@
 /**
  * RundizStrap - Show default thumbnail if there is no post feature image.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */

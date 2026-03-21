@@ -10,7 +10,7 @@
  * Requires PHP: 8.0
  * License: MIT
  * License URI: https://opensource.org/licenses/MIT
- * Text Domain: bootstrap-basic-fse
+ * Text Domain: rundizstrap
  * Tags: two-columns, right-sidebar
  * Domain Path: /languages/
  */
@@ -140,16 +140,16 @@ body.error404 .wp-site-blocks {
 }
 
 
-.bootstrap-basic-fse-entry-meta a {
+.rundizstrap-entry-meta a {
     color: inherit;
     text-decoration: none;
 }
-.bootstrap-basic-fse-entry-meta a:hover {
+.rundizstrap-entry-meta a:hover {
     color: hsl(from currentColor h s calc(l - 80));
 }
 
 
-.bootstrap-basic-fse-comment-content-wrapper {
+.rundizstrap-comment-content-wrapper {
     min-width: 0;/* make flex child not too wide over its parent. */
 }
 

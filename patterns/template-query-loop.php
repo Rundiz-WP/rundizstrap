@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: BBFSE List of posts
- * Slug: bootstrap-basic-fse/template-query-loop
+ * Slug: rundizstrap/template-query-loop
  * Categories: query
  * Block Types: core/query
  * Keywords: bootstrap basic, list posts
  * Description: A list of posts, with featured image, post date, author.
  *
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  */
 ?>
@@ -20,9 +20,9 @@
 
             <!-- wp:post-title {"level":2,"isLink":true,"className":"h3"} /-->
 
-            <!-- wp:pattern {"slug":"bootstrap-basic-fse/hidden-post-date-author"} /-->
+            <!-- wp:pattern {"slug":"rundizstrap/hidden-post-date-author"} /-->
 
-            <!-- wp:post-content {"className":"bootstrap-basic-fse-each-post-contents mt-0 bootstrap-basic-fse-entry-content-readmore"} /-->
+            <!-- wp:post-content {"className":"rundizstrap-each-post-contents mt-0 rundizstrap-entry-content-readmore"} /-->
         </article>
         <!-- /wp:group -->
     <!-- /wp:post-template -->
@@ -31,7 +31,7 @@
         <!-- wp:group {"className":"border-top mb-4 p-5"} -->
         <div class="wp-block-group border-top mb-4 p-5">
             <!-- wp:paragraph {"className":"m-0 lead"} -->
-            <p class="m-0 lead"><?php echo esc_html_x('Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'bootstrap-basic-fse'); ?></p>
+            <p class="m-0 lead"><?php echo esc_html_x('Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'rundizstrap'); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->

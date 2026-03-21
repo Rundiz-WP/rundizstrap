@@ -2,7 +2,7 @@
 /**
  * RundizStrap - Content pagination.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */
@@ -91,8 +91,8 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\ContentPagination')) {
         public function modifyWPLinkPagesArgs(array $parsed_args): array
         {
             $parsed_args['before'] = '<div class="mt-3">' . 
-                esc_html__('Pages:', 'bootstrap-basic-fse') . 
-                '<nav class="post-nav-links" aria-label="' . esc_html__('Content pages', 'bootstrap-basic-fse') . '">' .
+                esc_html__('Pages:', 'rundizstrap') . 
+                '<nav class="post-nav-links" aria-label="' . esc_html__('Content pages', 'rundizstrap') . '">' .
                 '<ul class="pagination">';
             $parsed_args['after'] = '</ul></nav></div>';
             $parsed_args['separator'] = '';

@@ -23,7 +23,7 @@ This theme requires plugin "rundizstrap-companion". You can download from GitHub
 Tested up to PHP 8.5.
 
 = Expand/collapse contents help (read more/read less) =
-To make contents limit height, add class `bootstrap-basic-fse-entry-content-readmore` to post content block that contain CSS `entry-content` and this functional will be activated automatically.
+To make contents limit height, add class `rundizstrap-entry-content-readmore` to post content block that contain CSS `entry-content` and this functional will be activated automatically.
 
 == Changelog ==
 = 0.0.1 =

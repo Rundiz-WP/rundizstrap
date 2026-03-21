@@ -2,24 +2,25 @@
 # This file is distributed under the MIT.
 msgid ""
 msgstr ""
-"Project-Id-Version: Bootstrap Basic FSE 0.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/bootstrap-basic-fse\n"
-"POT-Creation-Date: 2026-02-15T10:32:58+07:00\n"
-"PO-Revision-Date: 2026-02-15 10:33+0700\n"
+"Project-Id-Version: RundizStrap\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rundizstrap\n"
+"POT-Creation-Date: 2026-03-21T10:08:47+07:00\n"
+"PO-Revision-Date: 2026-03-21 10:10+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
-"X-Domain: bootstrap-basic-fse\n"
+"X-Generator: Poedit 3.9\n"
+"X-Domain: rundizstrap\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #. Theme Name of the theme
-#: style.css inc/classes/Hooks/DetectRequiredPlugin.php:52 patterns/hero-bird-flame.php:26
+#: style.css inc/classes/Hooks/DetectRequiredPlugin.php:52
+#: patterns/hero-bird-flame.php:26
 msgid "RundizStrap"
 msgstr "RundizStrap"
 
@@ -43,7 +44,8 @@ msgstr "วี ว."
 msgid "Read less"
 msgstr "อ่านน้อยลง"
 
-#: inc/classes/Assets/EntryContentReadmore.php:90 patterns/template-query-loop-search.php:21
+#: inc/classes/Assets/EntryContentReadmore.php:90
+#: patterns/template-query-loop-search.php:21
 msgid "Read more"
 msgstr "อ่านเพิ่มเติม"
 
@@ -250,7 +252,8 @@ msgctxt "Pattern description"
 msgid "A list of posts, 3 columns."
 msgstr "รายการโพสต์, 3 คอลัมน์."
 
-#: patterns/template-query-grid.php:35 patterns/template-query-loop-search.php:30
+#: patterns/template-query-grid.php:35
+#: patterns/template-query-loop-search.php:30
 #: patterns/template-query-loop.php:34
 msgctxt "Message explaining that there are no results returned from a search."
 msgid "Sorry, but nothing was found. Please try a search with different keywords."
@@ -359,19 +362,11 @@ msgstr "ท้าย"
 #~ msgid "Default (<div>)"
 #~ msgstr "ค่าเริ่มต้น (<div>)"
 
-#~ msgid ""
-#~ "Please add a Bootstrap column class (e.g., \"col\", \"col-md-6\") in the \"Additional CSS "
-#~ "class(es)\" field under Advanced settings."
-#~ msgstr ""
-#~ "โปรดเพิ่มคลาสคอลัมน์ของ Bootstrap (เช่น \"col\", \"col-md-6\") ในช่อง \"คลาส CSS เพิ่มเติม\" "
-#~ "ภายใต้การตั้งค่าขั้นสูง."
+#~ msgid "Please add a Bootstrap column class (e.g., \"col\", \"col-md-6\") in the \"Additional CSS class(es)\" field under Advanced settings."
+#~ msgstr "โปรดเพิ่มคลาสคอลัมน์ของ Bootstrap (เช่น \"col\", \"col-md-6\") ในช่อง \"คลาส CSS เพิ่มเติม\" ภายใต้การตั้งค่าขั้นสูง."
 
-#~ msgid ""
-#~ "Please add a Bootstrap container class (e.g., \"container\", \"container-fluid\") in the "
-#~ "\"Additional CSS class(es)\" field under Advanced settings."
-#~ msgstr ""
-#~ "โปรดเพิ่มคลาสคอนเทนเนอร์ของ Bootstrap (เช่น \"container\", \"container-fluid\") ในช่อง \"คลาส "
-#~ "CSS เพิ่มเติม\" ภายใต้การตั้งค่าขั้นสูง."
+#~ msgid "Please add a Bootstrap container class (e.g., \"container\", \"container-fluid\") in the \"Additional CSS class(es)\" field under Advanced settings."
+#~ msgstr "โปรดเพิ่มคลาสคอนเทนเนอร์ของ Bootstrap (เช่น \"container\", \"container-fluid\") ในช่อง \"คลาส CSS เพิ่มเติม\" ภายใต้การตั้งค่าขั้นสูง."
 
 #~ msgid "Key"
 #~ msgstr "คีย์"
@@ -517,12 +512,8 @@ msgstr "ท้าย"
 #~ msgid "Number of adjacent pages"
 #~ msgstr "จำนวนหน้าติดกัน"
 
-#~ msgid ""
-#~ "Specify how many links can appear before and after the current page number. Links to the "
-#~ "first, current and last page are always visible."
-#~ msgstr ""
-#~ "ระบุจำนวนลิงก์ที่สามารถปรากฏก่อนและหลังหมายเลขหน้าปัจจุบัน. ลิงก์ไปยังหน้าแรก, หน้าปัจจุบัน "
-#~ "และหน้าสุดท้ายจะแสดงอยู่เสมอ."
+#~ msgid "Specify how many links can appear before and after the current page number. Links to the first, current and last page are always visible."
+#~ msgstr "ระบุจำนวนลิงก์ที่สามารถปรากฏก่อนและหลังหมายเลขหน้าปัจจุบัน. ลิงก์ไปยังหน้าแรก, หน้าปัจจุบัน และหน้าสุดท้ายจะแสดงอยู่เสมอ."
 
 #~ msgid "Alignment"
 #~ msgstr "การจัดแนว"
@@ -624,9 +615,7 @@ msgstr "ท้าย"
 #~ msgstr "คอนเทนเนอร์แถบนำทาง Bootstrap"
 
 #~ msgctxt "block description"
-#~ msgid ""
-#~ "Wrap the navbar items with collapse or offcanvas. This block is in the Bootstrap Basic FSE "
-#~ "theme."
+#~ msgid "Wrap the navbar items with collapse or offcanvas. This block is in the Bootstrap Basic FSE theme."
 #~ msgstr "หุ้มรายการในแถบนำทางด้วย collapse หรือ offcanvas. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
 
 #~ msgctxt "block keyword"
@@ -686,8 +675,7 @@ msgstr "ท้าย"
 #~ msgstr "แถวเลย์เอาต์ Bootstrap"
 
 #~ msgctxt "block description"
-#~ msgid ""
-#~ "Display search form in Bootstrap style. This block is in the Bootstrap Basic FSE theme."
+#~ msgid "Display search form in Bootstrap style. This block is in the Bootstrap Basic FSE theme."
 #~ msgstr "แสดงฟอร์มค้นหาในรูปแบบของ Bootstrap. บล็อกนี้อยู่ในธีม Bootstrap Basic FSE."
 
 #~ msgctxt "block keyword"

@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Comments
- * Slug: bootstrap-basic-fse/comments
+ * Slug: rundizstrap/comments
  * Description: Comments area with comments list, pagination, and comment form.
  * Categories: text
  * Block Types: core/comments
  *
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  */
 
@@ -14,7 +14,7 @@
 <!-- wp:comments {"tagName":"section","className":"wp-block-comments-query-loop mt-5 border-top border-secondary-subtle pt-5"} -->
 <section class="wp-block-comments wp-block-comments-query-loop mt-5 border-top border-secondary-subtle pt-5">
     <!-- wp:heading -->
-    <h2 class="wp-block-heading"><?php esc_html_e('Comments', 'bootstrap-basic-fse'); ?></h2>
+    <h2 class="wp-block-heading"><?php esc_html_e('Comments', 'rundizstrap'); ?></h2>
     <!-- /wp:heading -->
 
     <!-- wp:comments-title {"level":3,"className":"mb-3"} /-->
@@ -27,7 +27,7 @@
                 <!-- wp:avatar {"size":50} /-->
 
                 <!-- wp:group {"className":"me-2 mb-2"} -->
-                <div class="wp-block-group bootstrap-basic-fse-comment-content-wrapper me-2 mb-2">
+                <div class="wp-block-group rundizstrap-comment-content-wrapper me-2 mb-2">
                     <!-- wp:comment-author-name {"className":"mt-0 mb-2","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} /-->
 
                     <!-- wp:comment-date {"className":"mt-0 mb-2","fontSize":"small"} /-->

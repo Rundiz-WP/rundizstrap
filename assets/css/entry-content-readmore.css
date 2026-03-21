@@ -1,26 +1,26 @@
 /*
-@package bootstrap-basic-fse
+@package rundizstrap
 @since 0.0.1
 @license http://opensource.org/licenses/MIT MIT
 */
 
 
-.bootstrap-basic-fse-entry-content-readmore {
+.rundizstrap-entry-content-readmore {
     --entry-content-readmore-collapse-height: 300px;
 }
 
-.bootstrap-basic-fse-entry-content-readmore {
+.rundizstrap-entry-content-readmore {
     overflow: hidden;
     position: relative;
     transition: max-height .3s;
 }
 
-.bootstrap-basic-fse-entry-content-readmore-collapsed {
+.rundizstrap-entry-content-readmore-collapsed {
     border-bottom: 1px dashed var(--bs-secondary-border-subtle);
     max-height: var(--entry-content-readmore-collapse-height);
 }
 
-.bootstrap-basic-fse-entry-content-readmore-expanded {
+.rundizstrap-entry-content-readmore-expanded {
     /* 
     use max-height value `var(--entry-content-readmore-full-height, 1000px)` for transition to work but
     it will not work properly if there is image lazy loading. it cause the element is not showing actual full height.
@@ -29,7 +29,7 @@
     max-height: none;
 }
 
-.bootstrap-basic-fse-entry-content-readmore-collapsed::after {
+.rundizstrap-entry-content-readmore-collapsed::after {
     background-image: linear-gradient(180deg,rgba(var(--bs-body-bg-rgb), 0) 0%, 
         rgba(var(--bs-body-bg-rgb), 0.5) 30%, 
         rgba(var(--bs-body-bg-rgb), 0.8) 60%, 
@@ -43,6 +43,6 @@
     right: 0;
 }
 
-.bootstrap-basic-fse-entry-content-readmore-expanded::after {
+.rundizstrap-entry-content-readmore-expanded::after {
     display: none;
 }

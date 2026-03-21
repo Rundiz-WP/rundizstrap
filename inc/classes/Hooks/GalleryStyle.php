@@ -2,7 +2,7 @@
 /**
  * RundizStrap - Hook into gallery shortcode style.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */

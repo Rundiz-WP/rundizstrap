@@ -2,7 +2,7 @@
 /**
  * RundizStrap main theme's class.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */
@@ -53,12 +53,12 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
         public function enqueueScriptsStyles()
         {
             // CSS
-            wp_enqueue_style('bootstrap-basic-fse-bootstrap');
-            wp_enqueue_style('bootstrap-basic-fse-bootstrap-icons');
-            wp_enqueue_style('bootstrap-basic-fse-stylesheet');
+            wp_enqueue_style('rundizstrap-bootstrap');
+            wp_enqueue_style('rundizstrap-bootstrap-icons');
+            wp_enqueue_style('rundizstrap-stylesheet');
 
             // JS
-            wp_enqueue_script('bootstrap-basic-fse-bootstrap');
+            wp_enqueue_script('rundizstrap-bootstrap');
         }// enqueueScriptsStyles
 
 
@@ -94,14 +94,14 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
         public function registerScriptsStyles()
         {
             // CSS
-            wp_register_style('bootstrap-basic-fse-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'), [], '5.3.8');
-            wp_register_style('bootstrap-basic-fse-bootstrap-icons', get_theme_file_uri('assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css'), [], '1.13.1');
-            wp_register_style('bootstrap-basic-fse-stylesheet', get_stylesheet_uri(), [], BOOTSTRAPBASICFSE_VERSION);
-            wp_register_style('bootstrap-basic-fse-entry-content-readmore', get_theme_file_uri('assets/css/entry-content-readmore.css'), [], BOOTSTRAPBASICFSE_VERSION);
+            wp_register_style('rundizstrap-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'), [], '5.3.8');
+            wp_register_style('rundizstrap-bootstrap-icons', get_theme_file_uri('assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css'), [], '1.13.1');
+            wp_register_style('rundizstrap-stylesheet', get_stylesheet_uri(), [], BOOTSTRAPBASICFSE_VERSION);
+            wp_register_style('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/css/entry-content-readmore.css'), [], BOOTSTRAPBASICFSE_VERSION);
 
             // JS
-            wp_register_script('bootstrap-basic-fse-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'), [], '5.3.8', true);
-            wp_register_script('bootstrap-basic-fse-entry-content-readmore', get_theme_file_uri('assets/js/entry-content-readmore.js'), [], BOOTSTRAPBASICFSE_VERSION, true);
+            wp_register_script('rundizstrap-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'), [], '5.3.8', true);
+            wp_register_script('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/js/entry-content-readmore.js'), [], BOOTSTRAPBASICFSE_VERSION, true);
         }// registerScriptsStyles
 
 
@@ -142,8 +142,8 @@ if (!class_exists('\\BootstrapBasicFSE\\BootstrapBasicFSE')) {
             $default_area_definitions[] = [
                 'area' => 'sidebar',
                 'area_tag' => 'aside',
-                'label' => __('Sidebar', 'bootstrap-basic-fse'),
-                'description' => __('Right side bar', 'bootstrap-basic-fse'),
+                'label' => __('Sidebar', 'rundizstrap'),
+                'description' => __('Right side bar', 'rundizstrap'),
                 'icon' => 'sidebar',
             ];
 

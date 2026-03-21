@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: BBFSE List posts as grid
- * Slug: bootstrap-basic-fse/template-query-grid
+ * Slug: rundizstrap/template-query-grid
  * Categories: query
  * Block Types: core/query
  * Viewport width: 1400
  * Keywords: bootstrap basic, grid
  * Description: A list of posts, 3 columns.
  *
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  */
 
@@ -32,7 +32,7 @@ add_filter('bootstrap_basic_fse_default_thumbnail_on_listing', '__return_true');
         <!-- wp:group {"className":"mb-5"} -->
         <div class="wp-block-group mb-5">
             <!-- wp:paragraph {"className":"m-0 lead"} -->
-            <p class="m-0 lead"><?php echo esc_html_x('Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'bootstrap-basic-fse'); ?></p>
+            <p class="m-0 lead"><?php echo esc_html_x('Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'rundizstrap'); ?></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->

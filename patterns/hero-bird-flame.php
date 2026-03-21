@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Hero bird flame
- * Slug: bootstrap-basic-fse/hero-bird-flame
+ * Slug: rundizstrap/hero-bird-flame
  * Categories: banner
  * Keywords: bootstrap basic, bird, smoke, flame, hero
  * Description: A hero section for display image banner with heading and paragraph text.
  *
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */
@@ -23,11 +23,11 @@
     <!-- wp:rundizstrap-companion/blocks-bs-column {"className":"col-lg-6 px-0"} -->
     <div class="wp-block-rundizstrap-companion-blocks-bs-column col-lg-6 offset-lg-6 px-0">
         <!-- wp:heading {"level":1,"className":"display-4 fst-italic"} -->
-        <h1 class="wp-block-heading display-4 fst-italic"><?php esc_html_e('RundizStrap', 'bootstrap-basic-fse'); ?></h1>
+        <h1 class="wp-block-heading display-4 fst-italic"><?php esc_html_e('RundizStrap', 'rundizstrap'); ?></h1>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"className":"lead my-3"} -->
-        <p class="lead my-3"><?php esc_html_e('A modern WordPress Block Theme (FSE) based on Bootstrap', 'bootstrap-basic-fse'); ?></p>
+        <p class="lead my-3"><?php esc_html_e('A modern WordPress Block Theme (FSE) based on Bootstrap', 'rundizstrap'); ?></p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:rundizstrap-companion/blocks-bs-column -->

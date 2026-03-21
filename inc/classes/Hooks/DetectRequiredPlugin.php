@@ -2,7 +2,7 @@
 /**
  * RundizStrap - Detect required plugin.
  * 
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */
@@ -47,9 +47,9 @@ if (!class_exists('\\BootstrapBasicFSE\\Hooks\\DetectRequiredPlugin')) {
 
                 $message = sprintf(
                     /* translators: %1$s the plugin name, %2$s the theme name. */
-                    esc_html__('The %1$s plugin is required for %2$s theme and must be activated.', 'bootstrap-basic-fse'),
+                    esc_html__('The %1$s plugin is required for %2$s theme and must be activated.', 'rundizstrap'),
                     '<strong style="text-decoration: underline;">RundizStrap Companion</strong>',
-                    '<strong style="text-decoration: underline;">' . (is_object($theme) ? $theme->get('Name') : esc_html__('RundizStrap', 'bootstrap-basic-fse')) . '</strong>'
+                    '<strong style="text-decoration: underline;">' . (is_object($theme) ? $theme->get('Name') : esc_html__('RundizStrap', 'rundizstrap')) . '</strong>'
                 );
                 $args = [
                     'dismissible' => true,

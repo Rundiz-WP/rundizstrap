@@ -1,12 +1,12 @@
 <?php
 /**
  * Title: Hero paper ripped and clouds
- * Slug: bootstrap-basic-fse/hero-paper-ripped-clouds
+ * Slug: rundizstrap/hero-paper-ripped-clouds
  * Categories: banner
  * Keywords: bootstrap basic, bird, smoke, flame, hero
  * Description: A hero section for display image banner in painting style.
  *
- * @package bootstrap-basic-fse
+ * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
  */
@@ -31,7 +31,7 @@
         <span aria-hidden="true" class="wp-block-cover__background has-white-background-color has-background-dim-30 has-background-dim"></span>
         <div class="wp-block-cover__inner-container">
             <!-- wp:paragraph {"className":"display-6","style":{"typography":{"textAlign":"center"}}} -->
-            <p class="has-text-align-center display-6"><?php esc_html_e('Open up a new perspective', 'bootstrap-basic-fse'); ?></p>
+            <p class="has-text-align-center display-6"><?php esc_html_e('Open up a new perspective', 'rundizstrap'); ?></p>
             <!-- /wp:paragraph -->
         </div>
     </div>
