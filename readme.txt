@@ -12,6 +12,8 @@ RundizStrap is licensed under the MIT.
 
 RundizStrap Uses Bootstrap https://getbootstrap.com/ , licensed under MIT.
 RundizStrap Uses Bootstrap Icons https://icons.getbootstrap.com/ , licensed under MIT.
+Screenshot use generate image (bird flame) by Grok AI ( https://grok.com/ ).
+Screenshot use image in a post is from https://unsplash.com/photos/v7r8kZStqFw, licensed under Unsplash ( https://unsplash.com/license ). In short, it is free for use commercial & non-commercial, attribution is appretiated.
 
 == Description ==
 Based on latest version of Bootstrap and it is WordPress Full Site Editor (FSE) theme.
