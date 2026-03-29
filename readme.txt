@@ -20,7 +20,7 @@ Based on the latest version of Bootstrap, it is a WordPress Full Site Editor (FS
 
 The concept is to keep it basic, minimal, and support most Bootstrap features.
 
-This theme requires plugin "rundizstrap-companion". You can download it from GitHub at https://github.com/Rundiz-WP/rundizstrap-companion
+This theme requires plugin "rundizstrap-companion". You can download it from https://wordpress.org/plugins/rundizstrap-companion/ or https://github.com/Rundiz-WP/rundizstrap-companion
 
 Tested up to PHP 8.5.
 
