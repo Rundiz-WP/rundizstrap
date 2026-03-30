@@ -1,10 +1,10 @@
 <?php
 /**
- * Title: Hero paper ripped and clouds
- * Slug: rundizstrap/hero-paper-ripped-clouds
+ * Title: Hero above the clouds
+ * Slug: rundizstrap/hero-above-clouds
  * Categories: banner
- * Keywords: rundizstrap, bootstrap, bird, smoke, flame, hero
- * Description: A hero section for display image banner in painting style.
+ * Keywords: rundizstrap, bootstrap, sky, cloud, clouds
+ * Description: A hero section for display image banner like flying above the clouds.
  *
  * @package rundizstrap
  * @since 0.0.1
@@ -15,7 +15,7 @@
 <div class="wp-block-group mb-4 text-body-emphasis bg-white">
     <!-- wp:cover {
         "className":"rounded",
-        "url":"<?php echo esc_url(get_theme_file_uri('assets/imgs/paper-ripped-clouds-1920x540.webp')); ?>",
+        "url":"<?php echo esc_url(get_theme_file_uri('assets/imgs/above-clouds-1920x540.webp')); ?>",
         "dimRatio":30,
         "overlayColor":"white",
         "isUserOverlayColor":true,
@@ -27,7 +27,7 @@
         }
     } -->
     <div class="wp-block-cover is-light has-custom-content-position is-position-bottom-center rounded">
-        <img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url(get_theme_file_uri('assets/imgs/paper-ripped-clouds-1920x540.webp')); ?>" data-object-fit="cover"/>
+        <img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url(get_theme_file_uri('assets/imgs/above-clouds-1920x540.webp')); ?>" data-object-fit="cover"/>
         <span aria-hidden="true" class="wp-block-cover__background has-white-background-color has-background-dim-30 has-background-dim"></span>
         <div class="wp-block-cover__inner-container">
             <!-- wp:paragraph {"className":"display-6","style":{"typography":{"textAlign":"center"}}} -->
