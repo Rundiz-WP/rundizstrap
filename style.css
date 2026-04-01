@@ -19,7 +19,8 @@
 /* WP core classes =========================================== */
 /* https://developer.wordpress.org/advanced-administration/wordpress/css/ */
 .alignnone {
-  margin: 5px 20px 20px 0;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .aligncenter,
@@ -44,7 +45,8 @@ a img.alignright {
 }
 
 a img.alignnone {
-  margin: 5px 20px 20px 0;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 a img.alignleft {
@@ -67,7 +69,9 @@ a img.aligncenter {
 }
 
 .wp-caption.alignnone {
-  margin: 5px 20px 20px 0;
+  clear: both;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .wp-caption.alignleft {
@@ -137,6 +141,14 @@ body.error404 .wp-site-blocks {
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - var(--wp-admin--admin-bar--height, 0px));
+}
+
+
+iframe:not(.ratio iframe) {
+    aspect-ratio: 16/9;
+    border: none;
+    height: auto;
+    max-width: 100%;/* use `max-width` instead of `width` to respect HTML attribute `width="..."`. otherwise, use `ratio` class from Bootstrap. */
 }
 
 
