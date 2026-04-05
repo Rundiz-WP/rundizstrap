@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-03-21T10:31:00+07:00\n"
+"POT-Creation-Date: 2026-04-05T14:52:53+07:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rundizstrap\n"
@@ -22,9 +22,8 @@ msgid "RundizStrap"
 msgstr ""
 
 #. Theme URI of the theme
-#. Author URI of the theme
 #: style.css
-msgid "https://rundiz.com"
+msgid "https://github.com/Rundiz-WP/rundizstrap"
 msgstr ""
 
 #. Description of the theme
@@ -37,6 +36,11 @@ msgstr ""
 msgid "Vee W."
 msgstr ""
 
+#. Author URI of the theme
+#: style.css
+msgid "https://rundiz.com"
+msgstr ""
+
 #: inc/classes/Assets/EntryContentReadmore.php:81
 msgid "Read less"
 msgstr ""
@@ -46,28 +50,28 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:81
+#: inc/classes/Hooks/CommentForm.php:84
 msgid "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:104
+#: inc/classes/Hooks/CommentForm.php:107
 msgid "Website"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:128
+#: inc/classes/Hooks/CommentForm.php:131
 msgid "Email"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:152
+#: inc/classes/Hooks/CommentForm.php:155
 msgid "Name"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:176
+#: inc/classes/Hooks/CommentForm.php:179
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:199
+#: inc/classes/Hooks/CommentForm.php:202
 msgid "Post Comment"
 msgstr ""
 
@@ -91,11 +95,11 @@ msgstr ""
 msgid "The views file was not found (%s)."
 msgstr ""
 
-#: inc/classes/Rundizstrap.php:145
+#: inc/classes/Rundizstrap.php:146
 msgid "Sidebar"
 msgstr ""
 
-#: inc/classes/Rundizstrap.php:146
+#: inc/classes/Rundizstrap.php:147
 msgid "Right side bar"
 msgstr ""
 
@@ -113,6 +117,20 @@ msgstr ""
 msgid "Comments"
 msgstr ""
 
+#: patterns/hero-above-clouds.php
+msgctxt "Pattern title"
+msgid "Hero above the clouds"
+msgstr ""
+
+#: patterns/hero-above-clouds.php
+msgctxt "Pattern description"
+msgid "A hero section for display image banner like flying above the clouds."
+msgstr ""
+
+#: patterns/hero-above-clouds.php:34
+msgid "Open up a new perspective"
+msgstr ""
+
 #: patterns/hero-bird-flame.php
 msgctxt "Pattern title"
 msgid "Hero bird flame"
@@ -125,20 +143,6 @@ msgstr ""
 
 #: patterns/hero-bird-flame.php:30
 msgid "A modern WordPress Block Theme (FSE) based on Bootstrap"
-msgstr ""
-
-#: patterns/hero-paper-ripped-clouds.php
-msgctxt "Pattern title"
-msgid "Hero paper ripped and clouds"
-msgstr ""
-
-#: patterns/hero-paper-ripped-clouds.php
-msgctxt "Pattern description"
-msgid "A hero section for display image banner in painting style."
-msgstr ""
-
-#: patterns/hero-paper-ripped-clouds.php:34
-msgid "Open up a new perspective"
 msgstr ""
 
 #: patterns/hidden-404.php
