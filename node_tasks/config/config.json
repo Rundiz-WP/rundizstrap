@@ -23,8 +23,16 @@
         "copy": {
             "copyTasks": [
                 {
+                    "patterns": "node_modules/bootstrap/dist/css/bootstrap.css*",
+                    "destination": "assets/vendor/bootstrap/css"
+                },
+                {
                     "patterns": "node_modules/bootstrap/dist/css/bootstrap.min.*",
                     "destination": "assets/vendor/bootstrap/css"
+                },
+                {
+                    "patterns": "node_modules/bootstrap/dist/js/bootstrap.bundle.js*",
+                    "destination": "assets/vendor/bootstrap/js"
                 },
                 {
                     "patterns": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.*",
