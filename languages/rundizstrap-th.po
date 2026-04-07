@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RundizStrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rundizstrap\n"
-"POT-Creation-Date: 2026-04-05T14:52:53+07:00\n"
-"PO-Revision-Date: 2026-04-05 14:54+0700\n"
+"POT-Creation-Date: 2026-04-08T00:46:38+07:00\n"
+"PO-Revision-Date: 2026-04-08 00:47+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #. Theme Name of the theme
-#: style.css inc/classes/Hooks/DetectRequiredPlugin.php:52
+#: style.css inc/classes/Hooks/DetectRecommendPlugin.php:107
 #: patterns/hero-bird-flame.php:26
 msgid "RundizStrap"
 msgstr "RundizStrap"
@@ -86,11 +86,19 @@ msgstr "หน้า:"
 msgid "Content pages"
 msgstr "หน้าของเนื้อหา"
 
+#: inc/classes/Hooks/DetectRecommendPlugin.php:51
+msgid "You have dismissed the notice."
+msgstr "คุณรับทราบการแจ้งเตือนแล้ว."
+
+#: inc/classes/Hooks/DetectRecommendPlugin.php:56
+msgid "You did not dismiss the notice yet."
+msgstr "คุณยังไม่ได้รับทราบการแจ้งเตือน."
+
 #. translators: %1$s the plugin name, %2$s the theme name.
-#: inc/classes/Hooks/DetectRequiredPlugin.php:50
+#: inc/classes/Hooks/DetectRecommendPlugin.php:105
 #, php-format
-msgid "The %1$s plugin is required for %2$s theme and must be activated."
-msgstr "ต้องการปลั๊กอิน %1$s สำหรับธีม %2$s และจะต้องเปิดใช้งาน."
+msgid "The %1$s plugin is recommended for %2$s theme and should be activated."
+msgstr "ปลั๊กอิน %1$s นั้นแนะนำสำหรับธีม %2$s และจะควรเปิดใช้งาน."
 
 #. translators: %s: Template path.
 #: inc/classes/Libraries/Loader.php:124
