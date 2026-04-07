@@ -1,6 +1,6 @@
 {
     "name": "rundizstrap",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A modern WordPress Block Theme (FSE) based on latest Bootstrap.",
     "private": true,
     "type": "module",
