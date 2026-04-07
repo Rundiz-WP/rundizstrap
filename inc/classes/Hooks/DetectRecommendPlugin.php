@@ -21,6 +21,9 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
     {
 
 
+        /**
+         * @var string Transient name for dismiss the recommended plugin notice.
+         */
         protected const TRANSIENT_NAME = 'rundizstrap_recommend_plugin_rundizstrapcompanion_not_found_dismissed';
 
 
@@ -50,7 +53,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
                 $output['dismiss'] = $dismiss;
                 $output['success'] = false;
                 $output['status'] = 400;
-                $output['message'] = __('You did not dismiss the notice', 'rundizstrap');
+                $output['message'] = __('You did not dismiss the notice yet.', 'rundizstrap');
             }
 
             if (isset($output['status']) && intval($output['status']) >= 200 && intval($output['status']) < 400) {
@@ -99,7 +102,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
 
                 $message = sprintf(
                     /* translators: %1$s the plugin name, %2$s the theme name. */
-                    esc_html__('The %1$s plugin is recommended for %2$s theme and must be activated.', 'rundizstrap'),
+                    esc_html__('The %1$s plugin is recommended for %2$s theme and should be activated.', 'rundizstrap'),
                     '<strong style="text-decoration: underline;">RundizStrap Companion</strong>',
                     '<strong style="text-decoration: underline;">' . (is_object($theme) ? $theme->get('Name') : esc_html__('RundizStrap', 'rundizstrap')) . '</strong>'
                 );
