@@ -25,9 +25,7 @@
     <!-- https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
     <config name="testVersion" value="8.0-"/>
     <!-- https://github.com/PHPCompatibility/PHPCompatibilityWP -->
-    <!--<rule ref="PHPCompatibilityWP">
-        <include-pattern>*\.php$</include-pattern>
-    </rule>-->
+    <rule ref="PHPCompatibilityWP"/>
 
     <!-- Rules: WordPress Coding Standards -->
     <!-- https://github.com/WordPress/WordPress-Coding-Standards -->
@@ -63,7 +61,7 @@
         <exclude name="Squiz.Commenting.InlineComment.NoSpaceBefore"></exclude>
         <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterOpen"></exclude>
         <exclude name="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingBeforeClose"></exclude>
-        <exclude name="Squiz.PHP.CommentedOutCode.Found"></exclude><!-- useful when scan for commented out code. only enabled if need. -->
+        <exclude name="Squiz.PHP.CommentedOutCode.Found"></exclude><!-- use when scan for commented out code. only enabled if need. -->
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterEnd"></exclude>
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen"></exclude>
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"></exclude>
@@ -78,10 +76,7 @@
         <exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned"></exclude>
         <exclude name="WordPress.Files.FileName.InvalidClassFileName"></exclude>
         <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"></exclude>
-        <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterStructureOpen"></exclude>
-        <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeOpenParenthesis"></exclude>
         <exclude name="WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid"></exclude>
-        <exclude name="WordPress.NamingConventions.ValidVariableName.InterpolatedVariableNotSnakeCase"></exclude>
         <exclude name="WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase"></exclude>
         <exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"></exclude>
         <exclude name="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase"></exclude>
@@ -92,6 +87,9 @@
         <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter"></exclude>
     </rule>
 
+    <!-- Let's also check that everything is properly documented. -->
+    <rule ref="WordPress-Docs" />
+
     <rule ref="WordPress.WP.I18n">
         <properties>
             <!-- Value: replace the text domain used. -->
@@ -99,7 +97,6 @@
                 <element value="rundizstrap" />
             </property>
         </properties>
-        <!--exclude name="WordPress.WP.I18n.MissingArgDomain"></exclude--><!-- comment out this line if you want to use `__('WordPress core translation text')`, or `esc_html('Text')` -->
     </rule>
 
     <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
