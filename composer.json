@@ -1,13 +1,13 @@
 {
+    "author_comments": {
+        "1": "This file is keep for in case future use. It will be install in target folder not /vendor from theme's root."
+    },
     "autoload": {
         "psr-4": {
             "Rundizstrap\\": "inc/classes/"
         }
     },
     "config": {
-        "vendor-dir": "inc/vendor",
-        "allow-plugins": {
-            "composer/installers": true
-        }
+        "vendor-dir": "inc/vendor"
     }
 }

@@ -7,7 +7,6 @@
     <exclude-pattern>/\.backup/</exclude-pattern>
     <exclude-pattern>/\.dev-notes/</exclude-pattern>
     <exclude-pattern>/assets/</exclude-pattern>
-    <exclude-pattern>/inc/vendor/</exclude-pattern>
     <exclude-pattern>/node_modules/</exclude-pattern>
 
     <!-- How to scan -->
