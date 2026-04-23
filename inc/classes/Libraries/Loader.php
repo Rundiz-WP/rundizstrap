@@ -47,9 +47,7 @@ if (!class_exists('\\Rundizstrap\Libraries\\Loader')) {
                             $TestClass->implementsInterface('\\Rundizstrap\\Interfaces\\AutoRegisterInterface')
                         ) {
                             $ClassObj = new $fileAsClassName();
-                            if (method_exists($ClassObj, 'registerHooks')) {
-                                $ClassObj->registerHooks();
-                            }
+                            $ClassObj->registerHooks();
                             unset($ClassObj);
                         }
                     }// endif;
