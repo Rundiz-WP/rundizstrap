@@ -223,6 +223,7 @@
                         ".phpunit*",
                         "assets-src",
                         "composer.*",
+                        "inc/composer.*",
                         "node_modules",
                         "node_tasks",
                         "package*.json"
