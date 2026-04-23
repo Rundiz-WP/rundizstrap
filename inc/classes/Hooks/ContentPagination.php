@@ -31,9 +31,9 @@ if (!class_exists('\\Rundizstrap\\Hooks\\ContentPagination')) {
         /**
          * Add pagination links if using classic editor.
          * 
-         * @link https://developer.wordpress.org/reference/hooks/the_content/ Reference
-         * @link https://github.com/WordPress/gutenberg/issues/29484 Issue
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/the_content/ Reference.
+         * @link https://github.com/WordPress/gutenberg/issues/29484 Issue. Update this part when it's fixed.
          * @param string $content Content of the current post.
          * @return string
          */
@@ -65,8 +65,8 @@ if (!class_exists('\\Rundizstrap\\Hooks\\ContentPagination')) {
          * 
          * Only work in singular (post, page, any post type).
          * 
-         * @link https://developer.wordpress.org/reference/hooks/the_content/ Reference
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/the_content/ Reference.
          * @param string $content Content of the current post.
          */
         public function detectHasBlock(string $content): string
@@ -85,6 +85,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\ContentPagination')) {
          * Modify link pages args to be matched Bootstrap style.
          * 
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/wp_link_pages_args/ Reference.
          * @param array $parsed_args An array of page link arguments. See `wp_link_pages()` for information on accepted arguments.
          * @return array
          */
@@ -105,6 +106,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\ContentPagination')) {
          * Modify link pages link HTML to be matched Bootstrap style.
          * 
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/wp_link_pages_link/ Reference.
          * @param string $link The page number HTML output.
          * @param int $i Page number for paginated posts' page links.
          * @return string
@@ -113,7 +115,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\ContentPagination')) {
         {
             if (stripos($link, '<a') === false) {
                 // if not found `<a>` link.
-                return '<li class="page-item active"><a class="page-link" href="#">' . $link . '</a></li>' . PHP_EOL;
+                return '<li class="page-item active"><a class="page-link" href="#">' . wp_kses_post($link) . '</a></li>' . PHP_EOL;
             } else {
                 // if found `<a>` link.
                 if (stripos($link, 'class=') !== false) {
@@ -127,7 +129,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\ContentPagination')) {
                     $link = str_ireplace('<a', '<a class="page-link"', $link);
                 }
                 // always wrap pagination with `<li>` element.
-                return '<li class="page-item">' . $link . '</li>' . PHP_EOL;
+                return '<li class="page-item">' . wp_kses_post($link) . '</li>' . PHP_EOL;
             }// endif;
         }// modifyWPLinkPagesLink
 

@@ -27,9 +27,9 @@ if (!class_exists('\\Rundizstrap\Hooks\\DependPluginEnqueueStylesScripts')) {
          * These enqueue names are on RundizStrap Companion that created for this theme by the same author.
          * It does not need to enqueue the same CSS & JS files on both plugin and theme. Use them based on this theme is enough.
          * 
+         * @since 0.0.1
          * @link https://developer.wordpress.org/reference/functions/wp_dequeue_style/ Reference.
          * @link https://developer.wordpress.org/reference/functions/wp_dequeue_script/ Reference.
-         * @since 0.0.1
          */
         public function dequeueStylesScripts()
         {

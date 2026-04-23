@@ -35,8 +35,8 @@ if (!class_exists('\\Rundizstrap\Hooks\\DefaultThumbnail')) {
         /**
          * Set default post thumbnail if there is no post feature image.
          * 
-         * @link https://developer.wordpress.org/reference/hooks/post_thumbnail_html/ Reference
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/post_thumbnail_html/ Reference
          * @param string $html The post thumbnail HTML.
          * @param int $post_id The post ID.
          * @param int $post_thumbnail_id The post thumbnail ID, or 0 if there isn’t one.

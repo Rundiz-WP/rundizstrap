@@ -29,6 +29,9 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
 
         /**
          * AJAX dismiss the notice.
+         * 
+         * @since 0.0.2
+         * @link https://developer.wordpress.org/reference/hooks/wp_ajax_action/ Reference.
          */
         public function ajaxDismiss()
         {
@@ -71,6 +74,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
          * Detect recommended plugin and display alert if not found activated.
          * 
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/admin_notices/ Reference.
          */
         public function detectAndDisplayAlert()
         {
@@ -120,6 +124,9 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
 
         /**
          * Enqueue script.
+         * 
+         * @since 0.0.2
+         * @link https://developer.wordpress.org/reference/hooks/admin_enqueue_scripts/ Reference.
          */
         public function enqueueScript()
         {
@@ -143,6 +150,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
         /**
          * Check is user is dismissed.
          * 
+         * @since 0.0.2
          * @return bool Return `true` if dismissed, `false` if not.
          */
         private function isDismissed(): bool
@@ -171,6 +179,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
         /**
          * Check if user has required capability to know this notice to install recommend plugin.
          * 
+         * @since 0.0.1
          * @return bool Return `true` if yes, `false` if no.
          */
         private function isUserHasRequiredCapability(): bool
@@ -199,6 +208,9 @@ if (!class_exists('\\Rundizstrap\\Hooks\\DetectRecommendPlugin')) {
 
         /**
          * Register script(s). Not enqueue here.
+         * 
+         * @since 0.0.2
+         * @link https://developer.wordpress.org/reference/hooks/init/ Reference.
          */
         public function registerScript()
         {

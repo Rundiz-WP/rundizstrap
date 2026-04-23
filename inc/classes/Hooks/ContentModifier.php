@@ -25,6 +25,7 @@ if (!class_exists('\\Rundizstrap\\Hooks\\ContentModifier')) {
          * Append clearfix (clear float).
          * 
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/the_content/ Reference.
          * @param string $content Content of the current post.
          * @return string
          */

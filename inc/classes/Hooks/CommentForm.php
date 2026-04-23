@@ -5,16 +5,27 @@
  * @package rundizstrap
  * @since 0.0.1
  * @license http://opensource.org/licenses/MIT MIT
- * @deprecated Use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
+ * @deprecated Use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead. Leave this file as fallback.
+ * 
+ * phpcs:disable
  */
 
 
 namespace Rundizstrap\Hooks;
 
 
-return;// disabled. use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
-// leave this file as fallback.
-// phpcs:disable
+/**
+ * Please read! Please read by human. Do not rely on tools for 100%.
+ * 
+ * Use block `wp:rundizstrap-companion/blocks-bs-comment-form` instead.
+ * 
+ * This file will leave as fallback in case some thing wrong and for example code.
+ * 
+ * Cannot use code block comments because there are a lot of doc block.  
+ * Use return nothing will stop working only on this file the same way and no errors occur.  
+ * The site still continue to work without any problems.
+ */
+return;
 
 
 if (!class_exists('\\Rundizstrap\\Hooks\\CommentForm')) {

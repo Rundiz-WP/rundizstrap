@@ -27,8 +27,8 @@ if (!class_exists('\\Rundizstrap\Hooks\\GalleryShortcode')) {
         /**
          * Enqueue gallery style.
          *
-         * @link https://developer.wordpress.org/reference/hooks/gallery_style/ Reference.
          * @since 0.0.1
+         * @link https://developer.wordpress.org/reference/hooks/gallery_style/ Reference.
          * @see `gallery_shortcode()`.
          */
         public function enqueueGalleryStyle()
