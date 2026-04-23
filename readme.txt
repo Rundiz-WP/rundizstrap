@@ -2,8 +2,8 @@
 Contributors: Vee W.
 Tags: one-column, two-columns, right-sidebar, translation-ready
 Requires at least: 6.1
-Tested up to: 7.0
-Stable tag: 0.0.2
+Tested up to: 6.9
+Stable tag: 0.0.3
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -12,7 +12,7 @@ RundizStrap is licensed under the MIT.
 
 RundizStrap uses Bootstrap https://getbootstrap.com/ , licensed under MIT.
 RundizStrap uses Bootstrap Icons https://icons.getbootstrap.com/ , licensed under MIT.
-Screenshots use a generated image (bird flame) by Grok AI ( https://grok.com/ ).
+Screenshots use a generated image (bird flame) by Grok AI ( https://grok.com/ ), licensed under Public Domain.
 The image used in a post screenshot is from https://wordpress.org/photos/photo/84869c4625/, licensed under CC0 ( https://creativecommons.org/publicdomain/zero/1.0/ ).
 
 == Description ==

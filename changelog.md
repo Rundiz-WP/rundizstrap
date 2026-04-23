@@ -1,5 +1,12 @@
 # Change log
 
+## 0.0.3
+2026-04-23
+
+* Remove text that alert theme reviewer. It is just a text but gets alert by tool and who rely on the tool for 100%.
+* Add license for generated image.
+* Remove composer files from package.
+
 ## 0.0.2
 2026-04-08
 
