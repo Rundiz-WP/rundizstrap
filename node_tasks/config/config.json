@@ -66,10 +66,6 @@
                     "destination": "assets"
                 },
                 {
-                    "patterns": "blocks/**",
-                    "destination": "blocks"
-                },
-                {
                     "patterns": "inc/**",
                     "destination": "inc"
                 },
@@ -125,10 +121,6 @@
             {
                 "patterns": "assets/**",
                 "destination": "assets"
-            },
-            {
-                "patterns": "blocks/**",
-                "destination": "blocks"
             },
             {
                 "patterns": "inc/**",
