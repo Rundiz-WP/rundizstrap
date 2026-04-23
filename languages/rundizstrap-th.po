@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RundizStrap\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rundizstrap\n"
-"POT-Creation-Date: 2026-04-08T00:46:38+07:00\n"
-"PO-Revision-Date: 2026-04-08 00:47+0700\n"
+"POT-Creation-Date: 2026-04-23T19:01:20+07:00\n"
+"PO-Revision-Date: 2026-04-23 19:01+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: th\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #. Theme Name of the theme
-#: style.css inc/classes/Hooks/DetectRecommendPlugin.php:107
+#: style.css inc/classes/Hooks/DetectRecommendPlugin.php:111
 #: patterns/hero-bird-flame.php:26
 msgid "RundizStrap"
 msgstr "RundizStrap"
@@ -53,55 +53,55 @@ msgstr "อ่านน้อยลง"
 msgid "Read more"
 msgstr "อ่านเพิ่มเติม"
 
-#: inc/classes/Hooks/CommentForm.php:84
+#: inc/classes/Hooks/CommentForm.php:95
 msgid "Save my name, email, and website in this browser for the next time I comment."
 msgstr "บันทึกชื่อ อีเมล และเว็บไซต์ของฉันลงในเบราว์เซอร์นี้สำหรับการแสดงความคิดเห็นครั้งต่อไป."
 
-#: inc/classes/Hooks/CommentForm.php:107
+#: inc/classes/Hooks/CommentForm.php:118
 msgid "Website"
 msgstr "เว็บไซต์"
 
-#: inc/classes/Hooks/CommentForm.php:131
+#: inc/classes/Hooks/CommentForm.php:142
 msgid "Email"
 msgstr "อีเมล"
 
-#: inc/classes/Hooks/CommentForm.php:155
+#: inc/classes/Hooks/CommentForm.php:166
 msgid "Name"
 msgstr "ชื่อ"
 
-#: inc/classes/Hooks/CommentForm.php:179
+#: inc/classes/Hooks/CommentForm.php:190
 msgctxt "noun"
 msgid "Comment"
 msgstr "ความคิดเห็น"
 
-#: inc/classes/Hooks/CommentForm.php:202
+#: inc/classes/Hooks/CommentForm.php:213
 msgid "Post Comment"
 msgstr "แสดงความคิดเห็น"
 
-#: inc/classes/Hooks/ContentPagination.php:94
+#: inc/classes/Hooks/ContentPagination.php:95
 msgid "Pages:"
 msgstr "หน้า:"
 
-#: inc/classes/Hooks/ContentPagination.php:95
+#: inc/classes/Hooks/ContentPagination.php:96
 msgid "Content pages"
 msgstr "หน้าของเนื้อหา"
 
-#: inc/classes/Hooks/DetectRecommendPlugin.php:51
+#: inc/classes/Hooks/DetectRecommendPlugin.php:54
 msgid "You have dismissed the notice."
 msgstr "คุณรับทราบการแจ้งเตือนแล้ว."
 
-#: inc/classes/Hooks/DetectRecommendPlugin.php:56
+#: inc/classes/Hooks/DetectRecommendPlugin.php:59
 msgid "You did not dismiss the notice yet."
 msgstr "คุณยังไม่ได้รับทราบการแจ้งเตือน."
 
 #. translators: %1$s the plugin name, %2$s the theme name.
-#: inc/classes/Hooks/DetectRecommendPlugin.php:105
+#: inc/classes/Hooks/DetectRecommendPlugin.php:109
 #, php-format
 msgid "The %1$s plugin is recommended for %2$s theme and should be activated."
 msgstr "ปลั๊กอิน %1$s นั้นแนะนำสำหรับธีม %2$s และจะควรเปิดใช้งาน."
 
 #. translators: %s: Template path.
-#: inc/classes/Libraries/Loader.php:124
+#: inc/classes/Libraries/Loader.php:122
 #, php-format
 msgid "The views file was not found (%s)."
 msgstr "ไม่พบไฟล์วิว (%s)."

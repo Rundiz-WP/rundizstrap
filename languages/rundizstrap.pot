@@ -9,14 +9,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-23T12:29:30+07:00\n"
+"POT-Creation-Date: 2026-04-23T19:01:20+07:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rundizstrap\n"
 
 #. Theme Name of the theme
 #: style.css
-#: inc/classes/Hooks/DetectRecommendPlugin.php:107
+#: inc/classes/Hooks/DetectRecommendPlugin.php:111
 #: patterns/hero-bird-flame.php:26
 msgid "RundizStrap"
 msgstr ""
@@ -50,55 +50,55 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:84
+#: inc/classes/Hooks/CommentForm.php:95
 msgid "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:107
+#: inc/classes/Hooks/CommentForm.php:118
 msgid "Website"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:131
+#: inc/classes/Hooks/CommentForm.php:142
 msgid "Email"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:155
+#: inc/classes/Hooks/CommentForm.php:166
 msgid "Name"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:179
+#: inc/classes/Hooks/CommentForm.php:190
 msgctxt "noun"
 msgid "Comment"
 msgstr ""
 
-#: inc/classes/Hooks/CommentForm.php:202
+#: inc/classes/Hooks/CommentForm.php:213
 msgid "Post Comment"
 msgstr ""
 
-#: inc/classes/Hooks/ContentPagination.php:94
+#: inc/classes/Hooks/ContentPagination.php:95
 msgid "Pages:"
 msgstr ""
 
-#: inc/classes/Hooks/ContentPagination.php:95
+#: inc/classes/Hooks/ContentPagination.php:96
 msgid "Content pages"
 msgstr ""
 
-#: inc/classes/Hooks/DetectRecommendPlugin.php:51
+#: inc/classes/Hooks/DetectRecommendPlugin.php:54
 msgid "You have dismissed the notice."
 msgstr ""
 
-#: inc/classes/Hooks/DetectRecommendPlugin.php:56
+#: inc/classes/Hooks/DetectRecommendPlugin.php:59
 msgid "You did not dismiss the notice yet."
 msgstr ""
 
 #. translators: %1$s the plugin name, %2$s the theme name.
-#: inc/classes/Hooks/DetectRecommendPlugin.php:105
+#: inc/classes/Hooks/DetectRecommendPlugin.php:109
 #, php-format
 msgid "The %1$s plugin is recommended for %2$s theme and should be activated."
 msgstr ""
 
 #. translators: %s: Template path.
-#: inc/classes/Libraries/Loader.php:124
+#: inc/classes/Libraries/Loader.php:122
 #, php-format
 msgid "The views file was not found (%s)."
 msgstr ""
