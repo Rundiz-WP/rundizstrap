@@ -53,12 +53,12 @@ if (!class_exists('\\Rundizstrap\\Rundizstrap')) {
         public function enqueueScriptsStyles()
         {
             // CSS
-            wp_enqueue_style('rundizstrap-bootstrap');
-            wp_enqueue_style('rundizstrap-bootstrap-icons');
+            wp_enqueue_style('bootstrap5');
+            wp_enqueue_style('bootstrap-icons1');
             wp_enqueue_style('rundizstrap-stylesheet');
 
             // JS
-            wp_enqueue_script('rundizstrap-bootstrap');
+            wp_enqueue_script('bootstrap5');
         }// enqueueScriptsStyles
 
 
@@ -94,14 +94,14 @@ if (!class_exists('\\Rundizstrap\\Rundizstrap')) {
         public function registerScriptsStyles()
         {
             // CSS
-            wp_register_style('rundizstrap-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'), [], '5.3.8');
-            wp_register_style('rundizstrap-bootstrap-icons', get_theme_file_uri('assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css'), [], '1.13.1');
+            wp_register_style('bootstrap5', get_theme_file_uri('assets/vendor/bootstrap/css/bootstrap.min.css'), [], '5.3.8');
+            wp_register_style('bootstrap-icons1', get_theme_file_uri('assets/vendor/bootstrap-icons/css/bootstrap-icons.min.css'), [], '1.13.1');
             wp_register_style('rundizstrap-stylesheet', get_stylesheet_uri(), [], RUNDIZSTRAP_VERSION);
             wp_register_style('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/css/entry-content-readmore.css'), [], RUNDIZSTRAP_VERSION);
             wp_register_style('rundizstrap-gallery-shortcode', get_theme_file_uri('assets/css/gallery-shortcode.css'), [], RUNDIZSTRAP_VERSION);
 
             // JS
-            wp_register_script('rundizstrap-bootstrap', get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'), [], '5.3.8', true);
+            wp_register_script('bootstrap5', get_theme_file_uri('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'), [], '5.3.8', true);
             wp_register_script('rundizstrap-entry-content-readmore', get_theme_file_uri('assets/js/entry-content-readmore.js'), [], RUNDIZSTRAP_VERSION, true);
         }// registerScriptsStyles
 
