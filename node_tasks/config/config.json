@@ -168,14 +168,14 @@
         {
             "nodePackage": "bootstrap",
             "assetsDataPattern": [
-                "rundizstrap\\-bootstrap"
+                "bootstrap5"
             ],
             "assetsDataFile": "inc/classes/Rundizstrap.php"
         },
         {
             "nodePackage": "bootstrap-icons",
             "assetsDataPattern": [
-                "rundizstrap\\-bootstrap\\-icons"
+                "bootstrap\\-icons.+"
             ],
             "assetsDataFile": "inc/classes/Rundizstrap.php"
         }
