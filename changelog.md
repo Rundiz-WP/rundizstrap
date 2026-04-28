@@ -1,7 +1,7 @@
 # Change log
 
 ## 0.0.4
-2026-xx-xx
+2026-04-28
 
 * Removed composer.json completely.
 * Use self autoload.php not from Composer but still in inc/vendor/.
