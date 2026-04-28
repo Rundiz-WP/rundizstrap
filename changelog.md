@@ -1,5 +1,14 @@
 # Change log
 
+## 0.0.4
+2026-xx-xx
+
+* Removed composer.json completely.
+* Use self autoload.php not from Composer but still in inc/vendor/.
+* Update checks in Loader class, remove task that is no need.
+* Removed inc/views folder.
+* Rename 3-rd party handles as per theme reviewer's comment.
+
 ## 0.0.3
 2026-04-23
 
